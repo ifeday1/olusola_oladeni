@@ -1,9 +1,9 @@
 import React from "react";
-import { Box, Image, Text, Button, VStack, Center } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Box, Image, Text, Button, VStack, Center, Link } from "@chakra-ui/react";
+
 
 const Card = ({ data }) => {
-    const { image, description, price, link, amazon } = data;
+    const { image, description, price, buttonLabel, link } = data;
 
     console.log('image', image)
     console.log('link', link)
@@ -21,8 +21,11 @@ const Card = ({ data }) => {
                     {price}
                 </Text>
                 <Center >
-                    <Button mr='5px' colorScheme="teal"><Link to={link} />Add to Cart</Button>
-                    <Button colorScheme="teal"><Link to={amazon} />Buy on Amazon</Button>
+                    <Link href={link} isExternal>
+                        <Button colorScheme="teal" mt={4}>
+                            {buttonLabel}
+                        </Button>
+                    </Link>
                 </Center>
             </VStack>
         </Box>

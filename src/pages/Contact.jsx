@@ -15,6 +15,7 @@ import { FaPhone, FaEnvelope, FaFacebook, FaInstagram, FaTwitter, FaTiktok } fro
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer/Footer'
 import Image2 from '../../src/assets/3.jpg'
+import WhatsappChat from '../components/Whatsapp/Index';
 
 const Contact = () => {
     const toast = useToast();
@@ -188,7 +189,7 @@ const Contact = () => {
             </div >
 
 
-
+            <WhatsappChat />
             <Footer />
         </>
     )

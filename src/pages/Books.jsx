@@ -5,6 +5,7 @@ import Footer from '../components/Footer/Footer'
 import { Flex, Container, Box, Text } from "@chakra-ui/react";
 import Card from "../utils/Card";
 import cardData from "../utils/CardData";
+import WhatsappChat from '../components/Whatsapp/Index';
 
 const Books = ({ data }) => {
 
@@ -25,6 +26,8 @@ const Books = ({ data }) => {
                 )
                 )}
             </Flex>
+            
+            <WhatsappChat/>
             <Footer />
         </>
     )

@@ -26,7 +26,7 @@ const Example = () => {
                     }}>
 
                         <span>
-                            <Text textAlign={'center'} fontSize={'4xl'} fontWeight={'bold'} color={'white'} py="400px" lineHeight='110%'>
+                            <Text textAlign={'center'} fontSize={{ base: "30px", md: "4xl" }} fontWeight={'bold'} color={'white'} py={{ base: "200px", md: "400px" }} lineHeight='110%' paddingBottom={{ base: "0px", md: "0px" }}>
                                 To influence and transform life holistically
                                 <br></br>through strategic discipleship and equipment
                                 <br></br>for a productive Christian life.
@@ -45,7 +45,7 @@ const Example = () => {
                         backgroundRepeat: 'no-repeat',
                     }}>
                         <span>
-                            <Text textAlign={'center'} fontSize={'4xl'} fontWeight={'bold'} color={'white'} py="400px" lineHeight='110%'>
+                            <Text textAlign={'center'} fontSize={{ base: "30px", md: "4xl" }} fontWeight={'bold'} color={'white'} py={{ base: "200px", md: "400px" }} lineHeight='110%' paddingBottom={{ base: "0px", md: "0px" }}>
                                 To influence and transform life holistically
                                 <br></br>through strategic discipleship and equipment
                                 <br></br>for a productive Christian life.
@@ -63,7 +63,7 @@ const Example = () => {
                         backgroundRepeat: 'no-repeat',
                     }}>
                         <span style={{ color: 'white' }}>
-                            <Text textAlign={'center'} fontSize={'4xl'} fontWeight={'bold'} color={'white'} py="400px" lineHeight='110%'>
+                            <Text textAlign={'center'} fontSize={{ base: "30px", md: "4xl" }} fontWeight={'bold'} color={'white'} py={{ base: "200px", md: "400px" }} lineHeight='110%' paddingBottom={{ base: "0px", md: "0px" }}>
                                 To influence and transform life holistically
                                 <br></br>through strategic discipleship and equipment
                                 <br></br>for a productive Christian life.
@@ -80,7 +80,7 @@ const Example = () => {
                         backgroundRepeat: 'no-repeat',
                     }}>
                         <span>
-                            <Text textAlign={'center'} fontSize={'4xl'} fontWeight={'bold'} color={'white'} py="400px" lineHeight='110%'>
+                            <Text textAlign={'center'} fontSize={{ base: "30px", md: "4xl" }} fontWeight={'bold'} color={'white'} py={{ base: "200px", md: "400px" }} lineHeight='110%' paddingBottom={{ base: "0px", md: "0px" }}>
                                 To influence and transform life holistically
                                 <br></br>through strategic discipleship and equipment
                                 <br></br>for a productive Christian life.
@@ -97,7 +97,7 @@ const Example = () => {
                         backgroundRepeat: 'no-repeat',
                     }}>
                         <span>
-                            <Text textAlign={'center'} fontSize={'4xl'} fontWeight={'bold'} color={'white'} py="400px" lineHeight='110%'>
+                            <Text textAlign={'center'} fontSize={{ base: "30px", md: "4xl" }} fontWeight={'bold'} color={'white'} py={{ base: "200px", md: "400px" }} lineHeight='110%' paddingBottom={{ base: "0px", md: "0px" }}>
                                 To influence and transform life holistically
                                 <br></br>through strategic discipleship and equipment
                                 <br></br>for a productive Christian life.

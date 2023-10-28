@@ -111,4 +111,4 @@ const Example = () => {
     );
 };
 
-export default Examples
+export default Example;

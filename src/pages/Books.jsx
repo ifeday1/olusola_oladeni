@@ -26,11 +26,11 @@ const Books = ({ data }) => {
                 )
                 )}
             </Flex>
-            
-            <WhatsappChat/>
+
+            <WhatsappChat />
             <Footer />
         </>
     )
 }
 
-export default Books
+export default Books;

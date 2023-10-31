@@ -3,11 +3,14 @@ import Navbar from '../components/Navbar'
 import ImageSlider from '../components/ImageSlider'
 import Footer from '../components/Footer/Footer'
 import WhatsappChat from '../components/Whatsapp/Index'
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 
 import Picture from '../assets/Picture.png'
+import Preparing from '../assets/prep.jpg'
+
 
 const Home = () => {
+    const marginValue = useBreakpointValue({ base: '2', md: '3', lg: '5' });
     return (
         <div>
             <Navbar />
@@ -46,6 +49,57 @@ const Home = () => {
                     </Text>
                 </Flex>
             </Box>
+
+            {/* best selling */}
+            <Text align="center" fontWeight="bold" fontSize="30px" fontStyle="italic" mt="40px">One of my best selling books </Text>
+            <Flex
+                direction={{ base: "column", md: "row" }} // Stack in a column on small screens
+                alignItems="center"
+
+                align="center"
+                justify="center"
+                spacing={4}
+                margin={marginValue}
+
+                my="40px"
+                mx={{ base: "20px", md: "180px" }}
+            >
+                {/* Image */}
+                <Image
+                    src={Preparing}
+                    alt="Best selling"
+                    boxSize={{ base: '1 00px', md: '250px', lg: '400px' }}
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1 }}
+                    mr="100px"
+                    paddingLeft={{ base: "50px", md: "40px" }}
+                />
+
+                {/* Text */}
+                <Text
+                    fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                >
+                    The book, Preparing for a Glorious Marriage,
+                    has attracted testimonies from readers.
+                    Some of the testimonies include the following:
+                    A lady testified, “The questions and answers in
+                    this book has delivered me from my ignorance”.
+                    A brother also testified, “This book has really
+                    helped me in choosing my life partner”.
+                    Therefore, this book is a premarital counselling book.
+                    It is a total book that seeks to teach singles on how
+                    to choose rightly, how to know God’s will and to
+                    live correctly in courtship in the fear of the Lord. I
+                    n this book, you will discover fifteen ways through
+                    which God can speak to you, ways to nurture God’s will,
+                    types of disappointment and the type you should work
+                    against, and lots more.
+                </Text>
+            </Flex>
 
             <WhatsappChat />
             <Footer />

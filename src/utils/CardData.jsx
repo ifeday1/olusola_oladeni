@@ -1,5 +1,5 @@
 import Making from '../assets/making.jpg'
-import Preparing from '../assets/preparing.jpg'
+import Preparing from '../assets/prep.jpg'
 import Multiply from '../assets/mutiply.jpg'
 import Without from '../assets/without.jpg'
 

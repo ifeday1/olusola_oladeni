@@ -33,4 +33,4 @@ const Books = ({ data }) => {
     )
 }
 
-export default Books
+export default Books;

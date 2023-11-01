@@ -3,10 +3,14 @@ import Navbar from '../components/Navbar'
 import ImageSlider from '../components/ImageSlider'
 import Footer from '../components/Footer/Footer'
 import WhatsappChat from '../components/Whatsapp/Index'
-import { Box, Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Flex, Image, Text, useBreakpointValue, Button, Link, CSSReset, } from "@chakra-ui/react";
 
 import Picture from '../assets/Picture.png'
 import Preparing from '../assets/prep.jpg'
+import { Link as ReactRouterLink } from 'react-router-dom'
+import { Link as ChakraLink, LinkProps } from '@chakra-ui/react'
+
+import ImageCarousel from '../utils/ ImageCarousel'
 
 
 const Home = () => {
@@ -77,28 +81,82 @@ const Home = () => {
                 />
 
                 {/* Text */}
-                <Text
-                    fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                >
-                    The book, Preparing for a Glorious Marriage,
-                    has attracted testimonies from readers.
-                    Some of the testimonies include the following:
-                    A lady testified, “The questions and answers in
-                    this book has delivered me from my ignorance”.
-                    A brother also testified, “This book has really
-                    helped me in choosing my life partner”.
-                    Therefore, this book is a premarital counselling book.
-                    It is a total book that seeks to teach singles on how
-                    to choose rightly, how to know God’s will and to
-                    live correctly in courtship in the fear of the Lord. I
-                    n this book, you will discover fifteen ways through
-                    which God can speak to you, ways to nurture God’s will,
-                    types of disappointment and the type you should work
-                    against, and lots more.
-                </Text>
+                <Box>
+                    <Text
+                        fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                    >
+                        The book, Preparing for a Glorious Marriage,
+                        has attracted testimonies from readers.
+                        Some of the testimonies include the following:
+                        A lady testified, “The questions and answers in
+                        this book has delivered me from my ignorance”.
+                        A brother also testified, “This book has really
+                        helped me in choosing my life partner”.
+                        Therefore, this book is a premarital counselling book.
+                        It is a total book that seeks to teach singles on how
+                        to choose rightly, how to know God’s will and to
+                        live correctly in courtship in the fear of the Lord. I
+                        n this book, you will discover fifteen ways through
+                        which God can speak to you, ways to nurture God’s will,
+                        types of disappointment and the type you should work
+                        against, and lots more.
+
+                    </Text>
+                    <Link href='https://www.amazon.com/PREPARING-GLORIOUS-MARRIAGE-OLUSOLA-OLADENI-ebook/dp/B0BTFVF9JQ/ref=sr_1_4?crid=23GLWYN00CK3O&keywords=olusola+oladeni&qid=1697823004&sprefix=olusola+oladeni+%2Caps%2C265&sr=8-4'><Button mr="20px" mt="10px" colorScheme="blue">Purchase Book</Button ></Link>
+
+                    <ChakraLink as={ReactRouterLink} to='/books'>
+                        <Button mt="10px" colorScheme="green">Browse through other books</Button>
+                    </ChakraLink>
+                </Box>
+
+            </Flex>
+
+            {/* carousel */}
+
+            <CSSReset />
+            <Box p={4}>
+                <ImageCarousel />
+            </Box>
+
+            {/* my area of focus */}
+            <Flex
+                direction={{ base: "column", md: "row" }} // Stack in a column on small screens
+                alignItems="center"
+
+                align="center"
+                justify="center"
+                spacing={4}
+                margin={marginValue}
+
+                my="40px"
+                mx={{ base: "20px", md: "180px" }}
+            >
+                <Box>
+                    <Text>Counselling and Relationships </Text>
+                    <Text>My Area of Training Focus
+                    </Text>
+                </Box>
+
+                {/* Text */}
+                <Box>
+                    <Text
+                        fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                    >
+                        ♣	Professional and personal purpose achievement<br></br>
+                        ♣	Improved personal relational skills, including work and life<br></br>
+                        ♣	Increased responsibility and persistence<br></br>
+                        ♣	Growth in marriage-building proficiency and capability<br></br>
+                        ♣	Better passion for counselling  and encouragement<br></br>
+
+
+                    </Text>
+                </Box>
             </Flex>
 
             <WhatsappChat />

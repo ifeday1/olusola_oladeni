@@ -11,6 +11,8 @@ import { Link as ReactRouterLink } from 'react-router-dom'
 import { Link as ChakraLink, LinkProps } from '@chakra-ui/react'
 
 import ImageCarousel from '../utils/ ImageCarousel'
+import StylishBox from '../utils/StylishBox'
+import StyledContainer from '../utils/StylishBox'
 
 
 const Home = () => {
@@ -121,6 +123,8 @@ const Home = () => {
                 <ImageCarousel />
             </Box>
 
+            <StyledContainer />
+
             {/* my area of focus */}
             <Flex
                 direction={{ base: "column", md: "row" }} // Stack in a column on small screens
@@ -130,20 +134,22 @@ const Home = () => {
                 justify="center"
                 spacing={4}
                 margin={marginValue}
+                gap={20}
 
                 my="40px"
                 mx={{ base: "20px", md: "180px" }}
             >
-                <Box>
-                    <Text>Counselling and Relationships </Text>
-                    <Text>My Area of Training Focus
+                <Box align="center">
+                    {/* <Text>Counselling and Relationships </Text> */}
+                    <Text fontSize="50px" py={{ base: "20px", md: "70px" }}>My Area of
+                        <br></br><span style={{ color: "teal", fontWeight: "bold" }}> Training Focus</span>
                     </Text>
                 </Box>
 
                 {/* Text */}
                 <Box>
                     <Text
-                        fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}
+                        fontSize={{ base: 'md', md: '17px', lg: '17px' }}
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}

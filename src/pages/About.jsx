@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Whatsapp from "../components/Whatsapp/Index";
 import Footer from "../components/Footer/Footer";
-import { Box, Text, Image, Center } from "@chakra-ui/react";
+import { Box, Text, Image, Center, Flex, Spacer } from "@chakra-ui/react";
 import Image2 from "../../src/assets/2.jpg";
 import Couples from "../../src/assets/Couples.jpeg";
 
@@ -96,6 +96,16 @@ const About = () => {
           PURPOSE OF THE WEBSITE
         </Text>
         <Text>Purpose, in the context, explains why the website.</Text>
+
+        <Flex>
+          <Box p="4" bg="red.400">
+            Box 1
+          </Box>
+          <Spacer />
+          <Box p="4" bg="green.400">
+            Box 2
+          </Box>
+        </Flex>
       </Box>
 
       <Whatsapp />

@@ -1,12 +1,107 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../components/Navbar";
+import Whatsapp from "../components/Whatsapp/Index";
+import Footer from "../components/Footer/Footer";
+import { Box, Text, Image, Center } from "@chakra-ui/react";
+import Image2 from "../../src/assets/2.jpg";
+import Couples from "../../src/assets/Couples.jpeg";
 
 const About = () => {
-    return (
-        <div>About
-            <h1></h1>
+  return (
+    <>
+      <Navbar />
+      <div className="each-slide-effect" style={{ paddingTop: "90px" }}>
+        <div
+          style={{
+            backgroundImage: `url(${Image2})`,
+            width: "100%",
+            height: "600px",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+          }}
+        >
+          <Text
+            textAlign={"center"}
+            fontSize={{ base: "30px", md: "50px" }}
+            fontWeight={"bold"}
+            color={"white"}
+            py={{ base: "400px", md: "400px" }}
+            lineHeight="110%"
+            paddingBottom={{ base: "0px", md: "0px" }}
+          >
+            THE MINISTRY
+          </Text>
+          <Text
+            textAlign={"center"}
+            fontSize={{ base: "20px", md: "40px" }}
+            fontWeight={"meduim"}
+            color={"white"}
+          >
+            OF REVEREND OLUSOLA OLADENI. Ph.D.
+          </Text>
         </div>
+      </div>
+      {/* Content */}
+      <Text
+        fontSize="20px"
+        fontWeight="medium"
+        mx={{ base: "20px", md: "200px" }}
+        my={{ base: "20px", md: "50px" }}
+      >
+        Olusola Oladeni is a called pastor and an ordained Baptist minister. He
+        is a family and marriage counsellor who has authored many books and
+        articles. He is spiritually gifted in teaching, preaching, counselling
+        and pre-marital and marital relationship building. His Christian and
+        ministerial principles are established on Ephesians 4:12, equipping
+        people so that the body of Christ may be built up and become mature,
+        attaining the whole measure of all the fullness of Christ. When people
+        are well equipped with correct principles on relationships, a healthy
+        family emerges and a healthy church is produced. Olusola Oladeni
+        strongly believes that ministry is a gift from the servant called and
+        commissioned by God to mentor and disciple Christians for spiritual
+        growth and to prepare them to be useful and valuable Christians in the
+        Church and their immediate community. He is privileged to pastor some
+        Baptist churches in Nigeria and has also led several organizations
+        within and outside of Baptist Denomination. He has his Doctor of
+        Philosophy in Counselling Psychology, with a special interest in
+        Marriage and Family life and leadership development. He is a member of
+        the Counselling Association of Nigeria. He is an Alumnus of the
+        prestigious Nigerian Baptist Theological Seminary, Ogbomoso, and the
+        University of Ibadan, Ibadan, Oyo State, Nigeria. He is currently the
+        Lead Pastor of Winners Baptist Church, Bariga, Lagos, Nigeria. He heads
+        Marfam Life Counselling Ministry International. He is happily married to
+        his Gem, Esther Adegbenjo and they are blessed with biological and
+        spiritual children. He is a veritable vessel in leading family revival,
+        and leadership/church workers’ equipment in and outside Nigeria.
+      </Text>
 
-    )
-}
+      <Center>
+        <Image
+          src={Couples}
+          alt="Best selling"
+          boxSize={{ base: "300px", md: "450px", lg: "1000px" }}
+          alignContent="center"
+        />
+      </Center>
 
-export default About
+      <Box backgroundColor="teal.500" height="1000px" borderLeftRadius="70px">
+        <Text
+          align="center"
+          fontWeight="bold"
+          fontSize="30px"
+          fontStyle="italic"
+          mt="40px"
+        >
+          PURPOSE OF THE WEBSITE
+        </Text>
+        <Text>Purpose, in the context, explains why the website.</Text>
+      </Box>
+
+      <Whatsapp />
+      <Footer />
+    </>
+  );
+};
+
+export default About;

@@ -89,17 +89,66 @@ const About = () => {
         <Text
           align="center"
           fontWeight="bold"
-          fontSize="30px"
+          fontSize="40px"
           fontStyle="italic"
           mt="40px"
+          color="white"
+          pt="90px"
         >
           PURPOSE OF THE WEBSITE
         </Text>
-        <Text>Purpose, in the context, explains why the website.</Text>
+        <Text align="center" color="white" pb="40px">
+          Purpose, in the context, explains why the website.
+        </Text>
 
-        <Flex>
-          <Box p="4" bg="red.400">
-            Box 1
+        <Flex mx={{ base: "20px", md: "200px" }} pb="50px">
+          <Box p="4">
+            <Text color="white">
+              <Text fontSize="30px" fontWeight="bold">
+                Proclamation
+              </Text>
+              To proclaim the Biblical faith in the Lord Jesus as
+              <br></br>the ultimate Savior from the power of sin and darkness.
+            </Text>
+          </Box>
+          <Spacer />
+          <Box p="4" bg="green.400">
+            Box 2
+          </Box>
+        </Flex>
+
+        <Flex mx={{ base: "20px", md: "200px" }} pb="50px">
+          <Box p="4" bg="green.400">
+            Box 2
+          </Box>
+          <Spacer />
+          <Box p="4">
+            <Text color="white">
+              <Text fontSize="30px" fontWeight="bold" align="right">
+                Preservation
+              </Text>
+              To preserve people the lives, homes and ministries through
+              <br></br>
+              discipleship and mentorship, and for spiritual growth and to
+              <br></br>
+              prepare them to be responsible Christians (single and married
+              <br></br>
+              couples) in and outside the church.
+            </Text>
+          </Box>
+        </Flex>
+
+        <Flex mx={{ base: "20px", md: "200px" }}>
+          <Box p="4">
+            <Text color="white">
+              <Text fontSize="30px" fontWeight="bold">
+                Production
+              </Text>
+              To produce and provide helpful resources in all set-ups taking the
+              <br></br>
+              benefit of countless info and communication technological<br></br>
+              platforms.
+            </Text>
           </Box>
           <Spacer />
           <Box p="4" bg="green.400">

@@ -183,6 +183,8 @@ const Home = () => {
           <Text
             fontSize={{ base: "md", md: "17px", lg: "17px" }}
             initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
           >
             ♣ Professional and personal purpose achievement<br></br>♣ Improved
             personal relational skills, including work and life<br></br>♣

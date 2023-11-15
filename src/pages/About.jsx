@@ -113,7 +113,7 @@ const About = () => {
           </Box>
           <Spacer />
           <Box p="4" bg="green.400">
-            Box 2 image coming soon
+            Box 2
           </Box>
         </Flex>
 

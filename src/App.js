@@ -9,6 +9,8 @@ import Media from "./pages/Media";
 import Contact from "./pages/Contact";
 import Basic from "./utils/Basic";
 import Patience from "./utils/Patience";
+import Purpose from "./utils/Purpose";
+import Presence from "./utils/Presence";
 
 function App() {
   return (
@@ -18,11 +20,13 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/books" element={<Book />} />
         <Route path="/articles" element={<Articles />} />
-
         <Route path="/media" element={<Media />} />
         <Route path="/contact" element={<Contact />} />
+
         <Route path="/basic" element={<Basic />} />
         <Route path="/patience" element={<Patience />} />
+        <Route path="/purpose" element={<Purpose />} />
+        <Route path="/presence" element={<Presence />} />
       </Routes>
     </div>
   );

@@ -93,7 +93,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link
-                to="/presence"
+                to="/articles"
                 spy={true}
                 smooth={true}
                 offset={-150}

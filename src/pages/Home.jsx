@@ -10,9 +10,9 @@ import {
   Text,
   useBreakpointValue,
   Button,
-  Link,
   CSSReset,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 import Picture from "../assets/Picture.png";
 import Preparing from "../assets/prep.jpg";

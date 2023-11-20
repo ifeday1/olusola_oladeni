@@ -5,6 +5,9 @@ import Footer from "../components/Footer/Footer";
 import { Box, Text, Image, Center, Flex, Spacer } from "@chakra-ui/react";
 import Image2 from "../../src/assets/2.jpg";
 import Couples from "../../src/assets/Couples.jpeg";
+import Preservation from "../../src/assets/preservation.jpg";
+import Proclaim from "../../src/assets/proclaim.jpg";
+import Production from "../../src/assets/production.jpg";
 
 const About = () => {
   return (
@@ -85,7 +88,7 @@ const About = () => {
         />
       </Center>
 
-      <Box backgroundColor="teal.500" height="1000px" borderLeftRadius="70px">
+      <Box backgroundColor="teal.500" height="1050px" borderLeftRadius="70px">
         <Text
           align="center"
           fontWeight="bold"
@@ -112,14 +115,14 @@ const About = () => {
             </Text>
           </Box>
           <Spacer />
-          <Box p="4" bg="green.400">
-            Box 2
+          <Box justify="space-around" align="center" wrap="wrap" width=" 200px">
+            <Image borderRadius="40px" src={Proclaim}></Image>
           </Box>
         </Flex>
 
         <Flex mx={{ base: "20px", md: "200px" }} pb="50px">
-          <Box p="4" bg="green.400">
-            Box 2
+          <Box justify="space-around" align="center" wrap="wrap" width=" 200px">
+            <Image borderRadius="40px" src={Preservation}></Image>
           </Box>
           <Spacer />
           <Box p="4">
@@ -151,8 +154,8 @@ const About = () => {
             </Text>
           </Box>
           <Spacer />
-          <Box p="4" bg="green.400">
-            Box 2
+          <Box justify="space-around" align="center" wrap="wrap" width=" 200px">
+            <Image borderRadius="40px" src={Production}></Image>
           </Box>
         </Flex>
       </Box>

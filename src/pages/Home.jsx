@@ -11,6 +11,8 @@ import {
   useBreakpointValue,
   Button,
   CSSReset,
+  Spacer,
+  Center,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
@@ -150,6 +152,42 @@ const Home = () => {
       <CSSReset />
       <Box p={4}>
         <ImageCarousel />
+      </Box>
+
+      <Box width="100%" height="500px">
+        <Text
+          align="center"
+          fontWeight="bold"
+          fontSize="50px"
+          mt="40px"
+          color="teal.500"
+        >
+          Featured Sermons & Teachings
+        </Text>
+        <Text align="center" fontSize="15px" color="teal.500">
+          Watch some of my most watched teachings and sermons selected randomly.
+        </Text>
+
+        <Flex
+          pt="100px"
+          direction={{ base: "column", md: "row" }}
+          justify="space-around"
+          align="center"
+          wrap="wrap"
+          mx={{ base: "0px", md: "90px" }}
+        >
+          <Box>
+            <Box h="40px" w="50px" background="red"></Box>
+          </Box>
+
+          <Spacer />
+          <Box>
+            <Box h="40px" w="50px" background="red"></Box>
+          </Box>
+
+          <Spacer />
+          <Box h="40px" w="50px" background="red"></Box>
+        </Flex>
       </Box>
 
       <StyledContainer />

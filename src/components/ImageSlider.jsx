@@ -2,6 +2,7 @@ import React from "react";
 import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { Center, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
 import Image from "../assets/1.jpg";
 import Image1 from "../assets/2.jpg";
@@ -25,19 +26,25 @@ const Example = () => {
             }}
           >
             <span>
-              <Text
-                textAlign={"center"}
-                fontSize={{ base: "30px", md: "4xl" }}
-                fontWeight={"bold"}
-                color={"white"}
-                py={{ base: "300px", md: "400px" }}
-                lineHeight="110%"
-                paddingBottom={{ base: "0px", md: "0px" }}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }} // Initial state of the text
+                animate={{ opacity: 1, y: 0 }} // Animation when it appears
+                transition={{ duration: 3 }} // Duration of the animation
               >
-                To influence and transform life holistically
-                <br></br>through strategic discipleship and equipment
-                <br></br>for a productive Christian life.
-              </Text>
+                <Text
+                  textAlign={"center"}
+                  fontSize={{ base: "30px", md: "4xl" }}
+                  fontWeight={"bold"}
+                  color={"white"}
+                  py={{ base: "300px", md: "400px" }}
+                  lineHeight="110%"
+                  paddingBottom={{ base: "0px", md: "0px" }}
+                >
+                  To influence and transform life holistically
+                  <br></br>through strategic discipleship and equipment
+                  <br></br>for a productive Christian life.
+                </Text>
+              </motion.div>
             </span>
           </div>
         </div>
@@ -54,19 +61,25 @@ const Example = () => {
             }}
           >
             <span>
-              <Text
-                textAlign={"center"}
-                fontSize={{ base: "30px", md: "4xl" }}
-                fontWeight={"bold"}
-                color={"white"}
-                py={{ base: "300px", md: "400px" }}
-                lineHeight="110%"
-                paddingBottom={{ base: "0px", md: "0px" }}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }} // Initial state of the text
+                animate={{ opacity: 1, y: 0 }} // Animation when it appears
+                transition={{ duration: 1 }} // Duration of the animation
               >
-                To influence and transform life holistically
-                <br></br>through strategic discipleship and equipment
-                <br></br>for a productive Christian life.
-              </Text>{" "}
+                <Text
+                  textAlign={"center"}
+                  fontSize={{ base: "30px", md: "4xl" }}
+                  fontWeight={"bold"}
+                  color={"white"}
+                  py={{ base: "300px", md: "400px" }}
+                  lineHeight="110%"
+                  paddingBottom={{ base: "0px", md: "0px" }}
+                >
+                  To influence and transform life holistically
+                  <br></br>through strategic discipleship and equipment
+                  <br></br>for a productive Christian life.
+                </Text>{" "}
+              </motion.div>
             </span>
           </div>
         </div>

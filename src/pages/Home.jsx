@@ -176,7 +176,7 @@ const Home = () => {
 
       {/* my area of focus */}
       <Flex
-        direction={{ base: "column", md: "row" }} // Stack in a column on small screens
+        direction={{ base: "column", md: "row" }}
         alignItems="center"
         align="center"
         justify="center"

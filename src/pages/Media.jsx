@@ -28,7 +28,7 @@ const Media = () => {
         fontSize={"4xl"}
         fontWeight={"extrabold"}
         color={"white"}
-        backgroundColor="red"
+        backgroundColor="green"
       >
         MEDIA
       </Text>

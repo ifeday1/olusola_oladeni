@@ -61,8 +61,6 @@ const Contact = () => {
         isClosable: true,
       });
     } else {
-      // Form is not empty, proceed to send the message or perform other actions.
-      // Here you can add the code to send the message.
       toast({
         title: "Sent",
         description: "Your message has been sent successfully.",

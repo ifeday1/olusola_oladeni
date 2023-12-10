@@ -21,7 +21,7 @@ const Media = () => {
   return (
     <>
       <Navbar />
-      {/* Media */}
+
       <Text
         mt="90px"
         py="20px"

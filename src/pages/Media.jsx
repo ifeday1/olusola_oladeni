@@ -21,7 +21,7 @@ const Media = () => {
   return (
     <>
       <Navbar />
-
+      {/* work in progress */}
       <Text
         mt='90px'
         py='20px'

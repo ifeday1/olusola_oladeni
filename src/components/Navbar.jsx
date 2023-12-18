@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import { animateScroll as scroll } from "react-scroll";
-import { Link } from "react-router-dom";
-import "./Navbar.css";
-import "aos/dist/aos.css";
-import AOS from "aos";
+import React, { useState, useEffect } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
-import Logo from "../assets/long.png";
+import Logo from '../assets/long.png';
 
 const Navbar = () => {
   //useEffect
@@ -26,38 +26,38 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="header">
-        <nav className="navbar">
+      <div className='header'>
+        <nav className='navbar'>
           <Link
-            to="/"
+            to='/'
             spy={true}
             smooth={true}
             offset={50}
             duration={500}
-            className="logo"
+            className='logo'
           >
             <img
               onClick={ScrollToTop}
               src={Logo}
-              alt="Logo"
+              alt='Logo'
               height={170}
               width={170}
             />
           </Link>
-          <div className="hamburger" onClick={handleClick}>
+          <div className='hamburger' onClick={handleClick}>
             {click ? (
-              <FaTimes size={30} style={{ color: "red" }} />
+              <FaTimes size={30} style={{ color: 'red' }} />
             ) : (
-              <FaBars size={30} style={{ color: "red" }} />
+              <FaBars size={30} style={{ color: 'red' }} />
             )}
           </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             {/* <li className='nav-item'>
                         <a href='/' onClick={closeMenu}>Home</a>
                     </li> */}
-            <li className="nav-item">
+            <li className='nav-item'>
               <Link
-                to="/"
+                to='/'
                 spy={true}
                 smooth={true}
                 offset={-100}
@@ -67,9 +67,9 @@ const Navbar = () => {
                 HOME
               </Link>
             </li>
-            <li className="nav-item">
+            <li className='nav-item'>
               <Link
-                to="/about"
+                to='/about'
                 spy={true}
                 smooth={true}
                 offset={-100}
@@ -79,9 +79,9 @@ const Navbar = () => {
                 ABOUT
               </Link>
             </li>
-            <li className="nav-item">
+            <li className='nav-item'>
               <Link
-                to="/books"
+                to='/books'
                 spy={true}
                 smooth={true}
                 offset={-150}
@@ -91,9 +91,9 @@ const Navbar = () => {
                 BOOKS
               </Link>
             </li>
-            <li className="nav-item">
+            <li className='nav-item'>
               <Link
-                to="/articles"
+                to='/articles'
                 spy={true}
                 smooth={true}
                 offset={-150}
@@ -103,9 +103,21 @@ const Navbar = () => {
                 ARTICLES
               </Link>
             </li>
-            <li className="nav-item">
+            <li className='nav-item'>
               <Link
-                to="/media"
+                to='/feeds'
+                spy={true}
+                smooth={true}
+                offset={-150}
+                duration={500}
+                onClick={closeMenu}
+              >
+                FEEDS
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/media'
                 spy={true}
                 smooth={true}
                 offset={-150}
@@ -115,9 +127,9 @@ const Navbar = () => {
                 MEDIA
               </Link>
             </li>
-            <li className="nav-item">
+            <li className='nav-item'>
               <Link
-                to="/contact"
+                to='/contact'
                 spy={true}
                 smooth={true}
                 offset={-150}

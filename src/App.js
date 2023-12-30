@@ -13,6 +13,9 @@ import Patience from './utils/Patience';
 import Purpose from './utils/Purpose';
 import Presence from './utils/Presence';
 import Feeds from './pages/Feeds';
+import Triple from './utils/Triple';
+import Worth from './utils/Worth';
+import Danger from './utils/Danger';
 
 function App() {
   return (
@@ -30,6 +33,9 @@ function App() {
         <Route path='/patience' element={<Patience />} />
         <Route path='/purpose' element={<Purpose />} />
         <Route path='/presence' element={<Presence />} />
+        <Route path='/triple' element={<Triple />} />
+        <Route path='/worth' element={<Worth />} />
+        <Route path='/danger' element={<Danger />} />
       </Routes>
     </div>
   );

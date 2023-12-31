@@ -16,6 +16,8 @@ import Feeds from './pages/Feeds';
 import Triple from './utils/Triple';
 import Worth from './utils/Worth';
 import Danger from './utils/Danger';
+import Winning from './utils/Winning';
+
 
 function App() {
   return (
@@ -36,6 +38,7 @@ function App() {
         <Route path='/triple' element={<Triple />} />
         <Route path='/worth' element={<Worth />} />
         <Route path='/danger' element={<Danger />} />
+        <Route path='/winning' element={<Winning />} />
       </Routes>
     </div>
   );

@@ -17,6 +17,8 @@ import Triple from './utils/Triple';
 import Worth from './utils/Worth';
 import Danger from './utils/Danger';
 import Winning from './utils/Winning';
+import Leader from './utils/Leader';
+import Blessed from './utils/Blessed';
 
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
         <Route path='/worth' element={<Worth />} />
         <Route path='/danger' element={<Danger />} />
         <Route path='/winning' element={<Winning />} />
+        <Route path='/leader' element={<Leader />} />
+        <Route path='/blessed' element={<Blessed />} />
       </Routes>
     </div>
   );

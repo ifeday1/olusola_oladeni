@@ -52,6 +52,14 @@ const CardDataArticles = [
       'Covenant making is as old as man. From generation to generation, people have covenanted with each other. Though, some are aware of its awful effect, they still went ahead to enter into a covenant. Those who enter into it ignorantly seems to outnumber those who are actually knowledgeable about covenant. This story is a life story of Sister Love and Brother Care. They both agree to marry each other. Not quite long in their relationship, they felt the need for making a covenant. They entered into blood covenant by cutting of their flesh and leaked the blood of each other alongside the pronouncement...',
     link: '/danger',
   },
+  {
+    id: 7,
+    image: Purpose1,
+    description: 'THE WINNING SINGLES',
+    price:
+      'No battle no title. No one can be a winner without being involved in a race or competition. The topic, The Winning Singles, suggests that some singles are in an unending competition or race but that they are winning each moment of the race, even as the race continues. Are you really a winning single? You will know whether you are a winning single or not by the time you conclude reading this piece. The aim of this teaching is to create...',
+    link: '/winning',
+  },
 ];
 
 export default CardDataArticles;

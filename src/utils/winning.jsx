@@ -15,158 +15,241 @@ const Winning = () => {
         <Text fontWeight='bold' fontSize='20px'>
           THE WINNING SINGLES
         </Text>
+        “Therefore, I will take my corn when it ripens, and my new wine when it
+        is ready. I will take back my wool and my linen, intended to cover her
+        naked body. So, now I will expose her lewdness before the eyes of her
+        lover; no one will take her out of my hands” (Hosea 2:9-10).
         <Text fontWeight='bold' fontSize='15px'>
           Introduction
         </Text>
-        “Anyone who marries a wise person grows wise but he who marries a fool
-        suffers harm”. The wise couple learns from the mistakes of others but
-        the fool couple learn from their own mistakes. From the primitive to the
-        modern age, every couple who would build a joyful (home) family, not
-        physical house, need these triplet ingredients for building. The Lord
-        gives wisdom and from His mouth comes knowledge and understanding
-        (Proverbs 2:6). “By wisdom a house is built, and through understanding
-        it is established; through knowledge its rooms are filled with rare and
-        beautiful treasures. A wise man has great power, and a man of knowledge
-        increases strength ;…( Proverbs 24:3 -5). The wise woman builds her
-        house but with her own hands the foolish one tears hers down” (Proverbs
-        14:1). Based on the above passages quoted, the triple ingredients for
-        building a Christian home are:
+        No battle no title. No one can be a winner without being involved in a
+        race or competition. The topic, The Winning Singles, suggests that some
+        singles are in an unending competition or race but that they are winning
+        each moment of the race, even as the race continues. Are you really a
+        winning single? You will know whether you are a winning single or not by
+        the time you conclude reading this piece. The aim of this teaching is to
+        create in all singles the winning mind-sets and mentality. Let us
+        understand the key two concepts, the theological meaning of the Hosea
+        2:9-10, the nature of singles battle, the winning strategies,
         <Text fontWeight='bold' fontSize='15px'>
-          Knowledge
+          Conceptual Meaning of Key Words
         </Text>
-        Every marriage partner needs knowledge. Knowledge describes the
-        information and skills one acquires through training, education or
-        experience or by reading books, Christian literatures etc. It is
-        generally believe that knowledge is power. I would say that Knowledge is
-        power when it is properly applied. Specifically, we do acquire or get
-        information by reading the Bible (marriage manual) and listening to
-        people who teach God’s word, particularly on marriage. Through God’s
-        word, we learn how to forgive (Matthew 6:6 -14), how to love and respect
-        (Eph. 5:21 -33), how to be contented (1Timothy 6:6), just to mention but
-        a few. The word of God really reveals principles for building a
-        Christian home. The scripture says, “Through knowledge its rooms are
-        filled with rare and beautiful treasures” Treasures explain wealth in
-        the form of gold, silver, jewels, among others. Treasures are good
-        things needed in the home. Treasures are things we purchase one-by-one,
-        which later become numerous. An example is the Shunamite woman (a well
-        to do woman) and her husband, who decided and made a room for Elisha.
-        They put in the room a bed and a table, a chair and a lamb for the man
-        of God (2Kings 4:8 -17). No doubt that their room too must have been
-        filled with such treasures. They must have acquired knowledge on things
-        that could be needed in such a room. According to knowledge, it is
-        therefore expedient for husband and wife to trust themselves, handle
-        their finances, pursue single goal, and be responsible and accountable
-        to each other. These and many more will afford them the opportunity to
-        fill their home and life with treasures.
         <Text fontWeight='bold' fontSize='15px'>
-          Understanding
+          Singles:
         </Text>
-        I asked a young lady who was trusting God for who to marry years ago,
-        afater a man proposed to her, to tell me three reasons why she was
-        convinced to marry the man. She said, “God told me that I need love,
-        understanding and have faith in order to marry the man”. Understanding
-        is a key concept for making a successful marriage. What is
-        understanding? It describes the ability to understand or have a
-        knowledge why people behave in a particular way and the willingness to
-        forgive them when they do something wrong. The scripture says “through
-        understanding a house is established”. The complex nature of human
-        beings makes it somehow difficult for them to understand themselves. No
-        matter how complex, husband and wife have the sole obligation to study
-        one another and understand each other. The first one and half years of
-        our marriage were so tasking because we were learning how to understand
-        each other. Though there are still a lot to understand about each other
-        but twenty five (25) years of marital life has taught us great lessons
-        and has given us broad understanding about one another. I assumed many
-        things about my wife while she equally did similarly. A times she
-        complained about my attitude in some areas which I equally did about her
-        but in all of those we were both aware that what is needed is
-        understanding. Of recent, a newly wedded couple reported their case to
-        me. The simple truth I discovered in their case is lack of understanding
-        and patience which I made them to know. I hope they will soon overcome
-        it. Regardless of how old one is in marriage understanding one’s partner
-        is very paramount. Husband and wife should use understanding to build by
-        realizing that: - Both of them are not the same. - Gender factor has key
-        role to play in one’s disposition to issues. - Both of them have to
-        graciously accept temperamental devices - Both should learn to comprise
-        - Both should be ready to put the other person first - Both should learn
-        to adjust to each other - Both should pay attention to the mood and
-        feelings of each other - Both should always remember that they were not
-        from the same background. - Both should be willing explore the most
-        irritating attitude positively. Mrs. Abigael Nabal really understood her
-        husband. Through that understanding she prevented her home/family from
-        being destroyed by King David. When Abigael saw David, she quickly got
-        off her donkey and bowed down before David with her face to the ground
-        and said don’t pay attention to that wicked man Nabal…(1Samuel 25:23
-        -25). The fact is, it is not possible to understand your spouse
-        completely, use the little understanding you have about your spouse to
-        establish your home.
+        The word “singles” describes a teenager, an adolescent, youths (male and
+        female) who is yet to get married. Some of these singles are engaged
+        while some are unengaged.
         <Text fontWeight='bold' fontSize='15px'>
-          Wisdom
+          Winning:
         </Text>
-        The general saying is that wisdom is the application of knowledge.
-        Wisdom is when knowledge is correctly applied. A lot of things are said
-        about wisdom in the Holy Bible. God is willing to give wisdom to
-        everyone who desires it. However, the ultimate condition for getting
-        wisdom from God is to fear Him. The scripture says, “The fear of the
-        Lord is the beginning of Wisdom; all who follow his precepts have good
-        understanding. To him belongs eternal praise (Psalm 111:10). Any man or
-        woman who finds wisdom is blessed (Prov. 3:13), with the blessing of a
-        well-built family. A wise man and woman build their house on the rock
-        but the fool build his/her house on the sand (Matthew 24:24 -27). What
-        is wisdom? It is commonly defined as the right application of knowledge.
-        Wisdom describes the ability to make sensible decisions and give good
-        advice because of the experience and knowledge that one possesses.
-        Wisdom is highly needed by married couples, even singles who are
-        trusting God for their future homes need wisdom because wisdom will help
-        them in: Making the right decision at the right time. Wisdom was
-        displayed by Joseph and Mary when they ran away from Bethlehem to Egypt
-        for the safety of the newly born king (Matthew 2:13 -18). It was a right
-        decision at the right time. Building solid and lasting relationship,
-        hence, solid home. Bringing up children who are filled with wisdom.
-        Solomon is product of such venture. Balancing every action and reaction.
-        Communicating their ideas, feelings and concern to each other. The
-        virtuous woman in Proverbs 31:26 spoke with wisdom. Securing their
-        future and that of their children. I would say that there can be earthly
-        and heavenly wisdom. The two wisdoms, but heavenly kingdom should be
-        desired.
+        The word “winning” is from the verb win. To win is to be a winner in a
+        contest or competition. To be victorious or to attain success or reach a
+        desired goal. The word “winning” therefore means succeeding with great
+        difficulty.
         <Text fontWeight='bold' fontSize='15px'>
-          Attributes of heavenly Wisdom
+          Winning singles:
         </Text>
-        According to James 3:17, attributes of the wisdom that comes from above
-        (God) are: 1. It is pure 2. It is peace-making 3. It is considerate 4.
-        It is submissive 5. It is full of mercy and good deeds 6. It is
-        impartial and sincere
+        Winning singles explains teenagers, adolescents and youths (males and
+        females) who are yet to get married; winning the battle between the
+        Spirit and flesh, reaching their desired goals. This desired goal may be
+        spiritual, academics, physical, social, etc.
         <Text fontWeight='bold' fontSize='15px'>
-          Attributes of Earthly Wisdom
+          Understanding Hosea 2:9-10.
         </Text>
-        As identified by the book of James 3: 13-16, attributes of earthly
-        wisdom include the following: It harbours bitter envy  It harbours
-        selfish ambition It is boastful It denies the truth
+        The scripture says, “Therefore, I will take my corn when it ripens, and
+        my new wine when it is ready. I will take back my wool and my linen,
+        intended to cover her naked body. So now I will expose her lewdness
+        before the eyes of her lover; no one will take her out of my hands”
+        (Hosea 2:9-10). The picture painted her is about the relationship
+        between Israel and God. God is pictured as the husband while Israel as
+        the wife. Israel did not acknowledge God of fertility, who blesses them
+        with grain, wine and oil. The Israelites and Canaanites attributed
+        grain, wine and oil to Baal- the Canaanites god who was believed to
+        control the weather and the fertility of crops, animals and man (Judges
+        2:13). Owing to the unfaithfulness of the Israelites, God decided to
+        punish them by withholding the fruits of the field and flock, the Lord
+        made known as the true source of those blessing; and by exposing the
+        filthiness of Israel being an unfaithful wife to God, her husband (Hosea
+        2:9-10).
+        <Text fontWeight='bold' fontSize='15px'>
+          The Nature of the Battle Singles do Face
+        </Text>
+        <Text fontWeight='bold' fontSize='15px'>
+          The battle in relation to Idolatry:
+        </Text>
+        Idolatry means the worship of other god in place of the living God. The
+        Israelites could not stand firm; they worshipped the Canaanites Baal.
+        They were deceived into the belief that Canaanites Baal was the God of
+        fertility. Hence they shifted their attentions from God to Baal for
+        grain, wine and oil. Whatever takes the place of God is a form of Idol.
+        The form of Idolatry today manifests as people shift their attentions
+        from God to money, materialism and other worldly things. No time for the
+        living God but people could find time for worldly things. Some singles,
+        who are mostly youths, are vulnerable in this matter because they are at
+        the phase of life where they are struggling to make wealth.
+        <Text fontWeight='bold' fontSize='15px'>
+          The battle in relation to Unfaithfulness:
+        </Text>
+        Looking at it from husband and wife relationship, the Israelites became
+        unfaithful to God because they entered into a strange relationship with
+        another husband (Baal). Two dimensions of unfaithfulness here: first,
+        unfaithfulness in sharing the faithfulness meant for the living God with
+        another thing. Second, unfaithfulness to one’s courtship partner. Why
+        should a brother who is pledged to be married to a sister impregnates
+        another sister? Why should a sister who is pledged to a brother become
+        pregnant for another brother? The issue of unfaithfulness is a serious
+        battle among singles, even Christian singles.
+        <Text fontWeight='bold' fontSize='15px'>
+          The battle in relation to Immorality:
+        </Text>
+        The case of immorality is a big issue. Some of our singles victorious
+        over immorality while some are extremely battling with immorality. Some
+        singles involve in pornography: This is the ungodly, immoral treatment
+        of sexual subjects in writing and pictures, produced by men of depraved
+        minds, in a way that is intended to arouse sexual excitement. As
+        Christian girl and boy, you should not embrace pornography. For
+        instance, you enter into some singles’ room you see postal, pictures,
+        and showing sexual subjects. Some singles have different kind of sexual
+        subjects on their handsets. Where are we going? Watching of Blue Film:
+        Blue films are films showing immorality and impurity. For instance in a
+        blue film you may see a lady and a guy in the act of sexual intercourse.
+        Stop watching such. It can only destroy, it cannot edify. Watching
+        Nudity Ladies and Boys: Nude mean bare nakedness on unclothed. Do you
+        know that there are lot of nude ladies and boys on the internet? It has
+        been discovered that most young boys and ladies who go to the net to
+        browse do go there to watch nudity on the internet. All these activities
+        can trigger sexual urge and can motivate the victims to engage in sexual
+        sins such as masturbation, rape, etc.
+        <Text fontWeight='bold' fontSize='15px'>
+          The battle in relation to Hedonism:
+        </Text>
+        The word “hedonism” is a philosophical parlance. Hedonism is a principle
+        of pleasure seeking attitude. Generally, human beings like pleasure.
+        This attitude is rampant among youth. A good number of youths are found
+        in this condition. It is noted that pleasure seeking attitude is
+        negatively their attitudes to their academic pursuit, career
+        development, creativity and innovation among others. Due to hedonism,
+        some are not up and doing in what they do and so they perform less than
+        expected. They are tails instead of being heads.
+        <Text fontWeight='bold' fontSize='15px'>
+          Singles and Winning Strategies
+        </Text>
+        <Text fontWeight='bold' fontSize='15px'>
+          Put God first:
+        </Text>
+        “But seek first his kingdom of God and his righteousness, and all these
+        things will be given to you as well” (Mathew 6:33). “But remember the
+        Lord your God, for it is he who gives you the ability to produce wealth,
+        and so confirms his covenant, which he swore to your ancestors, as it is
+        today” (Deuteronomy 8:18). 6:17 Command those who are rich in this
+        present world not to be arrogant nor to put their hope in wealth, which
+        is so uncertain, but to put their hope in God, who richly provides us
+        with everything for our enjoyment. 6:18 Command them to do good, to be
+        rich in good deeds, and to be generous and willing to share. 6:19 In
+        this way they will lay up treasure for themselves as a firm foundation
+        for the coming age, so that they may take hold of the life that is truly
+        life. 6:20 Timothy, guard what has been entrusted to your care. Turn
+        away from godless chatter and the opposing ideas of what is falsely
+        called knowledge, 6:21 which some have professed and in so doing have
+        wandered from the faith. Grace be with you (1 Timothy 6: 17-21). Don’t
+        joke with God and anything that concerns God. Allow God to take his
+        rightful place in your life. The living God is the source of blessings.
+        Serve the Lord with all your strength, soul, spirit and body. Worship
+        him with everything he has blessed you with.
+        <Text fontWeight='bold' fontSize='15px'>
+          Don’t love money at the expense of your love for Christ.
+        </Text>
+        Flee the Love of Money: “6:5 and constant friction between men of
+        corrupt mind, who have been robbed of the truth and who think that
+        godliness is a means to financial gain. 6:6 But godliness with
+        contentment is great gain. 6:7 For we brought nothing into the world,
+        and we can take nothing out of it. 6:8 But if we have food and clothing,
+        we will be content with that. 6:9 People who want to get rich fall into
+        temptation and a trap and into many foolish and harmful desires that
+        plunge men into ruin and destruction. 6:10 For the love of money is a
+        root of all kinds of evil. Some people, eager for money, have wandered
+        from the faith and pierced themselves with many griefs. 6:11 But you,
+        man of God, flee from all this, and pursue righteousness, godliness,
+        faith, love, endurance and gentleness. 6:12 Fight the good fight of the
+        faith. Take hold of the eternal life to which you were called when you
+        made your good confession in the presence of many witnesses. 6:13 In the
+        sight of God, who gives life to everything, and of Christ Jesus, who
+        while testifying before Pontius Pilate made the good confession, I
+        charge you 6:14 to keep this command without spot or blame until the
+        appearing of our Lord Jesus Christ, 6:15 which God will bring about in
+        his own time--God, the blessed and only Ruler, the King of kings and
+        Lord of lords, 6:16 who alone is immortal and who lives in
+        unapproachable light, whom no one has seen or can see. To him be honor
+        and might forever. Amen” (1 Timothy 6: 5-15).
+        <Text fontWeight='bold' fontSize='15px'>
+          Flee from Sexual Immorality:
+        </Text>
+        6:16 Do you not know that he who unites himself with a prostitute is one
+        with her in body? For it is said, "The two will become one flesh." 6:17
+        But he who unites himself with the Lord is one with him in spirit. 6:18
+        Flee from sexual immorality. All other sins a man commits are outside
+        his body, but he who sins sexually sins against his own body. 6:19 Do
+        you not know that your body is a temple of the Holy Spirit, who is in
+        you, whom you have received from God? You are not your own; 6:20 you
+        were bought at a price. Therefore honor God with your body. Maintain
+        purity (1 Corinthians 6: 16-20). But among you there must not be even a
+        hint of sexual immorality, or any kind of impurity…for these are
+        improper for God’s holy people (Ephesians 5:3). Live above pornography,
+        watching of blue film, nude and nudity and all associated form of
+        impurity.
+        <Text fontWeight='bold' fontSize='15px'>
+          Top Your Mates:
+        </Text>
+        You have to “Top” your mates. What does it mean therefore to “top” your
+        mates? To top your mates means to outshine your mates in everything you
+        do academically, professionally, spiritually, etc. shun all forms of
+        pleasures now in order to secure lasting pleasure tomorrow. Here, “Top”
+        is used as an acronym. So, top your equals’ means that you have to:
+        <br></br>1. Tackle the problem your equal cannot tackle. There was a
+        problem in the land of Egypt some years ago. The problem was
+        interpretation of the dream the king had. The magician tried but they
+        could not interpret it. Joseph interpreted the dreams and he became the
+        governor of Egypt. He topped his equal and he was placed at the top.
+        What of Daniel? Daniel interpreted the dreams and the hand writing on
+        the wall and he was appointed into the administrative position in
+        Babylon.
+        <br></br>2. Operate uniquely in all you do. Josiah operated differently
+        to the way his forefathers (2kings 23:1-30). Think on the operations of
+        Joseph and Jesus. A lot of people cannot make it in their lives, in
+        leadership, business and ministry because they maintain a kind of status
+        quo in the way they operate. They cannot do something unique to the
+        former.
+        <br></br>3. Pay attention to your vision rather than paying attention to
+        obstacles. One thing among others than hinders vision to come to pass is
+        paying attention to obstacles. If you really want to set to the top, if
+        you really want to change the history of your dispensation positively,
+        you need not to pay attention to Sabbalant and Tobia, that is, obstacles
+        to build your business, obstacles to realize your vision, obstacles to
+        pass that examination, etc. Nehemiah disregarded all the plans of
+        Sabbalant and Tobia and he was able to build the wall of Jerusalem. This
+        remains a record breaking project in history.
         <Text fontWeight='bold' fontSize='15px'>
           Conclusion
         </Text>
-        Somebody said “knowledge is acquiring fact, understanding is analysing
-        fact while wisdom uses facts”. As couples acquire fact, analyse fact and
-        use fact, they should always remember that in Christ are hidden all the
-        treasures of wisdom and knowledge. Colossians 2:3 says, “My goal is that
-        they may be encouraged in heart and united in love, so they may have
-        full riches of complete understanding, in order that they may know the
-        mystery of God namely, Christ, in whom are hidden all the treasures of
-        wisdom and knowledge”. Let Jesus be the source of your wisdom as against
-        the earthly wisdom. This reminds me of something I read on a WhatsApp
-        platform recently about two donkeys who engaged on a conversation a day
-        after the triumphant entry of the Lord. It goes thus: First donkey said
-        “people don’t recognize me again like they did yesterday when Jesus rode
-        on me and walked on their cloaks in great honour. Second donkey
-        responded and said “Do you think you were the one people honoured? If
-        you were honoured in any way at all, it was because of Jesus Christ on
-        you. Without Jesus you are nothing”. The lesson is, without Jesus Christ
-        in a person’s life; the life of such a person cannot attract any
-        recognition or honour. If the life of a husband or a wife lacks Jesus
-        Christ, in whom the treasures of knowledge, understanding and wisdom are
-        hidden, the triple ingredients will be lacking. Definitely, it will be
-        difficult for such a spouse to build or co-build and nurture joyful
-        family for God.
+        Are you a willing single or a losing single? Let me remind you that you
+        are not a winners if God is not in His rightful place in your life; if
+        you are overpowered by immorality; if you are not faithful with your
+        future partner; if you are not a goal setter and goal getter; if you
+        quit in the face of challenge; if you are not outstanding in all you do.
+        Thomas Jefferson said, “Nothing can stop the man with the right mental
+        attitude from achieving his goal; nothing can help the man with wrong
+        mental attitude”. I therefore encourage all singles listening to me to
+        be winners like Joseph who won over sexual temptation; David who won the
+        battle against Goliath for the Israelites; Daniel who decided to worship
+        God, the only living Lord against the wish of his enemies which was to
+        bowl for an image of gold; In fact, winning will bail you out of the
+        wrath of God as declared in Hosea 2:9-10). The scripture says,
+        “Therefore, I will take my corn when it ripens, and my new wine when it
+        is ready. I will take back my wool and my linen, intended to cover her
+        naked body. So now I will expose her lewdness before the eyes of her
+        lover; no one will take her out of my hands” (Hosea 2:9-10). May you
+        never be blotted out of the book of life.
       </Text>
       <WhatsappChat />
       <Footer />

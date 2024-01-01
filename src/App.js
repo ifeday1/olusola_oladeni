@@ -18,7 +18,6 @@ import Worth from './utils/Worth';
 import Danger from './utils/Danger';
 import Winning from './utils/Winning';
 
-
 function App() {
   return (
     <div>

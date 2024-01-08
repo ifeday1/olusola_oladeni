@@ -11,7 +11,6 @@ const Media = () => {
     'https://via.placeholder.com/200',
     'https://via.placeholder.com/250',
     'https://via.placeholder.com/180',
-    'https://via.placeholder.com/220',
   ];
   return (
     <>

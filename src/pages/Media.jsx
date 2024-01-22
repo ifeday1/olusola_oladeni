@@ -19,7 +19,6 @@ const Media = () => {
     'https://via.placeholder.com/250',
     'https://via.placeholder.com/250',
     'https://via.placeholder.com/250',
-    'https://via.placeholder.com/250',
   ];
   return (
     <>

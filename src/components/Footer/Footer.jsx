@@ -4,7 +4,7 @@ import { Box, Flex, List, ListIcon, ListItem, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/long.png";
 import { FaEnvelope, FaMap, FaPhone } from "react-icons/fa";
-import { Link as SLink } from "react-scroll";
+// import { Link as SLink } from "react-scroll";
 
 const Footer = () => {
   return (

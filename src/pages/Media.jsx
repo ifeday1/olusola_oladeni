@@ -3,21 +3,21 @@ import WhatsappChat from '../components/Whatsapp/Index';
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar';
 import { Text } from '@chakra-ui/react';
-import { Flex, Box } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 
 const Media = () => {
-  const imageUrls = [
-    'https://via.placeholder.com/150',
-    'https://via.placeholder.com/200',
-    'https://via.placeholder.com/250',
-    'https://via.placeholder.com/250',
-    'https://via.placeholder.com/250',
-    'https://via.placeholder.com/250',
-    'https://via.placeholder.com/250',
-    'https://via.placeholder.com/250',
-    'https://via.placeholder.com/250',
-    'https://via.placeholder.com/250',
-  ];
+  // const imageUrls = [
+  //   'https://via.placeholder.com/150',
+  //   'https://via.placeholder.com/200',
+  //   'https://via.placeholder.com/250',
+  //   'https://via.placeholder.com/250',
+  //   'https://via.placeholder.com/250',
+  //   'https://via.placeholder.com/250',
+  //   'https://via.placeholder.com/250',
+  //   'https://via.placeholder.com/250',
+  //   'https://via.placeholder.com/250',
+  //   'https://via.placeholder.com/250',
+  // ];
   return (
     <>
       <Navbar />

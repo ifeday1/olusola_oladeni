@@ -1,8 +1,5 @@
 import { React, useState } from "react";
 import {
-  Container,
-  Grid,
-  GridItem,
   Text,
   FormControl,
   FormLabel,
@@ -14,7 +11,6 @@ import {
   Box,
   HStack,
   IconButton,
-  Center,
   useToast,
 } from "@chakra-ui/react";
 import { useForm, ValidationError } from "@formspree/react";

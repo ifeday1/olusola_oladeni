@@ -9,7 +9,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { Link, Link as ReactRouterLink } from "react-router-dom";
-import { Link as ChakraLink, LinkProps } from "@chakra-ui/react";
+import { Link as ChakraLink } from "@chakra-ui/react";
 import "./StyledContainer.css"; // Create a separate CSS file for additional styling
 import Patience1 from "../assets/patience.webp";
 import Presence1 from "../assets/presence.jpg";

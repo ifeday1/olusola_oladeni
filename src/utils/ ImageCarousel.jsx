@@ -37,27 +37,37 @@ const ImageCarousel = () => {
     };
 
     return (
-        <div className="carousel-container" style={{ width: "100%", }}>
-            <div className="carousel" style={{ background: 'teal', }}>
-                <Text align="center" fontWeight="bold" fontSize="30px" fontStyle="italic" mt="40px" mb="20px" color="white">Premarital and Marital Matters </Text>
+      <div className='carousel-container' style={{ width: '100%' }}>
+        <div className='carousel' style={{ background: 'teal' }}>
+          <Text
+            align='center'
+            fontWeight='bold'
+            fontSize='30px'
+            fontStyle='italic'
+            mt='40px'
+            mb='20px'
+            color='white'
+          >
+            Premarital and Marital Matters{' '}
+          </Text>
 
-                <Slider {...settings}>
-                    <div className="carousel-item">
-                        <img src={Pre1} alt="Image 1" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={Pre2} alt="Image 2" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={Pre3} alt="Image 3" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={Pre4} alt="Image 4" />
-                    </div>
-                    {/* Add more images as needed */}
-                </Slider>
+          <Slider {...settings}>
+            <div className='carousel-item'>
+              <img src={Pre1} alt='prep' />
             </div>
+            <div className='carousel-item'>
+              <img src={Pre2} alt='prep1' />
+            </div>
+            <div className='carousel-item'>
+              <img src={Pre3} alt='prep2' />
+            </div>
+            <div className='carousel-item'>
+              <img src={Pre4} alt='prep3' />
+            </div>
+            {/* Add more images as needed */}
+          </Slider>
         </div>
+      </div>
     );
 };
 

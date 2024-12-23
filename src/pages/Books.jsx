@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer/Footer'
 
-import { Flex, Container, Box, Text } from "@chakra-ui/react";
+import { Flex, Box, Text } from "@chakra-ui/react";
 import Card from "../utils/Card";
 import cardData from "../utils/CardData";
 import WhatsappChat from '../components/Whatsapp/Index';

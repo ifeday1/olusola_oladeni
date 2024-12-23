@@ -1,7 +1,7 @@
 import React from "react";
 import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import { Center, Text } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 import Image from "../assets/1.jpg";

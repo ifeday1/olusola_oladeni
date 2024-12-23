@@ -1,7 +1,7 @@
 import './App.css';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Book from './pages/Books';

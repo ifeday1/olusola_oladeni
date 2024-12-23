@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text } from "@chakra-ui/react";
+import {  Text } from "@chakra-ui/react";
 import Navbar from "../components/Navbar";
 import WhatsappChat from "../components/Whatsapp/Index";
 import Footer from "../components/Footer/Footer";

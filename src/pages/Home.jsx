@@ -11,32 +11,31 @@ import {
   useBreakpointValue,
   Button,
   CSSReset,
-  Spacer,
-  Center,
+ 
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 import Picture from "../assets/Picture.png";
 import Preparing from "../assets/prep.jpg";
 import { Link as ReactRouterLink } from "react-router-dom";
-import { Link as ChakraLink, LinkProps } from "@chakra-ui/react";
+import { Link as ChakraLink} from "@chakra-ui/react";
 
 import ImageCarousel from "../utils/ ImageCarousel";
-import StylishBox from "../utils/StylishBox";
+// import StylishBox from "../utils/StylishBox";
 import StyledContainer from "../utils/StylishBox";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 
 const Home = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: true, // Trigger animation only once
-    threshold: 0.2, // Percentage of the element's visibility required to trigger the animation
-  });
+  // const [ inView] = useInView({
+  //   triggerOnce: true, // Trigger animation only once
+  //   threshold: 0.2, // Percentage of the element's visibility required to trigger the animation
+  // });
 
-  const imageVariants = {
-    hidden: { opacity: 0, scale: 0.5 }, // Initial state of the image
-    visible: { opacity: 1, scale: 1, rotate: 360 }, // Animation when it appears
-  };
+  // const imageVariants = {
+  //   hidden: { opacity: 0, scale: 0.5 }, // Initial state of the image
+  //   visible: { opacity: 1, scale: 1, rotate: 360 }, // Animation when it appears
+  // };
 
   const marginValue = useBreakpointValue({ base: "2", md: "3", lg: "5" });
   return (

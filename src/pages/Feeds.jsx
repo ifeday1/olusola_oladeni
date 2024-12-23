@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import WhatsappChat from '../components/Whatsapp/Index';
 import Footer from '../components/Footer/Footer';
 import { FacebookEmbed } from 'react-social-media-embed';
-import { Flex, Text } from '@chakra-ui/react';
+import { Text } from '@chakra-ui/react';
 
 const Feeds = () => {
   return (

@@ -35,7 +35,7 @@ const Media = () => {
       </Text>
 
       <Flex wrap='wrap' justifyContent='center'>
-        {imageUrls.map((url, index) => (
+        {/* {imageUrls.map((url, index) => (
           <Box
             key={index}
             m={2}
@@ -47,7 +47,8 @@ const Media = () => {
           >
             <img src={url} alt={`Image ${index}`} />
           </Box>
-        ))}
+        ))} */}
+        WORKING IN PROGRESS
       </Flex>
 
       <WhatsappChat />

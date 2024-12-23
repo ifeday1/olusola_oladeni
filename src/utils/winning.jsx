@@ -1,5 +1,5 @@
 import React from 'react';
-import {} from '@chakra-ui/react';
+import { Text } from '@chakra-ui/react';
 import Navbar from '../components/Navbar';
 import WhatsappChat from '../components/Whatsapp/Index';
 import Footer from '../components/Footer/Footer';
@@ -8,7 +8,7 @@ const Winning = () => {
   return (
     <>
       <Navbar />
-      {/* <Text
+      <Text
         margin={{ base: '20px', md: '200px' }}
         pt={{ base: '90px', md: '0px' }}
       >
@@ -250,7 +250,7 @@ const Winning = () => {
         naked body. So now I will expose her lewdness before the eyes of her
         lover; no one will take her out of my hands” (Hosea 2:9-10). May you
         never be blotted out of the book of life.
-      </Text> */}
+      </Text>
       <WhatsappChat />
       <Footer />
     </>

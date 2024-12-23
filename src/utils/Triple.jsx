@@ -118,17 +118,17 @@ const Triple = () => {
         advice because of the experience and knowledge that one possesses.
         Wisdom is highly needed by married couples, even singles who are
         trusting God for their future homes need wisdom because wisdom will help
-        them in:  Making the right decision at the right time. Wisdom was
+        them in: Making the right decision at the right time. Wisdom was
         displayed by Joseph and Mary when they ran away from Bethlehem to Egypt
         for the safety of the newly born king (Matthew 2:13 -18). It was a right
-        decision at the right time.  Building solid and lasting relationship,
-        hence, solid home.  Bringing up children who are filled with wisdom.
-        Solomon is product of such venture.  Balancing every action and
-        reaction.  Communicating their ideas, feelings and concern to each
-        other. The virtuous woman in Proverbs 31:26 spoke with wisdom. 
-        Securing their future and that of their children. I would say that there
-        can be earthly and heavenly wisdom. The two wisdoms, but heavenly
-        kingdom should be desired.
+        decision at the right time. Building solid and lasting relationship,
+        hence, solid home. Bringing up children who are filled with wisdom.
+        Solomon is product of such venture. Balancing every action and reaction.
+        Communicating their ideas, feelings and concern to each other. The
+        virtuous woman in Proverbs 31:26 spoke with wisdom. Securing their
+        future and that of their children. I would say that there can be earthly
+        and heavenly wisdom. The two wisdoms, but heavenly kingdom should be
+        desired.
         <Text fontWeight='bold' fontSize='15px'>
           Attributes of heavenly Wisdom
         </Text>

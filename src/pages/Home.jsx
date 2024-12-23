@@ -1,8 +1,8 @@
-import React from "react";
-import Navbar from "../components/Navbar";
-import ImageSlider from "../components/ImageSlider";
-import Footer from "../components/Footer/Footer";
-import WhatsappChat from "../components/Whatsapp/Index";
+import React from 'react';
+import Navbar from '../components/Navbar';
+import ImageSlider from '../components/ImageSlider';
+import Footer from '../components/Footer/Footer';
+import WhatsappChat from '../components/Whatsapp/Index';
 import {
   Box,
   Flex,
@@ -11,19 +11,18 @@ import {
   useBreakpointValue,
   Button,
   CSSReset,
- 
-} from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+} from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
-import Picture from "../assets/Picture.png";
-import Preparing from "../assets/prep.jpg";
-import { Link as ReactRouterLink } from "react-router-dom";
-import { Link as ChakraLink} from "@chakra-ui/react";
+import Picture from '../assets/Picture.png';
+import Preparing from '../assets/prep.jpg';
+import { Link as ReactRouterLink } from 'react-router-dom';
+import { Link as ChakraLink } from '@chakra-ui/react';
 
-import ImageCarousel from "../utils/ ImageCarousel";
+import ImageCarousel from '../utils/ ImageCarousel';
 // import StylishBox from "../utils/StylishBox";
-import StyledContainer from "../utils/StylishBox";
-import { motion } from "framer-motion";
+import StyledContainer from '../utils/StylishBox';
+import { motion } from 'framer-motion';
 // import { useInView } from "react-intersection-observer";
 
 const Home = () => {
@@ -37,32 +36,32 @@ const Home = () => {
   //   visible: { opacity: 1, scale: 1, rotate: 360 }, // Animation when it appears
   // };
 
-  const marginValue = useBreakpointValue({ base: "2", md: "3", lg: "5" });
+  const marginValue = useBreakpointValue({ base: '2', md: '3', lg: '5' });
   return (
     <div>
       <Navbar />
       <ImageSlider />
 
       <Box
-        bgColor="teal.500"
-        width="100%"
-        height="77vh"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
+        bgColor='teal.800'
+        width='100%'
+        height='130vh'
+        display='flex'
+        justifyContent='center'
+        alignItems='center'
       >
         <Flex
-          direction={{ base: "column", md: "row" }} // Stack in a column on small screens
-          alignItems="center"
+          direction={{ base: 'column', md: 'row' }} // Stack in a column on small screens
+          alignItems='center'
         >
           <Image
             as={motion.img}
             src={Picture} // Replace with your image URL
-            alt=" Image"
-            width="350px"
-            height="auto"
-            paddingLeft={{ base: "0px", md: "40px" }}
-            boxSize={{ base: "200px", md: "490px" }} // Adjust image size based on screen size
+            alt=' Image'
+            width='350px'
+            height='auto'
+            paddingLeft={{ base: '0px', md: '40px' }}
+            boxSize={{ base: '200px', md: '490px' }} // Adjust image size based on screen size
           />
 
           <motion.div
@@ -71,10 +70,10 @@ const Home = () => {
             transition={{ duration: 9 }} // Duration of the animation
           >
             <Text
-              fontSize={{ base: "15px", md: "20px" }}
+              fontSize={{ base: '15px', md: '20px' }}
               ml={4}
-              px="50px"
-              color="white"
+              px='50px'
+              color='white'
             >
               It is great to have you here. I delightfully welcome you to my
               website. My vision and mission is to direct people to Jesus
@@ -102,40 +101,40 @@ const Home = () => {
 
       {/* best selling */}
       <Text
-        align="center"
-        fontWeight="bold"
-        fontSize="30px"
-        fontStyle="italic"
-        mt="40px"
+        align='center'
+        fontWeight='bold'
+        fontSize='30px'
+        fontStyle='italic'
+        mt='40px'
       >
-        One of my best selling books{" "}
+        One of my best selling books{' '}
       </Text>
       <Flex
-        direction={{ base: "column", md: "row" }} // Stack in a column on small screens
-        alignItems="center"
-        align="center"
-        justify="center"
+        direction={{ base: 'column', md: 'row' }} // Stack in a column on small screens
+        alignItems='center'
+        align='center'
+        justify='center'
         spacing={4}
         margin={marginValue}
-        my="40px"
-        mx={{ base: "20px", md: "180px" }}
+        my='40px'
+        mx={{ base: '20px', md: '180px' }}
       >
         {/* Image */}
         <Image
           src={Preparing}
-          alt="Best selling"
-          boxSize={{ base: "1 00px", md: "250px", lg: "400px" }}
+          alt='Best selling'
+          boxSize={{ base: '1 00px', md: '250px', lg: '400px' }}
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          mr="100px"
-          paddingLeft={{ base: "50px", md: "40px" }}
+          mr='100px'
+          paddingLeft={{ base: '50px', md: '40px' }}
         />
 
         {/* Text */}
         <Box>
           <Text
-            fontSize={{ base: "md", md: "lg", lg: "xl" }}
+            fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
@@ -152,14 +151,14 @@ const Home = () => {
             speak to you, ways to nurture God’s will, types of disappointment
             and the type you should work against, and lots more.
           </Text>
-          <Link href="https://www.amazon.com/PREPARING-GLORIOUS-MARRIAGE-OLUSOLA-OLADENI-ebook/dp/B0BTFVF9JQ/ref=sr_1_4?crid=23GLWYN00CK3O&keywords=olusola+oladeni&qid=1697823004&sprefix=olusola+oladeni+%2Caps%2C265&sr=8-4">
-            <Button mr="20px" mt="10px" colorScheme="blue">
+          <Link href='https://www.amazon.com/PREPARING-GLORIOUS-MARRIAGE-OLUSOLA-OLADENI-ebook/dp/B0BTFVF9JQ/ref=sr_1_4?crid=23GLWYN00CK3O&keywords=olusola+oladeni&qid=1697823004&sprefix=olusola+oladeni+%2Caps%2C265&sr=8-4'>
+            <Button mr='20px' mt='10px' colorScheme='blue'>
               Purchase Book
             </Button>
           </Link>
 
-          <ChakraLink as={ReactRouterLink} to="/books">
-            <Button mt="10px" colorScheme="green">
+          <ChakraLink as={ReactRouterLink} to='/books'>
+            <Button mt='10px' colorScheme='green'>
               Browse through other books
             </Button>
           </ChakraLink>
@@ -175,23 +174,23 @@ const Home = () => {
 
       {/* my area of focus */}
       <Flex
-        direction={{ base: "column", md: "row" }}
-        alignItems="center"
-        align="center"
-        justify="center"
+        direction={{ base: 'column', md: 'row' }}
+        alignItems='center'
+        align='center'
+        justify='center'
         spacing={4}
         margin={marginValue}
         gap={20}
-        my="40px"
-        mx={{ base: "20px", md: "180px" }}
+        my='40px'
+        mx={{ base: '20px', md: '180px' }}
       >
-        <Box align="center">
+        <Box align='center'>
           {/* <Text>Counselling and Relationships </Text> */}
-          <Text fontSize="50px" py={{ base: "20px", md: "70px" }}>
+          <Text fontSize='50px' py={{ base: '20px', md: '70px' }}>
             My Area of
             <br></br>
-            <span style={{ color: "teal", fontWeight: "bold" }}>
-              {" "}
+            <span style={{ color: 'teal', fontWeight: 'bold' }}>
+              {' '}
               Training Focus
             </span>
           </Text>
@@ -200,7 +199,7 @@ const Home = () => {
         {/* Text */}
         <Box>
           <Text
-            fontSize={{ base: "md", md: "17px", lg: "17px" }}
+            fontSize={{ base: 'md', md: '17px', lg: '17px' }}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}

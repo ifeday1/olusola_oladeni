@@ -48,7 +48,7 @@ const Media = () => {
             <img src={url} alt={`Image ${index}`} />
           </Box>
         ))} */}
-        WORKING IN PROGRESS
+        WORK IN PROGRESS
       </Flex>
 
       <WhatsappChat />

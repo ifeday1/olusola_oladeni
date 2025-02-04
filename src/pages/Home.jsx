@@ -14,7 +14,8 @@ import {
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
-import Picture from '../assets/Picture.png';
+// import Picture from '../assets/Picture.png';
+import Dad from '../assets/dad.svg';
 import Preparing from '../assets/prep.jpg';
 import { Link as ReactRouterLink } from 'react-router-dom';
 import { Link as ChakraLink } from '@chakra-ui/react';
@@ -56,7 +57,7 @@ const Home = () => {
         >
           <Image
             as={motion.img}
-            src={Picture} // Replace with your image URL
+            src={Dad} // Replace with your image URL
             alt=' Image'
             width='350px'
             height='auto'

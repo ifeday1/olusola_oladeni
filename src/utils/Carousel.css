@@ -2,12 +2,15 @@
   position: relative;
   margin: 0 auto;
   width: 100%;
+  height: auto;
 }
 
 .carousel {
-  background: teal;
+  background: rgb(7, 70, 70);
   padding: 50px;
   position: relative;
+    width: 100%;
+
 }
 
 .carousel-item {

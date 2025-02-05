@@ -38,10 +38,7 @@ const ImageCarousel = () => {
 
   return (
     <div className='carousel-container' style={{ width: '100%' }}>
-      <div
-        className='carousel'
-        style={{ background: 'teal.800', width: '100%' }}
-      >
+      <div className='carousel' style={{ width: '100%' }}>
         <Text
           align='center'
           fontWeight='bold'

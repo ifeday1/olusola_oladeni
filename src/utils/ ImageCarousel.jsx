@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Carousel.css'; // Create a separate CSS file for styling
+import './Carousel.css';
 import { Text } from '@chakra-ui/react';
 
 import Pre1 from '../assets/p1.jpg';
@@ -42,13 +42,13 @@ const ImageCarousel = () => {
         <Text
           align='center'
           fontWeight='bold'
-          fontSize='30px'
+          fontSize='40px'
           fontStyle='italic'
           mt='40px'
           mb='20px'
           color='white'
         >
-          Premarital and Marital Matters{' '}
+          Premarital and Marital Matters
         </Text>
 
         <Slider {...settings}>

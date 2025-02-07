@@ -172,7 +172,6 @@ s          >
         <ImageCarousel />
       </Box>
 
-      {/* my area of focus */}
       <Flex
         direction={{ base: 'column', md: 'row' }}
         alignItems='center'

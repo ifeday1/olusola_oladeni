@@ -68,8 +68,7 @@ const Home = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }} // Initial state of the text
             animate={{ opacity: 1, y: 0 }} // Animation when it appears
-            transition={{ duration: 9 }} // Duration of the animation
-          >
+s          >
             <Text
               fontSize={{ base: '15px', md: '20px' }}
               ml={4}

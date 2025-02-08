@@ -68,7 +68,8 @@ const Home = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }} // Initial state of the text
             animate={{ opacity: 1, y: 0 }} // Animation when it appears
-s          >
+            s
+          >
             <Text
               fontSize={{ base: '15px', md: '20px' }}
               ml={4}
@@ -195,7 +196,6 @@ s          >
           </Text>
         </Box>
 
-        {/* Text */}
         <Box>
           <Text
             fontSize={{ base: 'md', md: '17px', lg: '17px' }}

@@ -29,7 +29,7 @@ export default function AppFooter(props) {
       >
         &copy; {1900 + new Date().getYear()}{" "}
         <a href="/" target="_blank" rel="noopener noreferrer">
-          IELTS ONLINE PREPS
+         CONTACT
         </a>
       </Text>
       <List display="flex">

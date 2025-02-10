@@ -166,7 +166,6 @@ const Home = () => {
         </Box>
       </Flex>
 
-      {/* carousel */}
 
       <CSSReset />
       <Box p={4}>

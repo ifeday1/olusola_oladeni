@@ -1,45 +1,45 @@
-import React from "react";
-import Navbar from "../components/Navbar";
-import Whatsapp from "../components/Whatsapp/Index";
-import Footer from "../components/Footer/Footer";
-import { Box, Text, Image, Center, Flex, Spacer } from "@chakra-ui/react";
-import Image2 from "../../src/assets/2.jpg";
-import Couples from "../../src/assets/Couples.jpeg";
-import Preservation from "../../src/assets/preservation.jpg";
-import Proclaim from "../../src/assets/proclaim.jpg";
-import Production from "../../src/assets/production.jpg";
+import React from 'react';
+import Navbar from '../components/Navbar';
+import Whatsapp from '../components/Whatsapp/Index';
+import Footer from '../components/Footer/Footer';
+import { Box, Text, Image, Center, Flex, Spacer } from '@chakra-ui/react';
+import Image2 from '../../src/assets/2.jpg';
+import Couples from '../../src/assets/Couples.jpeg';
+import Preservation from '../../src/assets/preservation.jpg';
+import Proclaim from '../../src/assets/proclaim.jpg';
+import Production from '../../src/assets/production.jpg';
 
 const About = () => {
   return (
     <>
       <Navbar />
-      <div className="each-slide-effect" style={{ paddingTop: "90px" }}>
+      <div className='each-slide-effect' style={{ paddingTop: '90px' }}>
         <div
           style={{
             backgroundImage: `url(${Image2})`,
-            width: "100%",
-            height: "600px",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
+            width: '100%',
+            height: '600px',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
           }}
         >
           <Text
-            textAlign={"center"}
-            fontSize={{ base: "30px", md: "50px" }}
-            fontWeight={"bold"}
-            color={"white"}
-            py={{ base: "400px", md: "400px" }}
-            lineHeight="110%"
-            paddingBottom={{ base: "0px", md: "0px" }}
+            textAlign={'center'}
+            fontSize={{ base: '30px', md: '50px' }}
+            fontWeight={'bold'}
+            color={'white'}
+            py={{ base: '400px', md: '400px' }}
+            lineHeight='110%'
+            paddingBottom={{ base: '0px', md: '0px' }}
           >
             THE MINISTRY
           </Text>
           <Text
-            textAlign={"center"}
-            fontSize={{ base: "20px", md: "40px" }}
-            fontWeight={"meduim"}
-            color={"white"}
+            textAlign={'center'}
+            fontSize={{ base: '20px', md: '40px' }}
+            fontWeight={'meduim'}
+            color={'white'}
           >
             OF REVEREND OLUSOLA OLADENI. Ph.D.
           </Text>
@@ -47,10 +47,10 @@ const About = () => {
       </div>
       {/* Content */}
       <Text
-        fontSize="20px"
-        fontWeight="medium"
-        mx={{ base: "20px", md: "200px" }}
-        my={{ base: "20px", md: "50px" }}
+        fontSize='20px'
+        fontWeight='medium'
+        mx={{ base: '20px', md: '200px' }}
+        my={{ base: '20px', md: '50px' }}
       >
         Olusola Oladeni is a called pastor and an ordained Baptist minister. He
         is a family and marriage counsellor who has authored many books and
@@ -82,32 +82,32 @@ const About = () => {
       <Center>
         <Image
           src={Couples}
-          alt="Best selling"
-          boxSize={{ base: "300px", md: "450px", lg: "1000px" }}
-          alignContent="center"
+          alt='Best selling'
+          boxSize={{ base: '300px', md: '450px', lg: '1000px' }}
+          alignContent='center'
         />
       </Center>
 
-      <Box backgroundColor="teal.500" height="1050px" borderLeftRadius="70px">
+      <Box backgroundColor='teal.800' height='1050px' borderLeftRadius='70px'>
         <Text
-          align="center"
-          fontWeight="bold"
-          fontSize="40px"
-          fontStyle="italic"
-          mt="40px"
-          color="white"
-          pt="90px"
+          align='center'
+          fontWeight='bold'
+          fontSize='40px'
+          fontStyle='italic'
+          mt='40px'
+          color='white'
+          pt='90px'
         >
           PURPOSE OF THE WEBSITE
         </Text>
-        <Text align="center" color="white" pb="40px">
+        <Text align='center' color='white' pb='40px'>
           Purpose, in the context, explains why the website.
         </Text>
 
-        <Flex mx={{ base: "20px", md: "200px" }} pb="50px">
-          <Box p="4">
-            <Text color="white">
-              <Text fontSize="30px" fontWeight="bold">
+        <Flex mx={{ base: '20px', md: '200px' }} pb='50px'>
+          <Box p='4'>
+            <Text color='white'>
+              <Text fontSize='30px' fontWeight='bold'>
                 Proclamation
               </Text>
               To proclaim the Biblical faith in the Lord Jesus as
@@ -115,19 +115,19 @@ const About = () => {
             </Text>
           </Box>
           <Spacer />
-          <Box justify="space-around" align="center" wrap="wrap" width=" 200px">
-            <Image borderRadius="40px" src={Proclaim}></Image>
+          <Box justify='space-around' align='center' wrap='wrap' width=' 200px'>
+            <Image borderRadius='40px' src={Proclaim}></Image>
           </Box>
         </Flex>
 
-        <Flex mx={{ base: "20px", md: "200px" }} pb="50px">
-          <Box justify="space-around" align="center" wrap="wrap" width=" 200px">
-            <Image borderRadius="40px" src={Preservation}></Image>
+        <Flex mx={{ base: '20px', md: '200px' }} pb='50px'>
+          <Box justify='space-around' align='center' wrap='wrap' width=' 200px'>
+            <Image borderRadius='40px' src={Preservation}></Image>
           </Box>
           <Spacer />
-          <Box p="4">
-            <Text color="white">
-              <Text fontSize="30px" fontWeight="bold" align="right">
+          <Box p='4'>
+            <Text color='white'>
+              <Text fontSize='30px' fontWeight='bold' align='right'>
                 Preservation
               </Text>
               To preserve people the lives, homes and ministries through
@@ -141,10 +141,10 @@ const About = () => {
           </Box>
         </Flex>
 
-        <Flex mx={{ base: "20px", md: "200px" }}>
-          <Box p="4">
-            <Text color="white">
-              <Text fontSize="30px" fontWeight="bold">
+        <Flex mx={{ base: '20px', md: '200px' }}>
+          <Box p='4'>
+            <Text color='white'>
+              <Text fontSize='30px' fontWeight='bold'>
                 Production
               </Text>
               To produce and provide helpful resources in all set-ups taking the
@@ -154,8 +154,8 @@ const About = () => {
             </Text>
           </Box>
           <Spacer />
-          <Box justify="space-around" align="center" wrap="wrap" width=" 200px">
-            <Image borderRadius="40px" src={Production}></Image>
+          <Box justify='space-around' align='center' wrap='wrap' width=' 200px'>
+            <Image borderRadius='40px' src={Production}></Image>
           </Box>
         </Flex>
       </Box>

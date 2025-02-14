@@ -104,7 +104,45 @@ const About = () => {
           Purpose, in the context, explains why the website.
         </Text>
 
-        <Flex mx={{ base: '20px', md: '200px' }} pb='50px'>
+        <Flex
+          direction={{ base: 'column', md: 'row' }}
+          align='center'
+          justify='center'
+          p={6}
+        >
+          {/* Text Section */}
+          <Box flex={1} maxW='500px' color='white'>
+            <Text>
+              <Text fontSize={{ base: 'xl', md: '3xl' }} fontWeight='bold'>
+                Proclamation<br></br>
+              </Text>
+              <br></br>
+              To proclaim the Biblical faith in the Lord Jesus as
+              <br></br>the ultimate Savior from the power of sin <br></br>and
+              darkness.
+            </Text>
+          </Box>
+
+          {/* Image Section */}
+          <Box flex={1} mt={{ base: 4, md: 0 }} maxW='500px' color='white'>
+            <Image
+              justify='space-around'
+              align='center'
+              wrap='wrap'
+              width=' 200px'
+              src={Proclaim}
+              alt='proclaim'
+              borderRadius='md'
+            />
+          </Box>
+        </Flex>
+
+        <Flex
+          mx={{ base: '20px', md: '200px' }}
+          pb='50px'
+          display='flex'
+          flexDirection='col'
+        >
           <Box p='4'>
             <Text color='white'>
               <Text fontSize='30px' fontWeight='bold'>

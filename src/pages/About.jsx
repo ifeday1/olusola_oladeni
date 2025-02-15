@@ -6,7 +6,8 @@ import { Box, Text, Image, Center, Flex, Spacer } from '@chakra-ui/react';
 import Image2 from '../../src/assets/2.jpg';
 import Couples from '../../src/assets/Couples.jpeg';
 import Preservation from '../../src/assets/preservation.jpg';
-import Proclaim from '../../src/assets/proclaim.jpg';
+// import Proclaim from '../../src/assets/proclaim.jpg';
+import Pro from '../../src/assets/Pro.jpeg';
 import Production from '../../src/assets/production.jpg';
 
 const About = () => {
@@ -109,6 +110,8 @@ const About = () => {
           align='center'
           justify='center'
           p={6}
+          justifyContent='center'
+          alignItems='center'
         >
           {/* Text Section */}
           <Box flex={1} maxW='500px' color='white'>
@@ -129,32 +132,11 @@ const About = () => {
               justify='space-around'
               align='center'
               wrap='wrap'
-              width=' 200px'
-              src={Proclaim}
+              width=' 500px'
+              src={Pro}
               alt='proclaim'
               borderRadius='md'
             />
-          </Box>
-        </Flex>
-
-        <Flex
-          mx={{ base: '20px', md: '200px' }}
-          pb='50px'
-          display='flex'
-          flexDirection='col'
-        >
-          <Box p='4'>
-            <Text color='white'>
-              <Text fontSize='30px' fontWeight='bold'>
-                Proclamation
-              </Text>
-              To proclaim the Biblical faith in the Lord Jesus as
-              <br></br>the ultimate Savior from the power of sin and darkness.
-            </Text>
-          </Box>
-          <Spacer />
-          <Box justify='space-around' align='center' wrap='wrap' width=' 200px'>
-            <Image borderRadius='40px' src={Proclaim}></Image>
           </Box>
         </Flex>
 

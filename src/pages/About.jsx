@@ -2,13 +2,14 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Whatsapp from '../components/Whatsapp/Index';
 import Footer from '../components/Footer/Footer';
-import { Box, Text, Image, Center, Flex, Spacer } from '@chakra-ui/react';
+import { Box, Text, Image, Center, Flex,  } from '@chakra-ui/react';
 import Image2 from '../../src/assets/2.jpg';
 import Couples from '../../src/assets/Couples.jpeg';
-import Preservation from '../../src/assets/preservation.jpg';
+// import Preservation from '../../src/assets/preservation.jpg'
 // import Proclaim from '../../src/assets/proclaim.jpg';
 import Pro from '../../src/assets/Pro.jpeg';
 import Production from '../../src/assets/production.jpg';
+import Pray from '../../src/assets/pray.jpg';
 
 const About = () => {
   return (
@@ -89,7 +90,11 @@ const About = () => {
         />
       </Center>
 
-      <Box backgroundColor='teal.800' height='1050px' borderLeftRadius='70px'>
+      <Box
+        backgroundColor='teal.800'
+        height={{ base: '1700px', md: '3150px', lg: '1350px' }}
+        borderLeftRadius='70px'
+      >
         <Text
           align='center'
           fontWeight='bold'
@@ -102,7 +107,7 @@ const About = () => {
           PURPOSE OF THE WEBSITE
         </Text>
         <Text align='center' color='white' pb='40px'>
-          Purpose, in the context, explains why the website.
+          Purpose, in the context, explains <br></br>why the website.
         </Text>
 
         <Flex
@@ -140,16 +145,34 @@ const About = () => {
           </Box>
         </Flex>
 
-        <Flex mx={{ base: '20px', md: '200px' }} pb='50px'>
-          <Box justify='space-around' align='center' wrap='wrap' width=' 200px'>
-            <Image borderRadius='40px' src={Preservation}></Image>
+        <Flex
+          direction={{ base: 'column', md: 'row' }}
+          align='center'
+          justify='center'
+          p={6}
+          justifyContent='center'
+          alignItems='center'
+        >
+          {/* Image Section */}
+          <Box flex={1} mt={{ base: 4, md: 0 }} maxW='500px' color='white'>
+            <Image
+              justify='space-around'
+              align='center'
+              wrap='wrap'
+              width=' 500px'
+              src={Pray}
+              alt='proclaim'
+              borderRadius='md'
+            />
           </Box>
-          <Spacer />
-          <Box p='4'>
-            <Text color='white'>
-              <Text fontSize='30px' fontWeight='bold' align='right'>
-                Preservation
+
+          {/* Text Section */}
+          <Box flex={1} maxW='500px' color='white' pl='7'>
+            <Text>
+              <Text fontSize={{ base: 'xl', md: '3xl' }} fontWeight='bold'>
+                Preservation<br></br>
               </Text>
+              <br></br>
               To preserve people the lives, homes and ministries through
               <br></br>
               discipleship and mentorship, and for spiritual growth and to
@@ -161,23 +184,43 @@ const About = () => {
           </Box>
         </Flex>
 
-        <Flex mx={{ base: '20px', md: '200px' }}>
-          <Box p='4'>
-            <Text color='white'>
-              <Text fontSize='30px' fontWeight='bold'>
-                Production
+        <Flex
+          direction={{ base: 'column', md: 'row' }}
+          align='center'
+          justify='center'
+          p={6}
+          justifyContent='center'
+          alignItems='center'
+        >
+          {/* Text Section */}
+          <Box flex={1} maxW='500px' color='white'>
+            <Text>
+              <Text fontSize={{ base: 'xl', md: '3xl' }} fontWeight='bold'>
+                Production<br></br>
               </Text>
+              <br></br>
               To produce and provide helpful resources in all set-ups taking the
               <br></br>
               benefit of countless info and communication technological<br></br>
               platforms.
             </Text>
           </Box>
-          <Spacer />
-          <Box justify='space-around' align='center' wrap='wrap' width=' 200px'>
-            <Image borderRadius='40px' src={Production}></Image>
+
+          {/* Image Section */}
+          <Box flex={1} mt={{ base: 4, md: 0 }} maxW='500px' color='white'>
+            <Image
+              justify='space-around'
+              align='center'
+              wrap='wrap'
+              width=' 500px'
+              src={Pro}
+              alt='proclaim'
+              borderRadius='md'
+            />
           </Box>
         </Flex>
+
+     
       </Box>
 
       <Whatsapp />

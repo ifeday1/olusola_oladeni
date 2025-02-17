@@ -10,6 +10,9 @@ import Pre1 from '../assets/p1.jpg';
 import Pre2 from '../assets/p2.jpg';
 import Pre3 from '../assets/p3.jpg';
 import Pre4 from '../assets/p4.jpg';
+import Feb1 from '../assets/feb1.jpg';
+import Feb3 from '../assets/feb3.jpg';
+import Feb4 from '../assets/feb4.jpg';
 
 const ImageCarousel = () => {
   const settings = {
@@ -63,6 +66,15 @@ const ImageCarousel = () => {
           </div>
           <div className='carousel-item'>
             <img src={Pre4} alt='prep3' />
+          </div>
+          <div className='carousel-item'>
+            <img src={Feb1} alt='prep3' />
+          </div>
+          <div className='carousel-item'>
+            <img src={Feb3} alt='prep3' />
+          </div>
+          <div className='carousel-item'>
+            <img src={Feb4} alt='prep3' />
           </div>
           {/* Add more images as needed */}
         </Slider>

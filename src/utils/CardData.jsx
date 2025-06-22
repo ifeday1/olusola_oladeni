@@ -25,7 +25,7 @@ const cardData = [
   {
     id: 2,
     image: Preparing,
-    description: 'PREPARING FRO A GLORIOUS MARRIAGE',
+    description: 'PREPARING FOR A GLORIOUS MARRIAGE',
     price: '$4.00',
     buttonLabel: 'Buy on Amazon',
     link: 'https://www.amazon.com/PREPARING-GLORIOUS-MARRIAGE-OLUSOLA-OLADENI-ebook/dp/B0BTFVF9JQ/ref=sr_1_4?crid=23GLWYN00CK3O&keywords=olusola+oladeni&qid=1697823004&sprefix=olusola+oladeni+%2Caps%2C265&sr=8-4',

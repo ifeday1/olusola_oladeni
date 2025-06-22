@@ -19,10 +19,12 @@ import Danger from './utils/Danger';
 
 import Leader from './utils/Leader';
 import Blessed from './utils/Blessed';
+import Scroll from './components/Scroll';
 
 function App() {
   return (
     <div>
+      <Scroll/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />

@@ -4,11 +4,11 @@ import "react-slideshow-image/dist/styles.css";
 import { Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
-import Image from "../assets/1.jpg";
-import Image1 from "../assets/2.jpg";
-import Image2 from "../assets/3.jpg";
-import Image3 from "../assets/4.jpg";
-import Image5 from "../assets/5.jpg";
+import Image from "../assets/1.webp";
+import Image1 from "../assets/2.webp";
+import Image2 from "../assets/3.webp";
+import Image3 from "../assets/4.webp";
+import Image5 from "../assets/5.webp";
 
 const Example = () => {
   return (

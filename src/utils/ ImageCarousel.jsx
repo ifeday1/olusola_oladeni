@@ -6,13 +6,13 @@ import 'slick-carousel/slick/slick-theme.css';
 import './Carousel.css';
 import { Text } from '@chakra-ui/react';
 
-import Pre1 from '../assets/p1.jpg';
-import Pre2 from '../assets/p2.jpg';
-import Pre3 from '../assets/p3.jpg';
-import Pre4 from '../assets/p4.jpg';
-import Feb1 from '../assets/feb1.jpg';
-import Feb3 from '../assets/feb3.jpg';
-import Feb4 from '../assets/feb4.jpg';
+import Pre1 from '../assets/p1.webp';
+import Pre2 from '../assets/p2.webp';
+import Pre3 from '../assets/p3.webp';
+import Pre4 from '../assets/p4.webp';
+import Feb1 from '../assets/feb1.webp';
+import Feb3 from '../assets/feb3.webp';
+import Feb4 from '../assets/feb4.webp';
 
 const ImageCarousel = () => {
   const settings = {

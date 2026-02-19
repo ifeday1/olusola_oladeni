@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Whatsapp from '../components/Whatsapp/Index';
 import Footer from '../components/Footer/Footer';
 import { Box, Text, Image, Center, Flex,  } from '@chakra-ui/react';
-import Image2 from '../../src/assets/2.jpg';
+import Image2 from '../../src/assets/2.webp';
 import Couples from '../../src/assets/Couples.jpeg';
 // import Preservation from '../../src/assets/preservation.jpg'
 // import Proclaim from '../../src/assets/proclaim.jpg';

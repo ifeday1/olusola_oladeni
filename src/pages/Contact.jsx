@@ -24,7 +24,7 @@ import {
 } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer/Footer";
-import Image2 from "../../src/assets/3.jpg";
+import Image2 from "../../src/assets/3.webp";
 import WhatsappChat from "../components/Whatsapp/Index";
 
 const Contact = () => {

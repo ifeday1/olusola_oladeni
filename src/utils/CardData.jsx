@@ -128,7 +128,7 @@ const cardData = [
     description: 'FROM TEARS TO TESTIMONIES',
     price: '$3.99',
     buttonLabel: 'Buy on Amazon',
-    link: 'https://https://a.co/d/fZZfOFN.amazon.com/MARRIAGE-SUPER-MAGNET-Esther-Oladeni-ebook/dp/B08P7H3TLQ/ref=sr_1_3?crid=852PHFPQSHXY&keywords=sola+oladeni&qid=1698173994&sprefix=sola+oladeni%2Caps%2C296&sr=8-3',
+    link: 'https://a.co/d/fZZfOFN',
     previewLink: '/triple',
   },
 ];

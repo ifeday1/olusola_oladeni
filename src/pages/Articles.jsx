@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import WhatsappChat from "../components/Whatsapp/Index";
 import Footer from "../components/Footer/Footer";
 import {
-	Box,
 	Text,
 	Image,
 	Button,
@@ -13,10 +12,8 @@ import {
 	InputGroup,
 	InputLeftElement,
 	HStack,
-	VStack,
 	Badge,
 	Icon,
-	Select,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import {
@@ -32,12 +29,10 @@ import {
 	FaCalendarAlt,
 	FaArrowRight,
 	FaSortAmountDown,
-	FaThLarge,
 	FaFire,
 	FaCheckCircle,
 } from "react-icons/fa";
 import CardDataArticles from "../utils/CardDataArticles";
-import "./Articles.css";
 
 const Articles = () => {
 	const [searchQuery, setSearchQuery] = useState("");
@@ -98,48 +93,41 @@ const Articles = () => {
 			<Navbar />
 
 			{/* Hero Section */}
-			<section className="articles-hero">
-				<div className="articles-hero-overlay"></div>
-				<div className="articles-hero-content">
-					<div className="articles-hero-badge">
-						<Icon as={FaBookOpen} mr={2} />
-						<span>Inspiring Articles</span>
-					</div>
-					<h1 className="articles-hero-title">
-						Insightful <span>Articles</span>
+			<section className="relative bg-gradient-to-r from-green-800 to-purple-800 pt-20 pb-8 px-4 mt-5 ">
+				<div className="absolute inset-0 overflow-hidden">
+					<div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full"></div>
+					<div className="absolute bottom-10 right-10 w-24 h-24 bg-white/10 rounded-full"></div>
+					<div className="absolute top-1/2 right-1/4 w-16 h-16 bg-white/10 rounded-full"></div>
+				</div>
+				<div className="max-w-4xl mx-auto text-center relative z-10">
+					
+					<h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+						Insightful <span className="text-green-300">Articles</span>
 					</h1>
-					<p className="articles-hero-subtitle">
+					<p className="text-xl text-white/90 max-w-2xl mx-auto">
 						Explore our collection of inspiring and transformative articles 
 						designed to strengthen your faith, relationships, and purpose.
 					</p>
-					<div className="articles-hero-stats">
-						<div className="hero-stat">
+					<div className="flex justify-center gap-8 mt-6 text-white">
+						<div className="flex items-center gap-2">
 							<Icon as={FaBookOpen} />
 							<span>{CardDataArticles.length} Articles</span>
 						</div>
-						<div className="hero-stat">
+						<div className="flex items-center gap-2">
 							<Icon as={FaEye} />
 							<span>{CardDataArticles.reduce((acc, a) => acc + a.views, 0).toLocaleString()}+ Views</span>
 						</div>
 					</div>
 				</div>
-				<div className="articles-hero-shapes">
-					<div className="hero-shape shape-1"></div>
-					<div className="hero-shape shape-2"></div>
-					<div className="hero-shape shape-3"></div>
-				</div>
-				<div className="scroll-indicator">
-					<span>Scroll to explore</span>
-					<div className="scroll-arrow">↓</div>
-				</div>
+				
 			</section>
 
 			{/* Search and Filter Section */}
-			<section className="articles-filter-section">
+			<section className="py-8 px-4 bg-gray-50">
 				<Container maxW="1400px">
-					<div className="filter-container">
-						<div className="search-filter-row">
-							<div className="search-wrapper">
+					<div className="bg-white rounded-xl shadow-md p-6">
+						<div className="flex flex-col md:flex-row gap-4 mb-6">
+							<div className="flex-1">
 								<InputGroup size="lg">
 									<InputLeftElement pointerEvents="none">
 										<Icon as={FaSearch} color="gray.400" />
@@ -150,15 +138,15 @@ const Articles = () => {
 										onChange={(e) =>
 											setSearchQuery(e.target.value)
 										}
-										className="search-input"
+										className="border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500"
 									/>
 								</InputGroup>
 							</div>
 
-							<div className="sort-wrapper">
-								<Icon as={FaSortAmountDown} className="sort-icon" />
+							<div className="flex items-center gap-2">
+								<Icon as={FaSortAmountDown} className="text-gray-500" />
 								<select 
-									className="sort-select"
+									className="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-500"
 									value={sortBy}
 									onChange={(e) => setSortBy(e.target.value)}
 								>
@@ -171,23 +159,27 @@ const Articles = () => {
 
 						<HStack
 							spacing={3}
-							className="category-tabs"
+							className="flex flex-wrap justify-center"
 							wrap="wrap"
 							justify="center"
 						>
 							{categories.map((category) => (
 								<button
 									key={category.name}
-									className={`category-tab ${activeCategory === category.name ? "active" : ""}`}
+									className={`px-4 py-2 rounded-full font-medium transition-colors ${
+										activeCategory === category.name
+											? "text-white"
+											: "bg-gray-100 text-gray-700 hover:bg-gray-200"
+									}`}
 									onClick={() => setActiveCategory(category.name)}
 									style={{ 
-										"--category-color": category.color 
+										backgroundColor: activeCategory === category.name ? category.color : undefined
 									}}
 								>
 									<Icon as={category.icon} mr={2} />
 									{category.name}
 									{activeCategory === category.name && (
-										<span className="category-count">
+										<span className="ml-2 bg-white/20 px-2 py-0.5 rounded-full text-xs">
 											{CardDataArticles.filter(a => a.category === category.name).length}
 										</span>
 									)}
@@ -200,65 +192,67 @@ const Articles = () => {
 
 			{/* Featured Articles Section - Horizontal Layout */}
 			{activeCategory === "All" && !searchQuery && (
-				<section className="featured-articles-section">
+				<section className="py-12 px-4">
 					<Container maxW="1400px">
-						<div className="section-header">
-							<div className="section-header-left">
-								<Icon as={FaFire} className="section-icon" />
-								<h2 className="section-title">Featured Articles</h2>
+						<div className="mb-8">
+							<div className="flex items-center gap-2 mb-2">
+								<Icon as={FaFire} className="text-orange-500 text-xl" />
+								<h2 className="text-2xl md:text-3xl font-bold text-gray-800">Featured Articles</h2>
 							</div>
-							<p className="section-subtitle">
+							<p className="text-gray-600">
 								Handpicked articles that will transform your perspective
 							</p>
 						</div>
 						
-						<div className="featured-articles-horizontal">
+						<div className="space-y-6">
 							{featuredArticles.map((article, index) => {
 								const catInfo = getCategoryInfo(article.category);
 								return (
 									<Link
 										to={article.link}
 										key={article.id}
-										className="featured-article-horizontal"
+										className="block bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow"
 									>
-										<div className="featured-article-horizontal-image">
-											<Image
-												src={article.image}
-												alt={article.title}
-												objectFit="cover"
-											/>
-										</div>
-										<div className="featured-article-horizontal-content">
-											<Badge 
-												className="featured-badge"
-												style={{ backgroundColor: catInfo.color }}
-											>
-												<Icon as={catInfo.icon} mr={1} />
-												{article.category}
-											</Badge>
-											<h3 className="featured-article-horizontal-title">
-												{article.title}
-											</h3>
-											<p className="featured-article-horizontal-excerpt">
-												{article.excerpt.substring(0, 180)}...
-											</p>
-											<div className="featured-article-horizontal-meta">
-												<span className="meta-item">
-													<Icon as={FaCalendarAlt} />
-													{formatDate(article.date)}
-												</span>
-												<span className="meta-item">
-													<Icon as={FaClock} />
-													{article.readTime} min read
-												</span>
-												<span className="meta-item">
-													<Icon as={FaEye} />
-													{article.views.toLocaleString()}
-												</span>
+										<div className="flex flex-col md:flex-row">
+											<div className="md:w-1/3">
+												<Image
+													src={article.image}
+													alt={article.title}
+													className="w-full h-48 md:h-full object-cover"
+												/>
 											</div>
-											<div className="featured-article-horizontal-cta">
-												Read Article
-												<Icon as={FaArrowRight} ml={2} />
+											<div className="md:w-2/3 p-6">
+												<Badge 
+													className="mb-2"
+													style={{ backgroundColor: catInfo.color }}
+												>
+													<Icon as={catInfo.icon} mr={1} />
+													{article.category}
+												</Badge>
+												<h3 className="text-xl font-bold text-gray-800 mb-2">
+													{article.title}
+												</h3>
+												<p className="text-gray-600 mb-4">
+													{article.excerpt.substring(0, 180)}...
+												</p>
+												<div className="flex flex-wrap gap-4 text-sm text-gray-500">
+													<span className="flex items-center gap-1">
+														<Icon as={FaCalendarAlt} />
+														{formatDate(article.date)}
+													</span>
+													<span className="flex items-center gap-1">
+														<Icon as={FaClock} />
+														{article.readTime} min read
+													</span>
+													<span className="flex items-center gap-1">
+														<Icon as={FaEye} />
+														{article.views.toLocaleString()}
+													</span>
+												</div>
+												<div className="mt-4 text-green-600 font-medium flex items-center">
+													Read Article
+													<Icon as={FaArrowRight} ml={2} />
+												</div>
 											</div>
 										</div>
 									</Link>
@@ -270,16 +264,16 @@ const Articles = () => {
 			)}
 
 			{/* Articles Grid */}
-			<section className="articles-grid-section">
+			<section className="py-12 px-4">
 				<Container maxW="1400px">
-					<div className="articles-header">
-						<div className="articles-header-left">
-							<h2 className="articles-grid-title">
+					<div className="flex justify-between items-center mb-8">
+						<div>
+							<h2 className="text-2xl md:text-3xl font-bold text-gray-800">
 								{activeCategory === "All"
 									? "Latest Articles"
 									: `${activeCategory} Articles`}
 							</h2>
-							<Text className="articles-count">
+							<Text className="text-gray-600">
 								{filteredArticles.length}{" "}
 								{filteredArticles.length === 1
 									? "article"
@@ -293,7 +287,6 @@ const Articles = () => {
 						<SimpleGrid
 							columns={{ base: 1, md: 2, lg: 3 }}
 							spacing={8}
-							className="articles-grid"
 						>
 							{filteredArticles.map((item, index) => {
 								const catInfo = getCategoryInfo(item.category);
@@ -301,64 +294,56 @@ const Articles = () => {
 									<Link
 										to={item.link}
 										key={item.id}
-										className="article-card-link"
+										className="block"
 									>
 										<article
-											className="article-card"
-											style={{
-												animationDelay: `${index * 0.1}s`,
-											}}
+											className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow h-full"
 										>
-											<div className="article-card-image-wrapper">
+											<div className="relative">
 												<Image
 													src={item.image}
 													alt={item.title}
-													className="article-card-image"
-													objectFit="cover"
+													className="w-full h-48 object-cover"
 												/>
-												<div className="article-card-overlay">
-													<span className="read-more-icon">
-														<Icon as={FaArrowRight} />
-													</span>
+												<div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+													<Icon as={FaArrowRight} className="text-white text-3xl" />
 												</div>
 												<Badge 
-													className="article-card-category"
+													className="absolute top-2 left-2"
 													style={{ backgroundColor: catInfo.color }}
 												>
 													<Icon as={catInfo.icon} mr={1} />
 													{item.category}
 												</Badge>
-												<div className="article-card-read-time">
+												<div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded flex items-center">
 													<Icon as={FaClock} mr={1} />
 													{item.readTime} min
 												</div>
 											</div>
-											<div className="article-card-content">
-												<h3 className="article-card-title">
+											<div className="p-4">
+												<h3 className="text-gray-800 font-semibold mb-2 line-clamp-2">
 													{item.title}
 												</h3>
-												<p className="article-card-excerpt">
+												<p className="text-gray-600 text-sm mb-4 line-clamp-2">
 													{item.excerpt.substring(0, 100)}
 													...
 												</p>
-												<div className="article-card-meta">
-													<div className="meta-author">
-														<div className="author-avatar">
+												<div className="flex justify-between items-center text-sm">
+													<div className="flex items-center gap-2">
+														<div className="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-xs">
 															{item.author.charAt(0)}
 														</div>
-														<div className="author-info">
-															<span className="author-name">{item.author}</span>
-															<span className="article-date">
+														<div>
+															<span className="text-gray-700 font-medium block">{item.author}</span>
+															<span className="text-gray-500 text-xs">
 																{formatDate(item.date)}
 															</span>
 														</div>
 													</div>
-													<div className="meta-stats">
-														<span className="views-count">
-															<Icon as={FaEye} />
-															{item.views.toLocaleString()}
-														</span>
-													</div>
+													<span className="text-gray-500 flex items-center gap-1">
+														<Icon as={FaEye} />
+														{item.views.toLocaleString()}
+													</span>
 												</div>
 											</div>
 										</article>
@@ -367,10 +352,10 @@ const Articles = () => {
 							})}
 						</SimpleGrid>
 					) : (
-						<div className="no-results">
-							<Icon as={FaCheckCircle} className="no-results-icon" />
-							<h3>No articles found</h3>
-							<p>
+						<div className="text-center py-16 bg-gray-50 rounded-xl">
+							<Icon as={FaCheckCircle} className="text-6xl text-green-500 mb-4 mx-auto" />
+							<h3 className="text-xl font-semibold text-gray-700 mb-2">No articles found</h3>
+							<p className="text-gray-500 mb-6">
 								Try adjusting your search or filter to find what
 								you're looking for.
 							</p>
@@ -379,7 +364,7 @@ const Articles = () => {
 									setSearchQuery("");
 									setActiveCategory("All");
 								}}
-								className="reset-btn"
+								className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg"
 							>
 								Reset Filters
 							</Button>
@@ -388,28 +373,7 @@ const Articles = () => {
 				</Container>
 			</section>
 
-			{/* Newsletter Section */}
-			<section className="newsletter-section">
-				<Container maxW="800px">
-					<div className="newsletter-card">
-						<div className="newsletter-content">
-							<h3 className="newsletter-title">Stay Updated</h3>
-							<p className="newsletter-subtitle">
-								Subscribe to get notified when new articles are published.
-							</p>
-						</div>
-						<div className="newsletter-form">
-							<Input
-								placeholder="Enter your email"
-								className="newsletter-input"
-							/>
-							<Button className="newsletter-btn">
-								Subscribe
-							</Button>
-						</div>
-					</div>
-				</Container>
-			</section>
+			
 
 			<WhatsappChat />
 			<Footer />

@@ -3,7 +3,6 @@ import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Carousel.css";
 import { Text } from "@chakra-ui/react";
 
 import Pre1 from "../assets/p1.webp";
@@ -40,14 +39,14 @@ const ImageCarousel = () => {
 	};
 
 	return (
-		<div className="carousel-container" style={{ width: "100%" }}>
-			<div className="carousel" style={{ width: "100%" }}>
+		<div className="w-full bg-gradient-to-r from-green-800 to-purple-800 py-10">
+			<div className="w-full max-w-7xl mx-auto">
 				<Text
 					align="center"
 					fontWeight="bold"
-					fontSize="40px"
+					fontSize={{ base: "2xl", md: "4xl" }}
 					fontStyle="italic"
-					mt="40px"
+					mt={{ base: "20px", md: "40px" }}
 					mb="20px"
 					color="white"
 				>
@@ -55,28 +54,27 @@ const ImageCarousel = () => {
 				</Text>
 
 				<Slider {...settings}>
-					<div className="carousel-item">
-						<img src={Pre1} alt="prep" />
+					<div className="px-2 outline-none">
+						<img src={Pre1} alt="prep" className="h-64 w-full object-cover rounded-lg" />
 					</div>
-					<div className="carousel-item">
-						<img src={Pre2} alt="prep1" />
+					<div className="px-2 outline-none">
+						<img src={Pre2} alt="prep1" className="h-64 w-full object-cover rounded-lg" />
 					</div>
-					<div className="carousel-item">
-						<img src={Pre3} alt="prep2" />
+					<div className="px-2 outline-none">
+						<img src={Pre3} alt="prep2" className="h-64 w-full object-cover rounded-lg" />
 					</div>
-					<div className="carousel-item">
-						<img src={Pre4} alt="prep3" />
+					<div className="px-2 outline-none">
+						<img src={Pre4} alt="prep3" className="h-64 w-full object-cover rounded-lg" />
 					</div>
-					<div className="carousel-item">
-						<img src={Feb1} alt="prep3" />
+					<div className="px-2 outline-none">
+						<img src={Feb1} alt="prep3" className="h-64 w-full object-cover rounded-lg" />
 					</div>
-					<div className="carousel-item">
-						<img src={Feb3} alt="prep3" />
+					<div className="px-2 outline-none">
+						<img src={Feb3} alt="prep3" className="h-64 w-full object-cover rounded-lg" />
 					</div>
-					<div className="carousel-item">
-						<img src={Feb4} alt="prep3" />
+					<div className="px-2 outline-none">
+						<img src={Feb4} alt="prep3" className="h-64 w-full object-cover rounded-lg" />
 					</div>
-					{/* Add more images as needed */}
 				</Slider>
 			</div>
 		</div>

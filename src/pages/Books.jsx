@@ -1,13 +1,11 @@
 import React, { useState, useMemo } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer/Footer";
-import Card from "../utils/Card";
 import cardData from "../utils/CardData";
 import WhatsappChat from "../components/Whatsapp/Index";
 import {
 	Container,
 	SimpleGrid,
-	Box,
 	Input,
 	InputGroup,
 	InputLeftElement,
@@ -18,7 +16,6 @@ import {
 	Button,
 } from "@chakra-ui/react";
 import { FaBook, FaHeart, FaCrown, FaStar, FaSearch } from "react-icons/fa";
-import "./Books.css";
 
 const Books = () => {
 	const [searchQuery, setSearchQuery] = useState("");
@@ -64,32 +61,28 @@ const Books = () => {
 			<Navbar />
 
 			{/* Hero Section */}
-			<section className="books-hero">
-				<div className="books-hero-overlay"></div>
-				<div className="books-hero-content">
-					<Badge className="books-badge">
-						<Icon as={FaBook} mr={2} /> Collection
-					</Badge>
-					<h1 className="books-hero-title">
-						My <span>Books</span>
+			<section className="relative bg-gradient-to-r from-green-800 to-purple-800 py-20 px-4">
+				<div className="absolute inset-0 overflow-hidden">
+					<div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full"></div>
+					<div className="absolute bottom-10 right-10 w-24 h-24 bg-white/10 rounded-full"></div>
+					<div className="absolute top-1/2 right-1/4 w-16 h-16 bg-white/10 rounded-full"></div>
+				</div>
+				<div className="max-w-4xl mx-auto text-center relative z-10">
+					<h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+						My <span className="text-green-300">Books</span>
 					</h1>
-					<p className="books-hero-subtitle">
+					<p className="text-xl text-white/90 max-w-2xl mx-auto">
 						Discover transformative books that will inspire your
 						marriage, leadership, and personal growth journey.
 					</p>
 				</div>
-				<div className="books-hero-shapes">
-					<div className="hero-shape shape-1"></div>
-					<div className="hero-shape shape-2"></div>
-					<div className="hero-shape shape-3"></div>
-				</div>
 			</section>
 
 			{/* Search and Filter Section */}
-			<section className="books-filter-section">
+			<section className="py-8 px-4 bg-gray-50">
 				<Container maxW="1400px">
-					<div className="filter-container-books">
-						<div className="search-wrapper-books">
+					<div className="bg-white rounded-xl shadow-md p-6">
+						<div className="mb-6">
 							<InputGroup size="lg">
 								<InputLeftElement pointerEvents="none">
 									<Icon as={FaSearch} color="gray.400" />
@@ -100,20 +93,24 @@ const Books = () => {
 									onChange={(e) =>
 										setSearchQuery(e.target.value)
 									}
-									className="search-input-books"
+									className="border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500"
 								/>
 							</InputGroup>
 						</div>
 
 						<HStack
 							spacing={2}
-							className="category-tabs-books"
+							className="flex flex-wrap"
 							wrap="wrap"
 						>
 							{categories.map((category) => (
 								<button
 									key={category.name}
-									className={`category-tab-books ${activeCategory === category.name ? "active" : ""}`}
+									className={`px-4 py-2 rounded-full font-medium transition-colors ${
+										activeCategory === category.name
+											? "bg-green-600 text-white"
+											: "bg-gray-100 text-gray-700 hover:bg-gray-200"
+									}`}
 									onClick={() =>
 										setActiveCategory(category.name)
 									}
@@ -128,15 +125,15 @@ const Books = () => {
 			</section>
 
 			{/* Books Grid Section */}
-			<section className="books-grid-section">
+			<section className="py-12 px-4">
 				<Container maxW="1400px">
-					<div className="books-header-section">
-						<h2 className="books-grid-title">
+					<div className="flex justify-between items-center mb-8">
+						<h2 className="text-2xl md:text-3xl font-bold text-gray-800">
 							{activeCategory === "All"
 								? "All Books"
 								: `${activeCategory} Books`}
 						</h2>
-						<Text className="books-count">
+						<Text className="text-gray-600">
 							{filteredBooks.length}{" "}
 							{filteredBooks.length === 1 ? "book" : "books"}{" "}
 							available
@@ -147,58 +144,54 @@ const Books = () => {
 						<SimpleGrid
 							columns={{ base: 1, sm: 2, md: 3, lg: 4 }}
 							spacing={8}
-							className="books-grid-new"
 						>
 							{filteredBooks.map((item, index) => (
 								<div
 									key={item.id}
-									className="book-card-new"
-									style={{
-										animationDelay: `${index * 0.1}s`,
-									}}
+									className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow"
 								>
-									<div className="book-cover-wrapper">
+									<div className="relative">
 										<img
 											src={item.image}
 											alt={item.description}
-											className="book-cover-image"
+											className="w-full h-64 object-cover"
 										/>
-										<div className="book-cover-overlay">
+										<div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
 											<a
 												href={item.link}
 												target="_blank"
 												rel="noopener noreferrer"
-												className="buy-btn-overlay"
+												className="bg-green-600 text-white px-6 py-2 rounded-lg"
 											>
 												Buy Now
 											</a>
 										</div>
-										<Badge className="book-category-badge">
+										<Badge className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 rounded">
 											{getCategory(item)}
 										</Badge>
 									</div>
 
-									<div className="book-details">
-										<h3 className="book-title">
+									<div className="p-4">
+										<h3 className="text-gray-800 font-semibold mb-2 line-clamp-2">
 											{item.description}
 										</h3>
-										<p className="book-price">
+										<p className="text-green-600 font-bold text-lg mb-4">
 											{item.price}
 										</p>
 
-										<div className="book-actions">
+										<div className="flex flex-col sm:flex-row gap-2">
 											<a
 												href={item.link}
 												target="_blank"
 												rel="noopener noreferrer"
-												className="buy-btn"
+												className="flex-1 bg-green-600 hover:bg-green-700 text-white text-center py-2 px-4 rounded transition-colors"
 											>
 												{item.buttonLabel}
 											</a>
 											{item.previewLink && (
 												<a
 													href={item.previewLink}
-													className="preview-btn"
+													className="flex-1 border border-green-600 text-green-600 hover:bg-green-50 text-center py-2 px-4 rounded transition-colors text-sm"
 												>
 													Preview
 												</a>
@@ -209,13 +202,13 @@ const Books = () => {
 							))}
 						</SimpleGrid>
 					) : (
-						<div className="no-results-books">
+						<div className="text-center py-16 bg-gray-50 rounded-xl">
 							<Icon
 								as={FaBook}
-								className="no-results-icon-books"
+								className="text-6xl text-gray-300 mb-4 mx-auto"
 							/>
-							<h3>No books found</h3>
-							<p>
+							<h3 className="text-xl font-semibold text-gray-700 mb-2">No books found</h3>
+							<p className="text-gray-500 mb-6">
 								Try adjusting your search or filter to find what
 								you're looking for.
 							</p>
@@ -224,7 +217,7 @@ const Books = () => {
 									setSearchQuery("");
 									setActiveCategory("All");
 								}}
-								className="reset-btn-books"
+								className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg"
 							>
 								Reset Filters
 							</Button>
@@ -234,30 +227,28 @@ const Books = () => {
 			</section>
 
 			{/* Featured Book CTA */}
-			<section className="featured-cta-section">
+			<section className="py-12 px-4 bg-gray-50">
 				<Container maxW="1000px">
-					<div className="featured-cta-card">
-						<div className="featured-cta-content">
-							<Badge className="featured-badge">
-								Best Seller
-							</Badge>
-							<h3 className="featured-cta-title">
-								Start Your Transformation Today
-							</h3>
-							<p className="featured-cta-text">
-								Browse our complete collection and find the
-								perfect book to inspire your marriage,
-								leadership, and personal growth journey.
-							</p>
-							<a
-								href="https://www.amazon.com/olusola-oladeni/e/B09KMXGB6S"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="view-all-btn"
-							>
-								View All Books on Amazon
-							</a>
-						</div>
+					<div className="bg-gradient-to-r from-green-800 to-purple-800 rounded-2xl p-8 text-center text-white">
+						<Badge className="mb-4 bg-yellow text-white px-3 py-500-1 rounded text-sm font-semibold">
+							Best Seller
+						</Badge>
+						<h3 className="text-2xl md:text-3xl font-bold mb-4">
+							Start Your Transformation Today
+						</h3>
+						<p className="text-white/90 mb-6 max-w-xl mx-auto">
+							Browse our complete collection and find the
+							perfect book to inspire your marriage,
+							leadership, and personal growth journey.
+						</p>
+						<a
+							href="https://www.amazon.com/olusola-oladeni/e/B09KMXGB6S"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="inline-block bg-white text-green-800 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors"
+						>
+							View All Books on Amazon
+						</a>
 					</div>
 				</Container>
 			</section>

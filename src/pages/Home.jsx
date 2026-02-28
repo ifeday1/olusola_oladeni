@@ -13,7 +13,6 @@ import Preparing from "../assets/prep.jpg";
 import ImageCarousel from "../utils/ImageCarousel";
 import StyledContainer from "../utils/StylishBox";
 import { motion } from "framer-motion";
-import "./Home.css";
 
 const Home = () => {
 	return (
@@ -22,217 +21,222 @@ const Home = () => {
 			<Hero />
 
 			{/* Welcome Section */}
-			<div className="welcome-section">
-				<div className="welcome-container">
-					<div className="welcome-content">
-						<p className="welcome-text">
-							It is great to have you here. I delightfully welcome
-							you to my website. My vision and mission is to
-							direct people to Jesus Christ, the great
-							transformer, and to support them through the grace
-							of God and to influence and transform life
-							holistically through strategic discipleship and
-							equipment for a productive Christian life. My areas
-							of specialization is Marriage and Family Life and
-							Leadership development through teaching, training
-							and counselling and relationship building. As you
-							surf through the pages of this website, I pray that
-							you will find answers to all your questions and your
-							needs be met. Do well to go through all the
-							resources on this website. I am very certain that
-							you will be blessed through them.
-						</p>
+			<div className="bg-gradient-to-r from-green-50 to-purple-50 py-16 px-4">
+				<div className="max-w-6xl mx-auto">
+					<div className="flex flex-col md:flex-row items-center gap-8">
+						<div className="flex-1">
+							<p className="text-gray-700 text-lg leading-relaxed mb-6">
+								It is great to have you here. I delightfully welcome
+								you to my website. My vision and mission is to
+								direct people to Jesus Christ, the great
+								transformer, and to support them through the grace
+								of God and to influence and transform life
+								holistically through strategic discipleship and
+								equipment for a productive Christian life. My areas
+								of specialization is Marriage and Family Life and
+								Leadership development through teaching, training
+								and counselling and relationship building. As you
+								surf through the pages of this website, I pray that
+								you will find answers to all your questions and your
+								needs be met. Do well to go through all the
+								resources on this website. I am very certain that
+								you will be blessed through them.
+							</p>
 
-						<p className="welcome-signature">
-							Contact me directly for counselling, prayer,
-							testimonies, suggestions and anything else
-							<br></br>
-							<br></br>
-							contact@olusolaoladeni.org OR oladeni2008@yahoo.com
-							<br></br>
-							<br></br>
-							Yours In The Lord's Service,
-							<br></br>
-							<br></br>
-							Olusola Oladeni
-						</p>
-					</div>
+							<p className="text-gray-700 text-lg">
+								Contact me directly for counselling, prayer,
+								testimonies, suggestions and anything else
+								<br></br>
+								<br></br>
+								<span className="font-semibold">contact@olusolaoladeni.org</span> OR <span className="font-semibold">oladeni2008@yahoo.com</span>
+								<br></br>
+								<br></br>
+								Yours In The Lord's Service,
+								<br></br>
+								<br></br>
+								<span className="text-xl font-bold text-green-700">Olusola Oladeni</span>
+							</p>
+						</div>
 
-					<div className="welcome-image">
-						<Image
-							as={motion.img}
-							src={Dad}
-							alt="Reverend Dr. Olusola Oladeni"
-						/>
+						<div className="flex-shrink-0">
+							<Image
+								as={motion.img}
+								src={Dad}
+								alt="Reverend Dr. Olusola Oladeni"
+								className="rounded-lg shadow-xl max-w-sm"
+							/>
+						</div>
 					</div>
 				</div>
 			</div>
 
 			{/* Best Selling Book Section */}
-			<div className="book-section">
-				<div className="book-content">
-					<div className="book-header">
-					<h2 className="book-title">
-						One of my best selling books
-					</h2>
-					<p className="book-subtitle">Best selling</p>
-				</div>
+			<div className="py-16 px-4 bg-white">
+				<div className="max-w-6xl mx-auto">
+					<div className="text-center mb-12">
+						<h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
+							One of my best selling books
+						</h2>
+						<p className="text-green-600 font-semibold">Best selling</p>
+					</div>
 
-				<div className="book-main">
-						<div className="book-image-wrapper">
+					<div className="flex flex-col md:flex-row items-center gap-12">
+						<div className="flex-shrink-0">
 							<a
 								href="/basic"
-								className="book-image-link"
+								className="block"
 								title="Preview this book"
 							>
-								<div className="book-image-container">
-									<Image src={Preparing} alt="Best selling" />
+								<div className="relative group">
+									<Image src={Preparing} alt="Best selling" className="rounded-lg shadow-lg w-64" />
+									<div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
 								</div>
 							</a>
 						</div>
 
-						<div className="book-details">
-							<p className="book-highlight">
+						<div className="flex-1">
+							<p className="text-xl text-gray-700 mb-6 italic">
 								"Preparing for a Glorious Marriage" has
 								transformed countless relationships, with
 								readers sharing powerful testimonies.
 							</p>
 
-							<p className="book-testimony">
-								<span className="quote-icon">"</span>
+							<p className="text-gray-600 mb-4">
+								<span className="text-2xl text-green-600 mr-1">&ldquo;</span>
 								The questions and answers in this book delivered
 								me from my ignorance.
-								<span className="quote-icon">"</span>
+								<span className="text-2xl text-green-600 ml-1">&rdquo;</span>
 							</p>
 
-							<p className="book-testimony">
-								<span className="quote-icon">"</span>
+							<p className="text-gray-600 mb-6">
+								<span className="text-2xl text-green-600 mr-1">&ldquo;</span>
 								This book has really helped me in choosing my
 								life partner.
-								<span className="quote-icon">"</span>
+								<span className="text-2xl text-green-600 ml-1">&rdquo;</span>
 							</p>
 
-							<p className="book-list-title">
+							<p className="font-semibold text-gray-800 mb-3">
 								This comprehensive premarital guide equips
 								singles with the wisdom to:
 							</p>
 
-							<ul className="book-list">
+							<ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
 								<li>Make wise relationship decisions</li>
 								<li>Discern God's will for your future</li>
 								<li>Live intentionally during courtship</li>
 							</ul>
 
-							<p className="book-features">
+							<p className="text-gray-600 mb-6">
 								Inside, you'll discover fifteen ways God speaks
 								to you, how to nurture His will, types of
 								disappointment to avoid, and much more.
 							</p>
 
-							<div className="book-cta">
+							<div className="flex flex-wrap gap-4">
 								<a
 									href="https://www.amazon.com/PREPARING-GLORIOUS-MARRIAGE-OLUSOLA-OLADENI-ebook/dp/B0BTFVF9JQ/ref=sr_1_4?crid=23GLWYN00CK3O&keywords=olusola+oladeni&qid=1697823004&sprefix=olusola+oladeni+%2Caps%2C265&sr=8-4"
-									className="btn-buy"
+									className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
 									Buy Now
 								</a>
 								<ChakraLink as={ReactRouterLink} to="/books">
-									<button className="btn-outline">
+									<button className="border-2 border-green-600 text-green-600 hover:bg-green-50 px-6 py-3 rounded-lg font-semibold transition-colors">
 										View All Books
 									</button>
 								</ChakraLink>
 							</div>
 						</div>
+					</div>
 				</div>
 			</div>
-		</div>
 
 			<CSSReset />
-			<div className="carousel-section">
+			<div className="w-full">
 				<ImageCarousel />
 			</div>
 
-			{/* Featured Articles Section */}
-			<div className="featured-articles-section">
-				<h2 className="section-title">Featured Articles</h2>
-				<p className="section-subtitle">
-					Some of the most educative and most inspiring articles from
-					the archives of Reverend Dr. Olusola Oladeni
-				</p>
+			{/* Featured Articles Section
+			<div className="py-16 px-4 bg-gray-50">
+				<div className="max-w-6xl mx-auto">
+					<h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">Featured Articles</h2>
+					<p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+						Some of the most educative and most inspiring articles from
+						the archives of Reverend Dr. Olusola Oladeni
+					</p>
 
-				<div className="articles-grid">
-					{/* Article Card 1 - Courtship */}
-					<div className="article-card">
-						<div>
-							<span className="article-category">Courtship</span>
-							<p className="article-title-text">
-								PATIENCE: A VIRTUE FOR SUSTAINING CHRISTIAN
-								COURTSHIP
-							</p>
+					<div className="grid md:grid-cols-3 gap-6">
+						<div className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow">
+							<div>
+								<span className="bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full">Courtship</span>
+								<p className="text-gray-800 font-semibold mt-3">
+									PATIENCE: A VIRTUE FOR SUSTAINING CHRISTIAN
+									COURTSHIP
+								</p>
+							</div>
+							<span className="text-gray-500 text-sm">Feb, 18 2025</span>
 						</div>
-						<span className="article-date">Feb, 18 2025</span>
+
+						<div className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow">
+							<div>
+								<span className="bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full">Marriage</span>
+								<p className="text-gray-800 font-semibold mt-3">
+									THE PRESENCE THAT MAKES THE DIFFERENCE IN A
+									CHRISTIAN MARRIAGE
+								</p>
+							</div>
+							<span className="text-gray-500 text-sm">Feb, 18 2025</span>
+						</div>
+
+						<div className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow">
+							<div>
+								<span className="bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full">Purpose</span>
+								<p className="text-gray-800 font-semibold mt-3">
+									PURPOSES OF HIS DIVINE POWER
+								</p>
+							</div>
+							<span className="text-gray-500 text-sm">Feb, 18 2025</span>
+						</div>
 					</div>
 
-					{/* Article Card 2 - Marriage */}
-					<div className="article-card">
-						<div>
-							<span className="article-category">Marriage</span>
-							<p className="article-title-text">
-								THE PRESENCE THAT MAKES THE DIFFERENCE IN A
-								CHRISTIAN MARRIAGE
-							</p>
-						</div>
-						<span className="article-date">Feb, 18 2025</span>
-					</div>
-
-					{/* Article Card 3 - Purpose */}
-					<div className="article-card">
-						<div>
-							<span className="article-category">Purpose</span>
-							<p className="article-title-text">
-								PURPOSES OF HIS DIVINE POWER
-							</p>
-						</div>
-						<span className="article-date">Feb, 18 2025</span>
+					<div className="text-center mt-10">
+						<ChakraLink as={ReactRouterLink} to="/articles">
+							<button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+								See all Articles
+							</button>
+						</ChakraLink>
 					</div>
 				</div>
-
-				<div className="articles-cta">
-					<ChakraLink as={ReactRouterLink} to="/articles">
-						<button className="btn-see-all">
-							See all Articles
-						</button>
-					</ChakraLink>
-				</div>
-			</div>
+			</div> */}
 
 			{/* Core Training Areas */}
-			<div className="training-section">
-				<h2 className="section-title">Core Training Areas</h2>
+			<div className="py-16 px-4 bg-white">
+				<div className="max-w-6xl mx-auto">
+					<h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Core Training Areas</h2>
 
-				<div className="training-grid">
-					<div className="training-card">
-						<p>Professional and personal purpose achievement</p>
-					</div>
-					<div className="training-card">
-						<p>
-							Improved personal relational skills, including work
-							and life
-						</p>
-					</div>
-					<div className="training-card">
-						<p>Increased responsibility and persistence</p>
-					</div>
-					<div className="training-card">
-						<p>
-							Growth in marriage-building proficiency and
-							capability
-						</p>
-					</div>
-					<div className="training-card">
-						<p>Better passion for counselling and encouragement</p>
+					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+						<div className="bg-gradient-to-r from-green-50 to-purple-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+							<p className="text-gray-700 font-medium">Professional and personal purpose achievement</p>
+						</div>
+						<div className="bg-gradient-to-r from-green-50 to-purple-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+							<p className="text-gray-700 font-medium">
+								Improved personal relational skills, including work
+								and life
+							</p>
+						</div>
+						<div className="bg-gradient-to-r from-green-50 to-purple-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+							<p className="text-gray-700 font-medium">Increased responsibility and persistence</p>
+						</div>
+						<div className="bg-gradient-to-r from-green-50 to-purple-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+							<p className="text-gray-700 font-medium">
+								Growth in marriage-building proficiency and
+								capability
+							</p>
+						</div>
+						<div className="bg-gradient-to-r from-green-50 to-purple-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+							<p className="text-gray-700 font-medium">Better passion for counselling and encouragement</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -240,26 +244,28 @@ const Home = () => {
 			<StyledContainer />
 
 			{/* Transformation Section */}
-			<div className="transformation-section">
-				<div className="transformation-container">
-					<div className="transformation-left">
-						<div className="transformation-text-box">
-							<h3 className="transformation-title">
-								Transformation is not accidental. It is
-								intentional.
-							</h3>
+			<div className="py-16 px-4 bg-gradient-to-r from-green-800 to-purple-800">
+				<div className="max-w-6xl mx-auto">
+					<div className="flex flex-col md:flex-row items-center justify-between gap-8">
+						<div className="text-white flex-1">
+							<div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 mb-6">
+								<h3 className="text-2xl md:text-3xl font-bold">
+									Transformation is not accidental. It is
+									intentional.
+								</h3>
+							</div>
+							<p className="text-white/90 text-lg mb-6">
+								Take the next step in your spiritual journey today.
+							</p>
+							<button className="bg-white text-green-800 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
+								Book a Session
+							</button>
 						</div>
-						<p className="transformation-subtitle">
-							Take the next step in your spiritual journey today.
-						</p>
-						<button className="btn-book-session">
-							Book a Session
-						</button>
-					</div>
 
-					<div className="transformation-right">
-						<div className="rectangle-box"></div>
-						<div className="rectangle-box"></div>
+						<div className="flex gap-4">
+							<div className="w-32 h-32 bg-white/20 rounded-lg"></div>
+							<div className="w-32 h-32 bg-white/10 rounded-lg mt-8"></div>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -8,13 +8,6 @@ import Leader from "../assets/leader.jpg";
 import Singles1 from "../assets/singles1.jpg";
 import Worth from "../assets/worth.jpg";
 
-// Calculate reading time based on word count (average 200 words per minute)
-const calculateReadTime = (text) => {
-	const wordCount = text.split(/\s+/).length;
-	const minutes = Math.ceil(wordCount / 200);
-	return minutes;
-};
-
 const CardDataArticles = [
 	{
 		id: 1,

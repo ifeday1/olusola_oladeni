@@ -11,15 +11,6 @@ import Couples from '../assets/Couples.jpeg';
 import Pro from '../assets/Pro.jpeg';
 import Pray from '../assets/pray.jpg';
 
-import { Box, Text, Image, Center, Flex,  } from '@chakra-ui/react';
-import Image2 from '../../src/assets/2.webp';
-import Couples from '../../src/assets/Couples.jpeg';
-// import Preservation from '../../src/assets/preservation.jpg'
-// import Proclaim from '../../src/assets/proclaim.jpg';
-import Pro from '../../src/assets/Pro.jpeg';
-import Production from '../../src/assets/production.jpg';
-import Pray from '../../src/assets/pray.jpg';
-
 
 const About = () => {
   return (

@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Base styles */
+=======
+>>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,6 +19,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+<<<<<<< HEAD
 
 /* Custom animations */
 @keyframes fadeIn {
@@ -207,3 +211,5 @@ code {
   width: 100%;
   height: auto;
 }
+=======
+>>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882

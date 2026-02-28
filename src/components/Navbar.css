@@ -1,0 +1,147 @@
+.header {
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .3s ease-in;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     z-index: 999;
+}
+
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: auto;
+    height: 100%;
+    padding: 0 3rem;
+}
+
+.header .nav-menu a {
+    color: red;
+    text-decoration: none;
+     padding: 0 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+.header .nav-menu {
+    display: flex;
+    list-style: none;
+    
+}
+
+.header .nav-item {
+ 
+}
+
+
+.nav-menu li:hover a{
+color: yellowgreen;
+cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+} 
+
+.nav-menu li:hover{
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #000;
+  transition: all 0.5s ease-in-out;
+  border-radius: 25px;
+  z-index: 999;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width:940px) {
+    .header {
+      max-width: 100%;
+       text-decoration: none;
+      
+    }
+
+    .header .navbar {
+      max-width: 100%;
+        list-style: none;
+         padding-left: 16px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: 100%;
+        top: 90px;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.9);
+       width: 100%;
+        height: 100vh;
+        z-index: 999;
+        text-align: center;
+        transition: .3s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+    .designer{
+        padding-top: 110px;
+font-weight: 500;
+font-size: 100px;
+line-height: 90px;
+top: 100px;
+background: linear-gradient(180.85deg, #FFFFFF 0.73%, rgba(255, 248, 248, 0) 118.56%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+text-align: center;
+}
+ 
+}
+
+@media screen and (max-width:656px) {
+    .designer {
+             padding-top: 110px;
+font-weight: 500;
+font-size: 50px;
+line-height: 60px;
+top: 100px;
+background: linear-gradient(180.85deg, #FFFFFF 0.73%, rgba(255, 248, 248, 0) 118.56%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

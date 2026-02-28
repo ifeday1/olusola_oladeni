@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React, { useState, useEffect } from "react";
 import { FaWhatsapp, FaTimes, FaCommentDots } from "react-icons/fa";
 
@@ -88,7 +88,7 @@ const WhatsappChat = () => {
 		</div>
 	);
 };
-=======
+
 import React from 'react'
 
 const WhatsappChat = () => {
@@ -117,6 +117,6 @@ const WhatsappChat = () => {
 		</a>
 	)
 }
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
+
 
 export default WhatsappChat;

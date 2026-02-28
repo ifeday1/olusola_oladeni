@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import WhatsappChat from "../components/Whatsapp/Index";
@@ -280,7 +279,8 @@ const Feeds = () => {
 			<Footer />
 		</div>
 	);
-=======
+
+};
 import React from 'react';
 import Navbar from '../components/Navbar';
 import WhatsappChat from '../components/Whatsapp/Index';

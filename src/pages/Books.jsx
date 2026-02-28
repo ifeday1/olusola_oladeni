@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState, useMemo } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer/Footer";
@@ -258,46 +257,7 @@ const Books = () => {
 			<Footer />
 		</>
 	);
-=======
-import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer/Footer';
 
-import { Flex, Box, Text } from '@chakra-ui/react';
-import Card from '../utils/Card';
-import cardData from '../utils/CardData';
-import WhatsappChat from '../components/Whatsapp/Index';
-
-const Books = ({ data }) => {
-  return (
-    <>
-      <Navbar />
-      <Box mt='90px' width='100%' height='80px' bg='red'>
-        <Text
-          pt='10px'
-          align='center'
-          color='white'
-          fontSize='40px'
-          fontWeight='bold'
-        >
-          MY BOOKS
-        </Text>
-      </Box>
-      <Flex
-        pt='80px'
-        flexWrap={{ base: 'wrap', md: 'no-wrap' }}
-        justifyContent='center'
-      >
-        {cardData.map((item) => (
-          <Card key={cardData.id} data={item} />
-        ))}
-      </Flex>
-
-      <WhatsappChat />
-      <Footer />
-    </>
-  );
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
 };
 
 export default Books;

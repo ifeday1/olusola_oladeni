@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-<<<<<<< HEAD
-=======
 import './App.css';
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
 import App from './App';
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 // eslint-disable-next-line

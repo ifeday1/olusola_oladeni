@@ -1,5 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
+
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.svg";
 import { FaEnvelope, FaMap, FaPhone, FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaChevronRight } from "react-icons/fa";
@@ -234,7 +234,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-=======
+
 
 import { Box, Flex, List, ListIcon, ListItem, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
@@ -344,7 +344,7 @@ const Footer = () => {
         </Text>
       </Box>
     </section>
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
+
   );
 };
 

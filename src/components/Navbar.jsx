@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
@@ -9,7 +9,7 @@ import AOS from "aos";
 import Logo from "../assets/logo.svg";
 
 const Navbar = () => {
-=======
+
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
@@ -22,7 +22,7 @@ import Logo from '../assets/long.png';
 
 const Navbar = () => {
   //useEffect
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -30,17 +30,17 @@ const Navbar = () => {
 
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-<<<<<<< HEAD
-=======
 
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
+
+
+
   const closeMenu = () => setClick(false);
 
   const ScrollToTop = () => {
     scroll.scrollToTop();
   };
 
-<<<<<<< HEAD
+
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
@@ -141,7 +141,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-=======
+
   return (
     <div>
       <div className='header'>
@@ -260,7 +260,7 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
+
     </div>
   );
 };

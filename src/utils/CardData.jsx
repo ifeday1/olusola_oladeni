@@ -21,10 +21,7 @@ const cardData = [
     price: '$4.50',
     buttonLabel: 'Buy on Amazon',
     link: ' https://www.amazon.com/MAKING-MARRIAGE-BETTER-Olusola-Oladeni-ebook/dp/B0CB77257T/ref=sr_1_2?crid=23GLWYN00CK3O&keywords=olusola+oladeni&qid=1697822966&sprefix=olusola+oladeni+%2Caps%2C265&sr=8-2',
-<<<<<<< HEAD
     previewLink: '/patience',
-=======
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
   },
   {
     id: 2,
@@ -33,10 +30,7 @@ const cardData = [
     price: '$4.00',
     buttonLabel: 'Buy on Amazon',
     link: 'https://www.amazon.com/PREPARING-GLORIOUS-MARRIAGE-OLUSOLA-OLADENI-ebook/dp/B0BTFVF9JQ/ref=sr_1_4?crid=23GLWYN00CK3O&keywords=olusola+oladeni&qid=1697823004&sprefix=olusola+oladeni+%2Caps%2C265&sr=8-4',
-<<<<<<< HEAD
     previewLink: '/basic',
-=======
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
   },
   {
     id: 3,
@@ -45,10 +39,7 @@ const cardData = [
     price: '$4.50',
     buttonLabel: 'Buy on Amazon',
     link: 'https://www.amazon.com/MARRIAGE-WITHOUT-WEEPING-Olusola-Oladeni-ebook/dp/B0BS9XRF83/ref=sr_1_5?keywords=olusola+oladeni&qid=1698085874&sr=8-5 ',
-<<<<<<< HEAD
     previewLink: '/presence',
-=======
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
   },
   {
     id: 4,
@@ -57,10 +48,7 @@ const cardData = [
     price: '$4.50',
     buttonLabel: 'Buy on Amazon',
     link: 'https://www.amazon.com/MULTIPLY-YOUR-GOLD-Olusola-Oladeni-ebook/dp/B0CFVQHJ7Y/ref=sr_1_1?keywords=olusola+oladeni&qid=1698085056&sr=8-1',
-<<<<<<< HEAD
     previewLink: '/purpose',
-=======
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
   },
   {
     id: 5,
@@ -69,10 +57,7 @@ const cardData = [
     price: '$3.99',
     buttonLabel: 'Buy on Amazon',
     link: 'https://www.amazon.com/BECOMING-EFFECTIVE-CHURCH-WORKER-indispensable-ebook/dp/B08R9YKQKH/ref=sr_1_7?keywords=olusola+oladeni&qid=1698085874&sr=8-7',
-<<<<<<< HEAD
     previewLink: '/leader',
-=======
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
   },
   {
     id: 6,
@@ -81,10 +66,7 @@ const cardData = [
     price: '$3.99',
     buttonLabel: 'Buy on Amazon',
     link: 'https://www.amazon.com/MARRIAGE-DIFFERENCE-Reading-Adegbenjo-Anniversary-ebook/dp/B08P293FNJ/ref=sr_1_6?keywords=olusola+oladeni&qid=1698085874&sr=8-6',
-<<<<<<< HEAD
     previewLink: '/blessed',
-=======
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
   },
   {
     id: 7,
@@ -93,10 +75,7 @@ const cardData = [
     price: '$3.99',
     buttonLabel: 'Buy on Amazon',
     link: 'https://www.amazon.com/LEADING-ABIDING-RESULTS-Olusola-Oladeni-ebook/dp/B08YN4BXKC/ref=sr_1_10?keywords=olusola+oladeni&qid=1698085874&sr=8-10',
-<<<<<<< HEAD
     previewLink: '/triple',
-=======
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
   },
   {
     id: 8,
@@ -105,10 +84,7 @@ const cardData = [
     price: '$3.99',
     buttonLabel: 'Buy on Amazon',
     link: 'https://www.amazon.com/POWER-DETERMINATION-Powerful-Exposition-Book-ebook/dp/B08YMHMDKX/ref=sr_1_8?keywords=olusola+oladeni&qid=1698085874&sr=8-8',
-<<<<<<< HEAD
     previewLink: '/danger',
-=======
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
   },
   {
     id: 9,
@@ -117,10 +93,7 @@ const cardData = [
     price: '$3.99',
     buttonLabel: 'Buy on Amazon',
     link: 'https://www.amazon.com/TURNING-YOUR-LITTLE-MULTIPLE-WEALTH-ebook/dp/B08YNJS2TX/ref=sr_1_9?keywords=olusola+oladeni&qid=1698085874&sr=8-9',
-<<<<<<< HEAD
     previewLink: '/worth',
-=======
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
   },
   {
     id: 10,
@@ -129,10 +102,7 @@ const cardData = [
     price: '$3.99',
     buttonLabel: 'Buy on Amazon',
     link: 'https://www.amazon.com/SINGLES-LOVE-INFATUATION-Esther-Oladeni-ebook/dp/B08P28LRHY/ref=sr_1_2?crid=852PHFPQSHXY&keywords=sola+oladeni&qid=1698173122&sprefix=sola+oladeni%2Caps%2C296&sr=8-2',
-<<<<<<< HEAD
     previewLink: '/patience',
-=======
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
   },
   {
     id: 11,
@@ -141,10 +111,7 @@ const cardData = [
     price: '$3.99',
     buttonLabel: 'Buy on Amazon',
     link: 'https://www.amazon.com/SOARING-HIGHER-LIFE-MINISTRY-practically-ebook/dp/B08R7JT97F/ref=sr_1_1?crid=852PHFPQSHXY&keywords=sola+oladeni&qid=1698173994&sprefix=sola+oladeni%2Caps%2C296&sr=8-1',
-<<<<<<< HEAD
     previewLink: '/purpose',
-=======
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
   },
   {
     id: 12,
@@ -153,10 +120,7 @@ const cardData = [
     price: '$3.99',
     buttonLabel: 'Buy on Amazon',
     link: 'https://www.amazon.com/MARRIAGE-SUPER-MAGNET-Esther-Oladeni-ebook/dp/B08P7H3TLQ/ref=sr_1_3?crid=852PHFPQSHXY&keywords=sola+oladeni&qid=1698173994&sprefix=sola+oladeni%2Caps%2C296&sr=8-3',
-<<<<<<< HEAD
     previewLink: '/presence',
-=======
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
   },
   {
     id: 13,
@@ -164,12 +128,8 @@ const cardData = [
     description: 'FROM TEARS TO TESTIMONIES',
     price: '$3.99',
     buttonLabel: 'Buy on Amazon',
-<<<<<<< HEAD
     link: 'https://a.co/d/fZZfOFN',
     previewLink: '/triple',
-=======
-    link: 'https://https://a.co/d/fZZfOFN.amazon.com/MARRIAGE-SUPER-MAGNET-Esther-Oladeni-ebook/dp/B08P7H3TLQ/ref=sr_1_3?crid=852PHFPQSHXY&keywords=sola+oladeni&qid=1698173994&sprefix=sola+oladeni%2Caps%2C296&sr=8-3',
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
   },
 ];
 

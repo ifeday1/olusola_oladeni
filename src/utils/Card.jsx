@@ -1,5 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
 import { Link } from "react-router-dom";
 
 const Card = ({ data }) => {
@@ -35,7 +34,8 @@ const Card = ({ data }) => {
 			</div>
 		</div>
 	);
-=======
+
+};
 import { Box, Image, Text, Button, VStack, Center, Link } from "@chakra-ui/react";
 
 
@@ -67,7 +67,6 @@ const Card = ({ data }) => {
             </VStack>
         </Box>
     );
->>>>>>> c24bcc57584f1dfcf929f40026e0afd4163f8882
 };
 
 export default Card;

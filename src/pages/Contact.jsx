@@ -1,5 +1,4 @@
 import { React, useState } from "react";
-<<<<<<< HEAD
 import { useToast } from "@chakra-ui/react";
 import { useForm, ValidationError } from "@formspree/react";
 import {
@@ -352,9 +351,9 @@ const Contact = () => {
 			<Footer />
 		</>
 	);
-=======
-import {
-  Text,
+
+
+export default Contact;
   FormControl,
   FormLabel,
   Input,

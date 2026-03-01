@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Footer from "../components/Footer/Footer";
 import WhatsappChat from "../components/Whatsapp/Index";
-import { Image, CSSReset } from "@chakra-ui/react";
+import { Image } from "@chakra-ui/react";
 import { Link as ReactRouterLink } from "react-router-dom";
 import { Link as ChakraLink } from "@chakra-ui/react";
 
@@ -152,7 +152,6 @@ const Home = () => {
 				</div>
 			</div>
 
-			<CSSReset />
 			<div className="w-full">
 				<ImageCarousel />
 			</div>

@@ -91,3 +91,4 @@ const WhatsappChat = () => {
 
 
 export default WhatsappChat;
+export { WhatsappChat };

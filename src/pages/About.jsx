@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Whatsapp from '../components/Whatsapp/Index';
+import { WhatsappChat } from '../components/Whatsapp/Index';
 import Footer from '../components/Footer/Footer';
 
 import { Box, Text, Image, Center, Flex } from '@chakra-ui/react';
@@ -228,7 +228,7 @@ const About = () => {
      
       </Box>
 
-      <Whatsapp />
+      <WhatsappChat />
       <Footer />
     </>
   );

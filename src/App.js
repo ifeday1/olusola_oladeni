@@ -44,15 +44,7 @@ function App() {
         <Route path="/blessed" element={<Blessed />} />
 
         {/* Article Detail Pages - Using new ArticleDetail component */}
-        <Route path="/patience" element={<ArticleDetail />} />
-        <Route path="/presence" element={<ArticleDetail />} />
-        <Route path="/purpose" element={<ArticleDetail />} />
-        <Route path="/triple" element={<ArticleDetail />} />
-        <Route path="/worth" element={<ArticleDetail />} />
-        <Route path="/danger" element={<ArticleDetail />} />
         <Route path="/winning" element={<ArticleDetail />} />
-        <Route path="/leader" element={<ArticleDetail />} />
-        <Route path="/blessed" element={<ArticleDetail />} />
       </Routes>
     </div>
   );

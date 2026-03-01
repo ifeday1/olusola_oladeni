@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.svg";
@@ -209,7 +209,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 md:px-8 lg:px-12 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm text-center md:text-left">
-              Â© {currentYear} Olusola Oladeni. All rights reserved.
+              © {currentYear} Olusola Oladeni. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <Link to="/privacy" className="text-gray-400 hover:text-green-400 transition-colors">
@@ -220,7 +220,7 @@ const Footer = () => {
               </Link>
             </div>
             <p className="text-gray-500 text-xs">
-              Designed with <span className="text-green-500">â™¥</span> by{" "}
+              Designed with <span className="text-green-500">♥</span> by{" "}
               <a
                 href="https://web-portfilo-git-master-ifeday1.vercel.app/"
                 target="_blank"

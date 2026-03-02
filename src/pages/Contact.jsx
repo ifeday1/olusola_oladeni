@@ -182,7 +182,7 @@ const Contact = () => {
 										<FaFacebook />
 									</a>
 									<a
-										href="https://instagram.com/olusola_oladeni"
+										href="https://instagram.com/olusolaoladeni"
 										target="_blank"
 										rel="noopener noreferrer"
 										className="w-10 h-10 bg-pink-600 text-white rounded-lg flex items-center justify-center hover:bg-pink-700 transition-colors"
@@ -191,7 +191,7 @@ const Contact = () => {
 										<FaInstagram />
 									</a>
 									<a
-										href="https://twitter.com/olusola_oladeni"
+										href="https://twitter.com/oladenisola"
 										target="_blank"
 										rel="noopener noreferrer"
 										className="w-10 h-10 bg-sky-500 text-white rounded-lg flex items-center justify-center hover:bg-sky-600 transition-colors"

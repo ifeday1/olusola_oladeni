@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 import Footer from "../components/Footer/Footer";
 import WhatsappChat from "../components/Whatsapp/Index";
 import { Image } from "@chakra-ui/react";
-import { Link as ReactRouterLink } from "react-router-dom";
+import { Link, Link as ReactRouterLink } from "react-router-dom";
 import { Link as ChakraLink } from "@chakra-ui/react";
 
 import Dad from "../assets/dad.svg";
@@ -305,9 +305,14 @@ const Home = () => {
 							<p className="text-white/90 text-lg mb-6">
 								Take the next step in your spiritual journey today.
 							</p>
-							<button className="bg-white text-green-800 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
+							<button>
+								<Link
+										  to="/contact"
+										  className="inline-block bg-white text-green-800 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
 								Book a Session
+								</Link>
 							</button>
+
 						</div>
 
 						<div className="flex gap-4">

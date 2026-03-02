@@ -11,7 +11,6 @@ import {
 	Input,
 	InputGroup,
 	InputLeftElement,
-	HStack,
 	Badge,
 	Icon,
 } from "@chakra-ui/react";

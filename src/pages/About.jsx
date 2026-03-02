@@ -5,11 +5,10 @@ import Footer from '../components/Footer/Footer';
 import { Link as ReactRouterLink } from 'react-router-dom';
 import { Link as ChakraLink } from '@chakra-ui/react';
 import { Box, Text, Image, Center, Flex, Button, SimpleGrid, VStack, HStack, Icon } from '@chakra-ui/react';
-import { FaCross, FaHands, FaBook, FaChurch, FaAward, FaHeart } from 'react-icons/fa';
+import { FaChurch, FaAward, FaHeart } from 'react-icons/fa';
 import Image2 from '../assets/2.webp';
 import Couples from '../assets/Couples.jpeg';
 import Pro from '../assets/Pro.jpeg';
-import Pray from '../assets/pray.jpg';
 import Preservation from '../assets/preservation.jpg';
 import Production from '../assets/production.jpg';
 

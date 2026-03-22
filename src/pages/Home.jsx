@@ -10,7 +10,7 @@ import { Link as ChakraLink } from "@chakra-ui/react";
 import Dad from "../assets/dad.svg";
 import Preparing from "../assets/prep.jpg";
 
-import ImageCarousel from "../utils/ImageCarousel";
+import ImageGallery from "../utils/ImageGallery";
 import StyledContainer from "../utils/StylishBox";
 import { motion } from "framer-motion";
 
@@ -153,7 +153,7 @@ const Home = () => {
 			</div>
 
 			<div className="w-full">
-				<ImageCarousel />
+				<ImageGallery />
 			</div>
 
 			{/* Featured Articles Section

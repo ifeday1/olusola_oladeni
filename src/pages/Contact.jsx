@@ -107,30 +107,22 @@ const Contact = () => {
 			
 			{/* Main Content */}
 			<div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-emerald-50">
-				{/* Page Header */}
-				<div className="relative overflow-hidden bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 py-24 pb-16">
-					{/* Decorative Elements */}
-					<div className="absolute inset-0 overflow-hidden">
-						<div className="absolute -top-20 -left-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
-						<div className="absolute -bottom-20 -right-20 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
-						<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-white/5 rounded-full blur-2xl"></div>
-						<div className="absolute top-20 right-1/4 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
-						<div className="absolute bottom-20 left-1/4 w-24 h-24 bg-white/10 rounded-full blur-xl"></div>
-					</div>
-					
-					<div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-						
-						<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-							Let's Start a
-							<span className="block bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-								Conversation
-							</span>
-						</h1>
-						<p className="text-emerald-100 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-							We'd love to hear from you. Send us a message and we'll respond as soon as possible.
-						</p>
-					</div>
+				<section className="relative bg-gradient-to-r from-green-800 to-purple-800 py-20 px-4">
+				<div className="absolute inset-0 overflow-hidden">
+					<div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full"></div>
+					<div className="absolute bottom-10 right-10 w-24 h-24 bg-white/10 rounded-full"></div>
+					<div className="absolute top-1/2 right-1/4 w-16 h-16 bg-white/10 rounded-full"></div>
 				</div>
+				<div className="max-w-4xl mx-auto text-center relative z-10">
+					<h1 className="text-4xl md:text-6xl font-bold text-white my-4">
+						Let's Start a <span className="text-green-300">Conversation</span>
+					</h1>
+					<p className="text-xl text-white/90 max-w-2xl mx-auto">
+						We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+					</p>
+				</div>
+			</section>
+				
 
 				{/* Contact Section */}
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 -mt-12">

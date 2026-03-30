@@ -68,7 +68,7 @@ const Books = () => {
 					<div className="absolute top-1/2 right-1/4 w-16 h-16 bg-white/10 rounded-full"></div>
 				</div>
 				<div className="max-w-4xl mx-auto text-center relative z-10">
-					<h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+					<h1 className="text-4xl md:text-6xl font-bold text-white my-4">
 						My <span className="text-green-300">Books</span>
 					</h1>
 					<p className="text-xl text-white/90 max-w-2xl mx-auto">

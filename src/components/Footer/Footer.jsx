@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.svg";
-import { FaEnvelope, FaMap, FaPhone, FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaChevronRight } from "react-icons/fa";
+import { FaEnvelope, FaMap, FaPhone, FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaLinkedin, FaChevronRight } from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -24,7 +24,7 @@ const Footer = () => {
             {/* Social Media Links */}
             <div className="flex gap-4">
               <a 
-                href="https://web.facebook.com/olusolaoladeniministries" 
+                href="https://web.facebook.com/ola.oladeni" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white hover:bg-green-700 transition-all duration-300 transform hover:scale-110"
@@ -32,7 +32,7 @@ const Footer = () => {
                 <FaFacebook className="text-lg" />
               </a>
               <a 
-                href="https://instagram.com/olusola_oladeni" 
+                href="https://www.instagram.com/olusolaoladeni/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white hover:bg-green-700 transition-all duration-300 transform hover:scale-110"
@@ -40,7 +40,7 @@ const Footer = () => {
                 <FaInstagram className="text-lg" />
               </a>
               <a 
-                href="https://twitter.com/olusola_oladeni" 
+                href="https://x.com/oladenisola" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white hover:bg-green-700 transition-all duration-300 transform hover:scale-110"
@@ -54,6 +54,14 @@ const Footer = () => {
                 className="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white hover:bg-green-700 transition-all duration-300 transform hover:scale-110"
               >
                 <FaYoutube className="text-lg" />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/olusola-oladeni-ph-d-3b079183/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white hover:bg-green-700 transition-all duration-300 transform hover:scale-110"
+              >
+                <FaLinkedin className="text-lg" />
               </a>
             </div>
           </div>

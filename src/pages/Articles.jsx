@@ -109,7 +109,7 @@ const Articles = () => {
 					<div className="absolute top-1/2 right-1/4 w-8 md:w-16 h-8 md:h-16 bg-white/10 rounded-full"></div>
 				</div>
 				<div className="max-w-4xl mx-auto text-center relative z-10 px-2">
-					<h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 md:mb-4">
+					<h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-4">
 						Insightful <span className="text-green-300">Articles</span>
 					</h1>
 					<p className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto px-2 md:px-0">

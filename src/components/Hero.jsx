@@ -34,11 +34,11 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-              <Link to="/media" className="no-underline">
+              <a href="https://www.youtube.com/@OlusolaOladeni" target="_blank" rel="noopener noreferrer" className="no-underline">
                 <button className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-transparent border-2 border-white text-white rounded-lg font-semibold text-sm md:text-base uppercase tracking-wide transition-all duration-300 hover:bg-white hover:text-gray-900">
                   Watch Messages
                 </button>
-              </Link>
+              </a>
               <Link to="/contact" className="no-underline">
                 <button className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-green-600 text-white rounded-lg font-semibold text-sm md:text-base uppercase tracking-wide border-none transition-all duration-300 hover:bg-green-700 hover:shadow-lg">
                   Book a Session

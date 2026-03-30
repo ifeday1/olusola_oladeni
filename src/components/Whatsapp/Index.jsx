@@ -15,17 +15,7 @@ const WhatsappChat = () => {
 	}, []);
 
 	function goToWhatsapp() {
-		var WhatsAppUrl = "https://web.whatsapp.com/send";
-
-		if (
-			/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-				navigator.userAgent,
-			)
-		) {
-			WhatsAppUrl = "https://api.whatsapp.com/send";
-		}
-
-		var url = WhatsAppUrl + "?phone=+23408034498307";
+		var url = "https://wa.me/2348034498307";
 		var win = window.open(url, "_blank");
 		win.focus();
 	}

@@ -16,7 +16,7 @@ const Media = () => {
           <div className="absolute top-1/2 right-1/4 w-16 h-16 bg-white/10 rounded-full"></div>
         </div>
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Media</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white my-4">Media</h1>
           <p className="text-xl text-white/90">
             Explore our multimedia content and resources
           </p>

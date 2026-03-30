@@ -14,6 +14,7 @@ import ImageCarousel from "../utils/ImageCarousel";
 import StyledContainer from "../utils/StylishBox";
 import { motion } from "framer-motion";
 
+
 const Home = () => {
 	return (
 		<div>
@@ -154,60 +155,9 @@ const Home = () => {
 
 			<div className="w-full">
 				<ImageCarousel />
+				
 			</div>
-
-			{/* Featured Articles Section
-			<div className="py-16 px-4 bg-gray-50">
-				<div className="max-w-6xl mx-auto">
-					<h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">Featured Articles</h2>
-					<p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-						Some of the most educative and most inspiring articles from
-						the archives of Reverend Dr. Olusola Oladeni
-					</p>
-
-					<div className="grid md:grid-cols-3 gap-6">
-						<div className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow">
-							<div>
-								<span className="bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full">Courtship</span>
-								<p className="text-gray-800 font-semibold mt-3">
-									PATIENCE: A VIRTUE FOR SUSTAINING CHRISTIAN
-									COURTSHIP
-								</p>
-							</div>
-							<span className="text-gray-500 text-sm">Feb, 18 2025</span>
-						</div>
-
-						<div className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow">
-							<div>
-								<span className="bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full">Marriage</span>
-								<p className="text-gray-800 font-semibold mt-3">
-									THE PRESENCE THAT MAKES THE DIFFERENCE IN A
-									CHRISTIAN MARRIAGE
-								</p>
-							</div>
-							<span className="text-gray-500 text-sm">Feb, 18 2025</span>
-						</div>
-
-						<div className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow">
-							<div>
-								<span className="bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full">Purpose</span>
-								<p className="text-gray-800 font-semibold mt-3">
-									PURPOSES OF HIS DIVINE POWER
-								</p>
-							</div>
-							<span className="text-gray-500 text-sm">Feb, 18 2025</span>
-						</div>
-					</div>
-
-					<div className="text-center mt-10">
-						<ChakraLink as={ReactRouterLink} to="/articles">
-							<button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-								See all Articles
-							</button>
-						</ChakraLink>
-					</div>
-				</div>
-			</div> */}
+					
 
 			{/* Core Training Areas */}
 			<div className="py-16 px-4 bg-gradient-to-br from-gray-50 via-white to-green-50">

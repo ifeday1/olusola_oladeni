@@ -42,7 +42,6 @@ function App() {
 
         <Route path="/leader" element={<Leader />} />
         <Route path="/blessed" element={<Blessed />} />
-
         {/* Article Detail Pages - Using new ArticleDetail component */}
         <Route path="/winning" element={<ArticleDetail />} />
       </Routes>

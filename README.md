@@ -1,6 +1,37 @@
-# Getting Started with Create React App
+# Olusola Oladeni Website
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Backend Setup
+
+The contact form uses a backend server to send emails. To set up the backend:
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Configure environment variables:**
+   - Copy `.env.example` to `.env`
+   - Update the email configuration in `.env`:
+     ```
+     PORT=5000
+     EMAIL_USER=email
+     EMAIL_PASS=your_email_password_here
+     ```
+   
+   **Note:** For Gmail, you may need to use an App Password instead of your regular password:
+   - Go to your Google Account settings
+   - Enable 2-Step Verification if not already enabled
+   - Go to Security > App passwords
+   - Generate a new app password for "Mail"
+   - Use that password in `EMAIL_PASS`
+
+3. **Start the backend server:**
+   ```bash
+   npm run server
+   ```
+   The server will run on port 5000.
 
 ## Available Scripts
 
@@ -68,3 +99,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Running Both Frontend and Backend
+
+To run both the frontend and backend simultaneously:
+
+1. **Terminal 1 - Start the backend:**
+   ```bash
+   npm run server
+   ```
+
+2. **Terminal 2 - Start the frontend:**
+   ```bash
+   npm start
+   ```
+
+The frontend will run on port 3000 and the backend will run on port 5000.
+
+## API Endpoints
+
+- `POST /api/contact` - Submit contact form
+- `GET /api/health` - Health check endpoint

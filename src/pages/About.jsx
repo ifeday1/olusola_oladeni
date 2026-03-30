@@ -5,7 +5,7 @@ import Footer from '../components/Footer/Footer';
 import { Link as ReactRouterLink } from 'react-router-dom';
 import { Link as ChakraLink } from '@chakra-ui/react';
 import { Box, Text, Image, Center, Flex, Button, SimpleGrid, VStack, HStack, Icon } from '@chakra-ui/react';
-import { FaChurch, FaAward, FaHeart } from 'react-icons/fa';
+import { FaChurch, FaAward, FaHeart, FaArrowRight } from 'react-icons/fa';
 import Image2 from '../assets/2.webp';
 import Couples from '../assets/Couples.jpeg';
 import Pro from '../assets/Pro.jpeg';
@@ -60,31 +60,7 @@ const About = () => {
             "Directing people to Jesus Christ, the great transformer, and equipping them for a productive Christian life through teaching, training, and counseling."
           </Text>
           {/* CTA Buttons in Hero */}
-          <Center mt={8} gap={4} flexWrap="wrap" justify="center">
-            <ChakraLink as={ReactRouterLink} to="/contact">
-              <Button
-                size="lg"
-                bg="green.600"
-                color="white"
-                _hover={{ bg: 'green.700' }}
-                px={8}
-              >
-                Book Counseling
-              </Button>
-            </ChakraLink>
-            <ChakraLink as={ReactRouterLink} to="/books">
-              <Button
-                size="lg"
-                variant="outline"
-                borderColor="white"
-                color="white"
-                _hover={{ bg: 'whiteAlpha.200' }}
-                px={8}
-              >
-                View Books
-              </Button>
-            </ChakraLink>
-          </Center>
+          
         </div>
       </div>
 
@@ -165,47 +141,149 @@ const About = () => {
         />
       </Center>
 
-      {/* Purpose Section with Enhanced Design */}
-      <Box backgroundColor='teal.800' py={16} borderLeftRadius='70px'>
-        <VStack spacing={4} mb={12}>
-          <Text align='center' fontWeight='bold' fontSize={{ base: '30px', md: '40px' }} fontStyle='italic' color='white'>
-            PURPOSE OF THE MINISTRY
-          </Text>
-          <Text align='center' color='white' fontSize="lg" opacity={0.9} maxW="2xl" mx={4}>
-            Guided by Ephesians 4:12, we exist to equip believers for ministry and spiritual maturity
-          </Text>
-        </VStack>
-
-        <Flex direction={{ base: 'column', md: 'row' }} align='center' justify='center' p={6}>
-          <Box flex={1} maxW='500px' color='white'>
-            <Text fontSize={{ base: 'xl', md: '3xl' }} fontWeight='bold'>Proclamation</Text>
-            <Text mt={4}>To proclaim the Biblical faith in the Lord Jesus as the ultimate Savior from the power of sin and darkness.</Text>
-          </Box>
-          <Box flex={1} mt={{ base: 4, md: 0 }} maxW='500px'>
-            <Image src={Pro} alt='proclaim' borderRadius="md" width="100%" />
-          </Box>
-        </Flex>
-
-        <Flex direction={{ base: 'column', md: 'row' }} align='center' justify='center' p={6}>
-          <Box flex={1} mt={{ base: 4, md: 0 }} maxW='500px'>
-            <Image src={Preservation} alt='preservation' borderRadius="md" width="100%" />
-          </Box>
-          <Box flex={1} maxW='500px' color='white' pl={{ base: 0, md: 7 }} mt={{ base: 4, md: 0 }}>
-            <Text fontSize={{ base: 'xl', md: '3xl' }} fontWeight='bold'>Preservation</Text>
-            <Text mt={4}>To preserve people the lives, homes and ministries through discipleship and mentorship, and for spiritual growth.</Text>
-          </Box>
-        </Flex>
-
-        <Flex direction={{ base: 'column', md: 'row' }} align='center' justify='center' p={6}>
-          <Box flex={1} maxW='500px' color='white'>
-            <Text fontSize={{ base: 'xl', md: '3xl' }} fontWeight='bold'>Production</Text>
-            <Text mt={4}>To produce and provide helpful resources in all set-ups taking the benefit of countless info and communication technological platforms.</Text>
-          </Box>
-          <Box flex={1} mt={{ base: 4, md: 0 }} maxW='500px'>
-            <Image src={Production} alt='production' borderRadius="md" width="100%" />
-          </Box>
-        </Flex>
-      </Box>
+       {/* Purpose Section with Modern 3-Column Design */}
+       <Box backgroundColor='white' py={12}>
+         <VStack spacing={8} align="center" maxW="7xl" mx="auto" px={4}>
+           {/* Header Section */}
+           <HStack align="center" justify="between" w="full" mb={6} spacing={6}>
+             <Text fontSize={{ base: '24px', md: '32px' }} fontWeight="bold" color="teal.800">
+               PURPOSE OF THE MINISTRY
+             </Text>
+             <Text fontSize="lg" color="gray.600" maxW="2xl">
+               Guided by Ephesians 4:12, we exist to equip believers for ministry and spiritual maturity
+             </Text>
+           </HStack>
+           
+           {/* 3-Column Grid */}
+           <SimpleGrid 
+             columns={{ base: 1, md: 3 }} 
+             spacing={6} 
+             maxW="7xl" 
+             mx="auto"
+           >
+           
+             {/* Proclamation Card */}
+             <Box 
+               bg="white" 
+               rounded="lg" 
+               shadow="sm" 
+               borderWidth="1px" 
+               borderColor="gray.100"
+               p={6}
+               textAlign="center"
+               transition="all 0.3s ease"
+               _hover={{
+                 transform: "translateY(-4px)",
+                 boxShadow: "md",
+                 borderColor: "teal.200"
+               }}
+             >
+               <Box 
+                 bg="peach.50" 
+                 rounded="full" 
+                 p={4} 
+                 mb={4} 
+                 display="inline-block"
+               >
+                 <Image 
+                   src={Pro} 
+                   alt='proclaim' 
+                   width={60} 
+                   height={60} 
+                   objectFit="cover"
+                 />
+               </Box>
+               <Text fontSize={{ base: '18px', md: '24px' }} fontWeight="bold" color="teal.800" mb={3}>
+                 Proclamation
+               </Text>
+               <Text color="gray.600" mb={4} lineHeight="1.6">
+                 To proclaim the Biblical faith in the Lord Jesus as the ultimate Savior from the power of sin and darkness.
+               </Text>
+               
+             </Box>
+             
+             {/* Preservation Card */}
+             <Box 
+               bg="white" 
+               rounded="lg" 
+               shadow="sm" 
+               borderWidth="1px" 
+               borderColor="gray.100"
+               p={6}
+               textAlign="center"
+               transition="all 0.3s ease"
+               _hover={{
+                 transform: "translateY(-4px)",
+                 boxShadow: "md",
+                 borderColor: "gray.200"
+               }}
+             >
+               <Box 
+                 bg="gray.50" 
+                 rounded="full" 
+                 p={4} 
+                 mb={4} 
+                 display="inline-block"
+               >
+                 <Image 
+                   src={Preservation} 
+                   alt='preservation' 
+                   width={60} 
+                   height={60} 
+                   objectFit="cover"
+                 />
+               </Box>
+               <Text fontSize={{ base: '18px', md: '24px' }} fontWeight="bold" color="teal.800" mb={3}>
+                 Preservation
+               </Text>
+               <Text color="gray.600" mb={4} lineHeight="1.6">
+                 To preserve people the lives, homes and ministries through discipleship and mentorship, and for spiritual growth.
+               </Text>
+               
+             </Box>
+             
+             {/* Production Card */}
+             <Box 
+               bg="white" 
+               rounded="lg" 
+               shadow="sm" 
+               borderWidth="1px" 
+               borderColor="gray.100"
+               p={6}
+               textAlign="center"
+               transition="all 0.3s ease"
+               _hover={{
+                 transform: "translateY(-4px)",
+                 boxShadow: "md",
+                 borderColor: "peach.200"
+               }}
+             >
+               <Box 
+                 bg="peach.50" 
+                 rounded="full" 
+                 p={4} 
+                 mb={4} 
+                 display="inline-block"
+               >
+                 <Image 
+                   src={Production} 
+                   alt='production' 
+                   width={60} 
+                   height={60} 
+                   objectFit="cover"
+                 />
+               </Box>
+               <Text fontSize={{ base: '18px', md: '24px' }} fontWeight="bold" color="teal.800" mb={3}>
+                 Production
+               </Text>
+               <Text color="gray.600" mb={4} lineHeight="1.6">
+                 To produce and provide helpful resources in all set-ups taking the benefit of countless info and communication technological platforms.
+               </Text>
+               
+             </Box>
+           </SimpleGrid>
+         </VStack>
+       </Box>
 
       <WhatsappChat />
       <Footer />

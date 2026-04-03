@@ -1,5 +1,4 @@
 import React, { useState, useMemo } from "react";
-import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 import WhatsappChat from "../components/Whatsapp/Index";
 import Footer from "../components/Footer/Footer";
@@ -12,7 +11,6 @@ import {
 	Input,
 	InputGroup,
 	InputLeftElement,
-	Badge,
 	Icon,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
@@ -32,7 +30,6 @@ import {
 	FaFire,
 	FaCheckCircle,
 } from "react-icons/fa";
-import axios from 'axios';
 import authorImage from "../assets/dad.svg";
 import CardDataArticles from "../utils/CardDataArticles";
 
@@ -40,20 +37,6 @@ const Articles = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState("All");
   const [sortBy, setSortBy] = useState("recent");
-
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Articles - Olusola Oladeni",
-    "description": "Read inspiring articles on strategic discipleship, Christian leadership, and life transformation by Reverend Dr. Olusola Oladeni.",
-    "url": "https://olusolaoladeni.org/articles",
-    "publisher": {
-      "@type": "Person",
-      "name": "Reverend Dr. Olusola Oladeni",
-      "jobTitle": "Christian Minister and Author",
-      "url": "https://olusolaoladeni.org"
-    }
-  };
 
   // Extract categories from article data
   const categories = [

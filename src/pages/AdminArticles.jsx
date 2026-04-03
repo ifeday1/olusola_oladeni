@@ -37,6 +37,7 @@ const AdminArticles = () => {
 
   useEffect(() => {
     fetchArticles();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const fetchArticles = async () => {

@@ -36,6 +36,7 @@ const AdminMedia = () => {
 
   useEffect(() => {
     fetchMedia();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const fetchMedia = async () => {

@@ -260,7 +260,7 @@ const Contact = () => {
 										<p className="text-gray-500 text-lg">Fill out the form below and we'll get back to you within 24 hours.</p>
 									</div>
 									
-									<form onSubmit={handleSubmit} className="space-y-6">
+									<form onSubmit={handleSubmit} className="space-y-6" aria-labelledby="contact-form-title">
 										<div className="grid md:grid-cols-2 gap-6">
 											{/* Name */}
 											<div className="group">
@@ -303,15 +303,15 @@ const Contact = () => {
 												<label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2 group-focus-within:text-emerald-600 transition-colors">
 													Phone Number
 												</label>
-												<input
-													type="tel"
-													id="phone"
-													name="phone"
-													value={formData.phone}
-													onChange={handleChange}
-													className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all duration-300 bg-gray-50/50 hover:bg-white hover:border-gray-300"
-													placeholder="+234 800 000 0000"
-												/>
+										<input
+											type="text"
+											name="subject"
+											value={formData.subject}
+											onChange={handleChange}
+											aria-label="Subject"
+											className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all duration-300"
+											placeholder="Subject"
+										/>
 											</div>
 
 											{/* Subject */}
@@ -358,7 +358,8 @@ const Contact = () => {
 										<button
 											type="submit"
 											disabled={isSubmitting}
-											className="w-full md:w-auto px-10 py-4 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 hover:from-emerald-700 hover:via-teal-700 hover:to-cyan-700 text-white font-bold rounded-xl transition-all duration-300 flex items-center justify-center gap-3 shadow-lg shadow-emerald-500/30 hover:shadow-xl hover:shadow-emerald-500/40 hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0"
+											aria-label={isSubmitting ? "Sending message..." : "Send Message"}
+											className="w-full bg-green-600 hover:bg-green-700 disabled:bg-gray-400 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2"
 										>
 											<FaPaperPlane className="text-lg" />
 											{isSubmitting ? 'Sending...' : 'Send Message'}

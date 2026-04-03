@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from "react";
+import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 import WhatsappChat from "../components/Whatsapp/Index";
 import Footer from "../components/Footer/Footer";
@@ -31,22 +32,38 @@ import {
 	FaFire,
 	FaCheckCircle,
 } from "react-icons/fa";
+import axios from 'axios';
+import authorImage from "../assets/dad.svg";
 import CardDataArticles from "../utils/CardDataArticles";
 
 const Articles = () => {
-	const [searchQuery, setSearchQuery] = useState("");
-	const [activeCategory, setActiveCategory] = useState("All");
-	const [sortBy, setSortBy] = useState("recent");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [activeCategory, setActiveCategory] = useState("All");
+  const [sortBy, setSortBy] = useState("recent");
 
-	// Extract categories from article data
-	const categories = [
-		{ name: "All", icon: FaStar, color: "#f59e0b" },
-		{ name: "Marriage", icon: FaHome, color: "#ec4899" },
-		{ name: "Courtship", icon: FaHeart, color: "#8b5cf6" },
-		{ name: "Leadership", icon: FaLightbulb, color: "#3b82f6" },
-		{ name: "Purpose", icon: FaStar, color: "#10b981" },
-		{ name: "Christian Living", icon: FaUsers, color: "#f97316" },
-	];
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Articles - Olusola Oladeni",
+    "description": "Read inspiring articles on strategic discipleship, Christian leadership, and life transformation by Reverend Dr. Olusola Oladeni.",
+    "url": "https://olusolaoladeni.org/articles",
+    "publisher": {
+      "@type": "Person",
+      "name": "Reverend Dr. Olusola Oladeni",
+      "jobTitle": "Christian Minister and Author",
+      "url": "https://olusolaoladeni.org"
+    }
+  };
+
+  // Extract categories from article data
+  const categories = [
+    { name: "All", icon: FaStar, color: "#f59e0b" },
+    { name: "Marriage", icon: FaHome, color: "#ec4899" },
+    { name: "Courtship", icon: FaHeart, color: "#8b5cf6" },
+    { name: "Leadership", icon: FaLightbulb, color: "#3b82f6" },
+    { name: "Purpose", icon: FaStar, color: "#10b981" },
+    { name: "Christian Living", icon: FaUsers, color: "#f97316" },
+  ];
 
 	// Sort articles based on selection
 	const sortedArticles = useMemo(() => {
@@ -54,33 +71,34 @@ const Articles = () => {
 		switch (sortBy) {
 			case "popular":
 				return articles.sort((a, b) => b.views - a.views);
+			case "recent":
+				return articles.sort((a, b) => new Date(b.date) - new Date(a.date));
 			case "oldest":
 				return articles.sort((a, b) => new Date(a.date) - new Date(b.date));
-			case "recent":
 			default:
-				return articles.sort((a, b) => new Date(b.date) - new Date(a.date));
+				return articles;
 		}
 	}, [sortBy]);
 
 	// Filter articles based on search and category
 	const filteredArticles = useMemo(() => {
-		return sortedArticles.filter((item) => {
-			const matchesSearch =
-				item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-				item.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
-			const matchesCategory =
-				activeCategory === "All" || item.category === activeCategory;
-			return matchesSearch && matchesCategory;
-		});
+		let filtered = sortedArticles;
+		if (searchQuery) {
+			filtered = filtered.filter(article =>
+				article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+				article.description.toLowerCase().includes(searchQuery.toLowerCase())
+			);
+		}
+		if (activeCategory !== "All") {
+			filtered = filtered.filter(article => article.category === activeCategory);
+		}
+		return filtered;
 	}, [sortedArticles, searchQuery, activeCategory]);
 
-	// Featured articles (marked as featured or most viewed)
-	const featuredArticles = CardDataArticles.filter(item => item.featured).slice(0, 2);
-	
-	// Get category info helper
-	const getCategoryInfo = (categoryName) => {
-		return categories.find(c => c.name === categoryName) || categories[0];
-	};
+	// Get featured articles
+	const featuredArticles = useMemo(() => {
+		return CardDataArticles.filter(article => article.featured);
+	}, []);
 
 	// Format date helper
 	const formatDate = (dateString) => {
@@ -208,7 +226,6 @@ const Articles = () => {
 						
 						<div className="space-y-4 md:space-y-6">
 							{featuredArticles.map((article, index) => {
-								const catInfo = getCategoryInfo(article.category);
 								return (
 									<Link
 										to={article.link}
@@ -224,13 +241,7 @@ const Articles = () => {
 												/>
 											</div>
 											<div className="md:w-2/3 p-4 md:p-6">
-												<Badge 
-													className="mb-2 text-xs"
-													style={{ backgroundColor: catInfo.color }}
-												>
-													<Icon as={catInfo.icon} mr={1} className="text-xs" />
-													{article.category}
-												</Badge>
+												
 												<h3 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
 													{article.title}
 												</h3>
@@ -292,7 +303,6 @@ const Articles = () => {
 							spacing={6}
 						>
 							{filteredArticles.map((item, index) => {
-								const catInfo = getCategoryInfo(item.category);
 								return (
 									<Link
 										to={item.link}
@@ -311,14 +321,7 @@ const Articles = () => {
 												<div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
 													<Icon as={FaArrowRight} className="text-white text-2xl md:text-3xl" />
 												</div>
-												<Badge 
-													className="absolute top-2 left-2 text-xs"
-													style={{ backgroundColor: catInfo.color }}
-												>
-													<Icon as={catInfo.icon} mr={1} className="text-xs" />
-													<span className="hidden sm:inline">{item.category}</span>
-													<span className="sm:hidden">{getShortCategoryName(item.category)}</span>
-												</Badge>
+												
 												<div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded flex items-center">
 													<Icon as={FaClock} mr={1} className="text-xs" />
 													{item.readTime} min
@@ -334,9 +337,11 @@ const Articles = () => {
 												</p>
 												<div className="flex justify-between items-center text-xs md:text-sm mt-auto">
 													<div className="flex items-center gap-2">
-														<div className="w-6 md:w-8 h-6 md:h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-xs">
-															{item.author.charAt(0)}
-														</div>
+														<img
+															src={authorImage}
+															alt={item.author}
+															className="w-6 md:w-8 h-6 md:h-8 rounded-full object-cover"
+														/>
 														<div>
 															<span className="text-gray-700 font-medium block text-xs md:text-sm">{item.author}</span>
 															<span className="text-gray-500 text-xs">
@@ -379,8 +384,8 @@ const Articles = () => {
 
 			<WhatsappChat />
 			<Footer />
-		</>
-	);
+    </>
+  );
 };
 
 export default Articles;

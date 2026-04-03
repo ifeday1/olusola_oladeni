@@ -14,13 +14,13 @@ import Feb4 from "../assets/feb4.jpg";
 
 const ImageCarousel = () => {
   const slides = [
-    { src: Pre1, title: "Session 1", date: "Jan 2023" },
-    { src: Pre2, title: "Session 2", date: "Feb 2023" },
-    { src: Pre3, title: "Session 3", date: "Mar 2023" },
-    { src: Pre4, title: "Session 4", date: "Apr 2023" },
-    { src: Feb1, title: "Session 5", date: "May 2023" },
-    { src: Feb3, title: "Session 6", date: "Jun 2023" },
-    { src: Feb4, title: "Session 7", date: "Jul 2023" },
+    { src: Pre1,  },
+    { src: Pre2,  },
+    { src: Pre3,  },
+    { src: Pre4,  },
+    { src: Feb1,  },
+    { src: Feb3,  },
+    { src: Feb4,  },
   ];
 
   const settings = {
@@ -62,7 +62,9 @@ const ImageCarousel = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1.2,
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: '0',
         },
       },
     ],
@@ -91,10 +93,7 @@ const ImageCarousel = () => {
                   alt={`session-${index + 1}`}
                   className=" object-cover rounded-[2rem] loading-lazy"
                 />
-                <div className="mt-4">
-                  <h3 className="font-bold text-sm text-black">{slide.title}</h3>
-                  <p className="text-xs text-gray-500 mt-1">{slide.date}</p>
-                </div>
+               
               </div>
             ))}
           </Slider>

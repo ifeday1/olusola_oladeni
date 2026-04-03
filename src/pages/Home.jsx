@@ -10,6 +10,8 @@ import { Link as ChakraLink } from "@chakra-ui/react";
 
 import Dad from "../assets/dad.svg";
 import Preparing from "../assets/prep.jpg";
+import Webp2 from "../assets/2.webp";
+import Picturejpeg from "../assets/Picture.jpeg";
 
 import ImageCarousel from "../utils/ImageCarousel";
 import StyledContainer from "../utils/StylishBox";
@@ -411,7 +413,7 @@ const Home = () => {
 
 						<div className="flex gap-4">
 							<motion.div
-								className="w-32 h-32 bg-white/20 rounded-lg"
+								className="w-32 h-32 rounded-lg overflow-hidden"
 								initial={{ opacity: 0, y: 20, rotate: 0 }}
 								animate={{ 
 									opacity: 1, 
@@ -423,9 +425,15 @@ const Home = () => {
 									repeat: Infinity, 
 									ease: "easeInOut" 
 								}}
-							/>
+							>
+								<img 
+									src={Webp2} 
+									alt="Transformation" 
+									className="w-full h-full object-cover"
+								/>
+							</motion.div>
 							<motion.div
-								className="w-32 h-32 bg-white/10 rounded-lg mt-8"
+								className="w-32 h-32 rounded-lg overflow-hidden mt-8"
 								initial={{ opacity: 0, y: 20, rotate: 0 }}
 								animate={{ 
 									opacity: 1, 
@@ -438,7 +446,13 @@ const Home = () => {
 									ease: "easeInOut",
 									delay: 0.5
 								}}
-							/>
+							>
+								<img 
+									src={Picturejpeg} 
+									alt="Growth" 
+									className="w-full h-full object-cover"
+								/>
+							</motion.div>
 						</div>
 					</div>
 				</div>

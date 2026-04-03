@@ -61,17 +61,17 @@ const Books = () => {
 			<Navbar />
 
 			{/* Hero Section */}
-			<section className="relative bg-gradient-to-r from-green-800 to-purple-800 py-20 px-4">
+			<section className="relative bg-gradient-to-r from-green-800 to-purple-800 py-12 md:py-20 px-4">
 				<div className="absolute inset-0 overflow-hidden">
-					<div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full"></div>
-					<div className="absolute bottom-10 right-10 w-24 h-24 bg-white/10 rounded-full"></div>
-					<div className="absolute top-1/2 right-1/4 w-16 h-16 bg-white/10 rounded-full"></div>
+					<div className="absolute top-5 md:top-10 left-5 md:left-10 w-16 md:w-32 h-16 md:h-32 bg-white/10 rounded-full"></div>
+					<div className="absolute bottom-5 md:bottom-10 right-5 md:right-10 w-12 md:w-24 h-12 md:h-24 bg-white/10 rounded-full"></div>
+					<div className="absolute top-1/2 right-1/4 w-8 md:w-16 h-8 md:h-16 bg-white/10 rounded-full"></div>
 				</div>
 				<div className="max-w-4xl mx-auto text-center relative z-10">
-					<h1 className="text-4xl md:text-6xl font-bold text-white my-4">
+					<h1 className="text-3xl md:text-6xl font-bold text-white my-3 mt-8 md:my-4">
 						My <span className="text-green-300">Books</span>
 					</h1>
-					<p className="text-xl text-white/90 max-w-2xl mx-auto">
+					<p className="text-base md:text-xl text-white/90 max-w-2xl mx-auto">
 						Discover transformative books that will inspire your
 						marriage, leadership, and personal growth journey.
 					</p>
@@ -79,10 +79,10 @@ const Books = () => {
 			</section>
 
 			{/* Search and Filter Section */}
-			<section className="py-8 px-4 bg-gray-50">
+			<section className="py-6 px-4 bg-gray-50">
 				<Container maxW="1400px">
-					<div className="bg-white rounded-xl shadow-md p-6">
-						<div className="mb-6">
+					<div className="bg-white rounded-xl shadow-md p-4 md:p-6">
+						<div className="mb-4 md:mb-6">
 							<InputGroup size="lg">
 								<InputLeftElement pointerEvents="none">
 									<Icon as={FaSearch} color="gray.400" />
@@ -98,42 +98,44 @@ const Books = () => {
 							</InputGroup>
 						</div>
 
-						<HStack
-							spacing={2}
-							className="flex flex-wrap"
-							wrap="wrap"
-						>
-							{categories.map((category) => (
-								<button
-									key={category.name}
-									className={`px-4 py-2 rounded-full font-medium transition-colors ${
-										activeCategory === category.name
-											? "bg-green-600 text-white"
-											: "bg-gray-100 text-gray-700 hover:bg-gray-200"
-									}`}
-									onClick={() =>
-										setActiveCategory(category.name)
-									}
-								>
-									<Icon as={category.icon} mr={2} />
-									{category.name}
-								</button>
-							))}
-						</HStack>
+						<div className="overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0">
+							<HStack
+								spacing={2}
+								className="flex flex-nowrap md:flex-wrap whitespace-nowrap md:whitespace-normal"
+								wrap="nowrap"
+							>
+								{categories.map((category) => (
+									<button
+										key={category.name}
+										className={`px-3 py-2 md:px-4 md:py-2 rounded-full font-medium text-sm md:text-base transition-colors flex-shrink-0 ${
+											activeCategory === category.name
+												? "bg-green-600 text-white"
+												: "bg-gray-100 text-gray-700 hover:bg-gray-200"
+										}`}
+										onClick={() =>
+											setActiveCategory(category.name)
+										}
+									>
+										<Icon as={category.icon} mr={2} />
+										{category.name}
+									</button>
+								))}
+							</HStack>
+						</div>
 					</div>
 				</Container>
 			</section>
 
 			{/* Books Grid Section */}
-			<section className="py-12 px-4">
+			<section className="py-8 md:py-12 px-4">
 				<Container maxW="1400px">
-					<div className="flex justify-between items-center mb-8">
-						<h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+					<div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-6 md:mb-8">
+						<h2 className="text-xl md:text-3xl font-bold text-gray-800">
 							{activeCategory === "All"
 								? "All Books"
 								: `${activeCategory} Books`}
 						</h2>
-						<Text className="text-gray-600">
+						<Text className="text-gray-600 text-sm md:text-base">
 							{filteredBooks.length}{" "}
 							{filteredBooks.length === 1 ? "book" : "books"}{" "}
 							available
@@ -143,39 +145,39 @@ const Books = () => {
 					{filteredBooks.length > 0 ? (
 						<SimpleGrid
 							columns={{ base: 1, sm: 2, md: 3, lg: 4 }}
-							spacing={8}
+							spacing={{ base: 4, md: 8 }}
 						>
 							{filteredBooks.map((item, index) => (
 								<div
 									key={item.id}
-									className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow"
+									className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
 								>
-									<div className="relative">
+									<div className="relative group">
 										<img
 											src={item.image}
 											alt={item.description}
-											className="w-full h-64 object-cover"
+											className="w-full h-48 md:h-64 object-cover transition-transform duration-300 group-hover:scale-105"
 										/>
-										<div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+										<div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
 											<a
 												href={item.link}
 												target="_blank"
 												rel="noopener noreferrer"
-												className="bg-green-600 text-white px-6 py-2 rounded-lg"
+												className="bg-green-600 text-white px-6 py-2 rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
 											>
 												Buy Now
 											</a>
 										</div>
-										<Badge className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 rounded">
+										<Badge className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 rounded text-xs md:text-sm">
 											{getCategory(item)}
 										</Badge>
 									</div>
 
-									<div className="p-4">
-										<h3 className="text-gray-800 font-semibold mb-2 line-clamp-2">
+									<div className="p-3 md:p-4">
+										<h3 className="text-gray-800 font-semibold mb-2 line-clamp-2 text-sm md:text-base group-hover:text-green-600 transition-colors duration-300">
 											{item.description}
 										</h3>
-										<p className="text-green-600 font-bold text-lg mb-4">
+										<p className="text-green-600 font-bold text-base md:text-lg mb-3 md:mb-4">
 											{item.price}
 										</p>
 
@@ -184,14 +186,14 @@ const Books = () => {
 												href={item.link}
 												target="_blank"
 												rel="noopener noreferrer"
-												className="flex-1 bg-green-600 hover:bg-green-700 text-white text-center py-2 px-4 rounded transition-colors"
+												className="flex-1 bg-green-600 hover:bg-green-700 text-white text-center py-2 px-3 md:px-4 rounded transition-all duration-300 hover:scale-105 text-sm"
 											>
 												{item.buttonLabel}
 											</a>
 											{item.previewLink && (
 												<a
 													href={item.previewLink}
-													className="flex-1 border border-green-600 text-green-600 hover:bg-green-50 text-center py-2 px-4 rounded transition-colors text-sm"
+													className="flex-1 border border-green-600 text-green-600 hover:bg-green-50 text-center py-2 px-3 md:px-4 rounded transition-all duration-300 hover:scale-105 text-xs md:text-sm"
 												>
 													Preview
 												</a>
@@ -227,16 +229,16 @@ const Books = () => {
 			</section>
 
 			{/* Featured Book CTA */}
-			<section className="py-12 px-4 bg-gray-50">
+			<section className="py-8 md:py-12 px-4 bg-gray-50">
 				<Container maxW="1000px">
-					<div className="bg-gradient-to-r from-green-800 to-purple-800 rounded-2xl p-8 text-center text-white">
-						<Badge className="mb-4 bg-yellow text-white px-3 py-500-1 rounded text-sm font-semibold">
+					<div className="bg-gradient-to-r from-green-800 to-purple-800 rounded-2xl p-6 md:p-8 text-center text-white">
+						<Badge className="mb-3 md:mb-4 bg-yellow text-white px-3 py-1 rounded text-xs md:text-sm font-semibold">
 							Best Seller
 						</Badge>
-						<h3 className="text-2xl md:text-3xl font-bold mb-4">
+						<h3 className="text-xl md:text-3xl font-bold mb-3 md:mb-4">
 							Start Your Transformation Today
 						</h3>
-						<p className="text-white/90 mb-6 max-w-xl mx-auto">
+						<p className="text-white/90 mb-4 md:mb-6 max-w-xl mx-auto text-sm md:text-base">
 							Browse our complete collection and find the
 							perfect book to inspire your marriage,
 							leadership, and personal growth journey.
@@ -245,7 +247,7 @@ const Books = () => {
 							href="https://www.amazon.com/olusola-oladeni/e/B09KMXGB6S"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="inline-block bg-white text-green-800 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors"
+							className="inline-block bg-white text-green-800 hover:bg-gray-100 px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold transition-colors text-sm md:text-base"
 						>
 							View All Books on Amazon
 						</a>

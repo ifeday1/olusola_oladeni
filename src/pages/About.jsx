@@ -126,6 +126,43 @@ const About = () => {
         </Box>
       </Box>
 
+      {/* 3D Tilt Effect - Large Screen Only */}
+      <Box py={16} px={4} bg="white" display={{ base: 'none', lg: 'block' }}>
+        <Center mb={8}>
+          <VStack spacing={2}>
+            <Text fontSize="2xl" fontWeight="bold" color="green.700">Our Journey Together</Text>
+            <Box w="100px" h="3px" bg="green.500"></Box>
+          </VStack>
+        </Center>
+        <Box maxW="6xl" mx="auto">
+          <HStack spacing={8} justify="center">
+            {[
+              { src: Couples, subtitle: "Family First" },
+              { src: Picturejpeg, subtitle: "Building Together" },
+              { src: Webp4, subtitle: "Leading Forward" }
+            ].map((item, idx) => (
+              <motion.div
+                key={idx}
+                whileHover={{ 
+                  rotateY: 15,
+                  rotateX: -15,
+                  scale: 1.05
+                }}
+                transition={{ duration: 0.3 }}
+                style={{ perspective: "1000px" }}
+              >
+                <Box borderRadius="xl" overflow="hidden" shadow="xl" w="300px" h="400px" position="relative">
+                  <Image src={item.src} alt={item.subtitle} w="full" h="full" objectFit="cover" />
+                  <Box position="absolute" bottom={0} left={0} right={0} bgGradient="linear(to-t, blackAlpha.800, transparent)" p={6}>
+                    <Text color="white" fontWeight="bold" fontSize="xl">{item.subtitle}</Text>
+                  </Box>
+                </Box>
+              </motion.div>
+            ))}
+          </HStack>
+        </Box>
+      </Box>
+
       {/* Purpose Section */}
       <Box backgroundColor="white" py={{ base: 8, md: 12 }} px={4}>
         <VStack spacing={6} align="center" maxW="7xl" mx="auto">

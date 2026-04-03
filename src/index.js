@@ -17,6 +17,10 @@ const activeLabelStyles = {
 };
 
 export const theme = extendTheme({
+	fonts: {
+		heading: "'Playfair Display', serif",
+		body: "'Lato', sans-serif",
+	},
 	components: {
 		Form: {
 			variants: {

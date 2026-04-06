@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   Box,
   Button,
@@ -24,17 +25,27 @@ import {
   Input,
   Textarea,
   Select,
+  HStack,
+  IconButton,
+  Badge,
 } from '@chakra-ui/react';
 import axios from 'axios';
+import { FaPlus, FaEdit, FaTrash, FaArrowLeft, FaVideo, FaImage, FaHeadphones } from 'react-icons/fa';
+import { Icon } from '@chakra-ui/react';
 
 const AdminMedia = () => {
   const [media, setMedia] = useState([]);
   const [editingMedia, setEditingMedia] = useState(null);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const toast = useToast();
+  const navigate = useNavigate();
   const token = localStorage.getItem('token');
 
   useEffect(() => {
+    if (!token) {
+      navigate('/admin/login');
+      return;
+    }
     fetchMedia();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -114,46 +125,105 @@ const AdminMedia = () => {
     }
   };
 
+  const getTypeIcon = (type) => {
+    switch (type) {
+      case 'video': return FaVideo;
+      case 'image': return FaImage;
+      case 'audio': return FaHeadphones;
+      default: return FaVideo;
+    }
+  };
+
+  const getTypeColor = (type) => {
+    switch (type) {
+      case 'video': return 'red';
+      case 'image': return 'blue';
+      case 'audio': return 'purple';
+      default: return 'gray';
+    }
+  };
+
   return (
-    <Container maxW="6xl" py={8}>
-      <Box mb={8}>
-        <Heading>Manage Media</Heading>
-        <Button mt={4} onClick={handleAdd} colorScheme="purple">
-          Add New Media
-        </Button>
-      </Box>
-      <Table variant="simple">
-        <Thead>
-          <Tr>
-            <Th>Title</Th>
-            <Th>Type</Th>
-            <Th>Actions</Th>
-          </Tr>
-        </Thead>
-        <Tbody>
-          {media.map((mediaItem) => (
-            <Tr key={mediaItem._id}>
-              <Td>{mediaItem.title}</Td>
-              <Td>{mediaItem.type}</Td>
-              <Td>
-                <Button size="sm" mr={2} onClick={() => handleEdit(mediaItem)}>
-                  Edit
-                </Button>
-                <Button size="sm" colorScheme="red" onClick={() => handleDelete(mediaItem._id)}>
-                  Delete
-                </Button>
-              </Td>
-            </Tr>
-          ))}
-        </Tbody>
-      </Table>
-      <MediaModal
-        isOpen={isOpen}
-        onClose={onClose}
-        mediaItem={editingMedia}
-        onSave={handleSave}
-      />
-    </Container>
+    <Box minH="100vh" bg="gray.50" py={8}>
+      <Container maxW="6xl">
+        <HStack justify="space-between" mb={6}>
+          <HStack spacing={4}>
+            <IconButton 
+              icon={<FaArrowLeft />} 
+              onClick={() => navigate('/admin/dashboard')}
+              variant="ghost"
+              aria-label="Back"
+            />
+            <Heading size="lg">Manage Media</Heading>
+          </HStack>
+          <Button leftIcon={<FaPlus />} onClick={handleAdd} colorScheme="purple">
+            Add New Media
+          </Button>
+        </HStack>
+        
+        <Box bg="white" borderRadius="lg" shadow="sm" overflow="hidden">
+          <Table variant="simple">
+            <Thead bg="gray.50">
+              <Tr>
+                <Th>Title</Th>
+                <Th>Type</Th>
+                <Th>Category</Th>
+                <Th>Date</Th>
+                <Th>Actions</Th>
+              </Tr>
+            </Thead>
+            <Tbody>
+              {media.length === 0 ? (
+                <Tr>
+                  <Td colSpan={5} textAlign="center" py={8} color="gray.500">
+                    No media found. Add your first media!
+                  </Td>
+                </Tr>
+              ) : (
+                media.map((mediaItem) => (
+                  <Tr key={mediaItem._id} _hover={{ bg: 'gray.50' }}>
+                    <Td fontWeight="medium">{mediaItem.title}</Td>
+                    <Td>
+                      <Badge colorScheme={getTypeColor(mediaItem.type)}>
+                        <HStack spacing={1}>
+                          <Icon as={getTypeIcon(mediaItem.type)} />
+                          <span>{mediaItem.type}</span>
+                        </HStack>
+                      </Badge>
+                    </Td>
+                    <Td>{mediaItem.category || 'Uncategorized'}</Td>
+                    <Td>{new Date(mediaItem.date).toLocaleDateString()}</Td>
+                    <Td>
+                      <HStack spacing={2}>
+                        <IconButton 
+                          icon={<FaEdit />} 
+                          size="sm" 
+                          onClick={() => handleEdit(mediaItem)}
+                          aria-label="Edit"
+                        />
+                        <IconButton 
+                          icon={<FaTrash />} 
+                          size="sm" 
+                          colorScheme="red"
+                          onClick={() => handleDelete(mediaItem._id)}
+                          aria-label="Delete"
+                        />
+                      </HStack>
+                    </Td>
+                  </Tr>
+                ))
+              )}
+            </Tbody>
+          </Table>
+        </Box>
+        <MediaModal
+          isOpen={isOpen}
+          onClose={onClose}
+          mediaItem={editingMedia}
+          onSave={handleSave}
+        />
+      </Container>
+    </Box>
   );
 };
 

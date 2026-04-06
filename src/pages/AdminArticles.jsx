@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   Box,
   Button,
@@ -25,17 +26,26 @@ import {
   Textarea,
   Select,
   Checkbox,
+  HStack,
+  Badge,
+  IconButton,
 } from '@chakra-ui/react';
 import axios from 'axios';
+import { FaPlus, FaEdit, FaTrash, FaArrowLeft } from 'react-icons/fa';
 
 const AdminArticles = () => {
   const [articles, setArticles] = useState([]);
   const [editingArticle, setEditingArticle] = useState(null);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const toast = useToast();
+  const navigate = useNavigate();
   const token = localStorage.getItem('token');
 
   useEffect(() => {
+    if (!token) {
+      navigate('/admin/login');
+      return;
+    }
     fetchArticles();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -116,47 +126,83 @@ const AdminArticles = () => {
   };
 
   return (
-    <Container maxW="6xl" py={8}>
-      <Box mb={8}>
-        <Heading>Manage Articles</Heading>
-        <Button mt={4} onClick={handleAdd} colorScheme="blue">
-          Add New Article
-        </Button>
-      </Box>
-      <Table variant="simple">
-        <Thead>
-          <Tr>
-            <Th>Title</Th>
-            <Th>Category</Th>
-            <Th>Date</Th>
-            <Th>Actions</Th>
-          </Tr>
-        </Thead>
-        <Tbody>
-          {articles.map((article) => (
-            <Tr key={article._id}>
-              <Td>{article.title}</Td>
-              <Td>{article.category}</Td>
-              <Td>{new Date(article.date).toLocaleDateString()}</Td>
-              <Td>
-                <Button size="sm" mr={2} onClick={() => handleEdit(article)}>
-                  Edit
-                </Button>
-                <Button size="sm" colorScheme="red" onClick={() => handleDelete(article._id)}>
-                  Delete
-                </Button>
-              </Td>
-            </Tr>
-          ))}
-        </Tbody>
-      </Table>
-      <ArticleModal
-        isOpen={isOpen}
-        onClose={onClose}
-        article={editingArticle}
-        onSave={handleSave}
-      />
-    </Container>
+    <Box minH="100vh" bg="gray.50" py={8}>
+      <Container maxW="6xl">
+        <HStack justify="space-between" mb={6}>
+          <HStack spacing={4}>
+            <IconButton 
+              icon={<FaArrowLeft />} 
+              onClick={() => navigate('/admin/dashboard')}
+              variant="ghost"
+              aria-label="Back"
+            />
+            <Heading size="lg">Manage Articles</Heading>
+          </HStack>
+          <Button leftIcon={<FaPlus />} onClick={handleAdd} colorScheme="blue">
+            Add New Article
+          </Button>
+        </HStack>
+        
+        <Box bg="white" borderRadius="lg" shadow="sm" overflow="hidden">
+          <Table variant="simple">
+            <Thead bg="gray.50">
+              <Tr>
+                <Th>Title</Th>
+                <Th>Category</Th>
+                <Th>Date</Th>
+                <Th>Featured</Th>
+                <Th>Actions</Th>
+              </Tr>
+            </Thead>
+            <Tbody>
+              {articles.length === 0 ? (
+                <Tr>
+                  <Td colSpan={5} textAlign="center" py={8} color="gray.500">
+                    No articles found. Add your first article!
+                  </Td>
+                </Tr>
+              ) : (
+                articles.map((article) => (
+                  <Tr key={article._id} _hover={{ bg: 'gray.50' }}>
+                    <Td fontWeight="medium">{article.title}</Td>
+                    <Td>
+                      <Badge colorScheme="green">{article.category || 'Uncategorized'}</Badge>
+                    </Td>
+                    <Td>{new Date(article.date).toLocaleDateString()}</Td>
+                    <Td>
+                      {article.featured && <Badge colorScheme="yellow">Featured</Badge>}
+                    </Td>
+                    <Td>
+                      <HStack spacing={2}>
+                        <IconButton 
+                          icon={<FaEdit />} 
+                          size="sm" 
+                          onClick={() => handleEdit(article)}
+                          aria-label="Edit"
+                        />
+                        <IconButton 
+                          icon={<FaTrash />} 
+                          size="sm" 
+                          colorScheme="red"
+                          onClick={() => handleDelete(article._id)}
+                          aria-label="Delete"
+                        />
+                      </HStack>
+                    </Td>
+                  </Tr>
+                ))
+              )}
+            </Tbody>
+          </Table>
+        </Box>
+        <ArticleModal
+          isOpen={isOpen}
+          onClose={onClose}
+          article={editingArticle}
+          onSave={handleSave}
+        />
+      </Container>
+    </Box>
   );
 };
 

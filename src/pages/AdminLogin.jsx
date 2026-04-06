@@ -22,8 +22,9 @@ const AdminLogin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('/api/login', { username, password });
+      const res = await axios.post('/api/auth/login', { username, password });
       localStorage.setItem('token', res.data.token);
+      localStorage.setItem('username', res.data.username);
       navigate('/admin/dashboard');
     } catch (err) {
       setError(err.response?.data?.error || 'Login failed');

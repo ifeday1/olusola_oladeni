@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { animateScroll as scroll } from "react-scroll";
 import { Link, NavLink } from "react-router-dom";
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -23,7 +22,7 @@ const Navbar = () => {
   const closeMenu = () => setClick(false);
 
   const ScrollToTop = () => {
-    scroll.scrollToTop();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
 
@@ -55,10 +54,6 @@ const Navbar = () => {
             <li key={index} className="nav-item">
               <NavLink
                 to={link.path}
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={500}
                 onClick={closeMenu}
                 className={({ isActive }) =>
                   `relative text-gray-700 no-underline py-2 font-medium text-xs uppercase cursor-pointer transition-colors duration-300 tracking-wider hover:text-green-600 ${
@@ -100,10 +95,6 @@ const Navbar = () => {
             <li key={index} className="my-1">
               <NavLink
                 to={link.path}
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={500}
                 onClick={closeMenu}
                 className={({ isActive }) =>
                   `text-lg px-6 py-2 no-underline text-gray-700 font-medium ${

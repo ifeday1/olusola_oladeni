@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
@@ -12,16 +12,32 @@ import Feb1 from "../assets/feb1.jpg";
 import Feb3 from "../assets/feb3.jpg";
 import Feb4 from "../assets/feb4.jpg";
 
-const ImageCarousel = () => {
-  const slides = [
-    { src: Pre1,  },
-    { src: Pre2,  },
-    { src: Pre3,  },
-    { src: Pre4,  },
-    { src: Feb1,  },
-    { src: Feb3,  },
-    { src: Feb4,  },
-  ];
+// Default fallback images (defined before useState to avoid eslint error)
+const defaultImages = [
+  { src: Pre1 },
+  { src: Pre2 },
+  { src: Pre3 },
+  { src: Pre4 },
+  { src: Feb1 },
+  { src: Feb3 },
+  { src: Feb4 },
+];
+
+const ImageCarousel = ({ instagramImages = [] }) => {
+  const [images, setImages] = useState(defaultImages);
+
+  useEffect(() => {
+    // If Instagram images are provided, use them
+    if (instagramImages.length > 0) {
+      setImages(instagramImages.map(url => ({ src: url })));
+    } else {
+      // Otherwise use default images
+      setImages(defaultImages);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [instagramImages]);
+
+  const slides = images;
 
   const settings = {
     infinite: true,
@@ -92,6 +108,10 @@ const ImageCarousel = () => {
                   src={slide.src}
                   alt={`session-${index + 1}`}
                   className=" object-cover rounded-[2rem] loading-lazy"
+                  onError={(e) => {
+                    // Replace failed image with first default image
+                    e.target.src = defaultImages[0].src;
+                  }}
                 />
                
               </div>

@@ -22,7 +22,6 @@
       testimonies, suggestions and anything else on
       contact@olusolaoladeni.org / oladeni2008@yahoo.com"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <title>Olusola Oladeni</title>
@@ -42,9 +41,29 @@
       gtag('js', new Date());
       gtag('config', 'GA_MEASUREMENT_ID');
     </script>
+    <!-- Twitter Widget - defer to ensure DOM is ready -->
+    <script>
+      window.addEventListener('load', function() {
+        var script = document.createElement('script');
+        script.src = 'https://platform.twitter.com/widgets.js';
+        script.charset = 'utf-8';
+        script.async = true;
+        document.body.appendChild(script);
+      });
+    </script>
   </head>
   <body>
+    <div id="fb-root"></div>
     <div id="root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml: true,
+          version: 'v18.0'
+        });
+      };
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0" nonce="123456789"></script>
 
   </body>
 </html>
